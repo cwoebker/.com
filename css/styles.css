@@ -82,7 +82,7 @@ h3{
 
 #topbar{
   position: fixed;
-  top: 2px;
+  top: 0px;
   left: 15px;
   right: 15px; 
   font-family: Helvetica, sans-serif;
@@ -117,7 +117,7 @@ h3{
 
 #topbar #cwoebker{
   padding-left: 1px;
-  padding-right: 5px;
+  padding-right: 15px;
   font-size: 23px;
   letter-spacing: 5px;
   color: #666;
@@ -131,28 +131,22 @@ h3{
   letter-spacing: 1px;
   color: #000;
 }
-#topbar .site{
-}
-#topbar .site img{
-  padding: 0 3px;
-  border: 0;
-}
 
-#topbar #sections{
+#topbar #section{
   margin: 25px 0 0 -15px;
   display: inline;
 }
-#topbar #sections div{
+#topbar #section div{
   margin-bottom: 7px;
 }
-#topbar #sections a{
+#topbar #section a{
   background-color: #000;
   padding: 3px 5px;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
 }
-#topbar #sections a:hover{
+#topbar #section a:hover{
   color: #ccc;
 }
 
