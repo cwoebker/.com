@@ -80,11 +80,18 @@ h3{
 }
 
 #topbar{
+  position: fixed;
+  top: 5px;
   left: 15px;
   right: 15px; 
-  float: right;
   font-family: Helvetica, sans-serif;
-}
+  width: auto;
+  padding: 3px 10px 0px 10px;
+  height: 30px;
+  line-height: 22px;
+  display: inline;
+}      
+
 #topbar .avatar{
   margin-left: 2px;
   -webkit-border-radius: 5px;
@@ -251,15 +258,6 @@ h3{
 	background-color: #EEE;
 	height: 31px;
 	margin-bottom: -31px;
-}
-
-#topbar {
-  width: auto;
-  padding: 3px 10px 0px 10px;
-  float: top;
-  height: 30px;
-  line-height: 22px;
-  display: inline;
 }
 
 /*
