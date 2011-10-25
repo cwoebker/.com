@@ -24,6 +24,7 @@ hr{
   margin: 2em 1em;
 }
 .content{
+  margin-top: 40px;
   margin-left: 110px;
   width: 650px;
   margin-bottom: 50px;
@@ -81,7 +82,7 @@ h3{
 
 #topbar{
   position: fixed;
-  top: 5px;
+  top: 2px;
   left: 15px;
   right: 15px; 
   font-family: Helvetica, sans-serif;
@@ -116,6 +117,7 @@ h3{
 
 #topbar #cwoebker{
   padding-left: 1px;
+  padding-right: 5px;
   font-size: 23px;
   letter-spacing: 5px;
   color: #666;
