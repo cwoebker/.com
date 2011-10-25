@@ -257,6 +257,7 @@ h3{
 */
   
 #custom-header {
+	position: fixed;
 	background-color: #EEE;
 	height: 37px;
 	margin-bottom: -32px;
