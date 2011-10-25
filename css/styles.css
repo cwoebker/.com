@@ -217,17 +217,17 @@ h3{
   color: #111;
   font-style: normal;
 }
-.whoring{
+.footer{
   margin: 30px 0;
   padding: 10px 0;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
-.whoring p{
+.footer p{
   margin-top: 0px;
 }
-.whoring img{
+.footer img{
   position: relative;
   float: left;
   margin-top: 5px;
@@ -235,10 +235,10 @@ h3{
   margin-left: -60px;
   border-radius: 4px;
 }
-.whoring .copy{
+.footer .copy{
   padding-left: 60px;
 }
-.whoring .twitter-follow-button{
+.footer .twitter-follow-button{
   width: 75px !important;
 }
 
@@ -403,5 +403,74 @@ input:hover, textarea:hover,
 input:focus, textarea:focus {
 	border-color: #C9C9C9;
 	}
+          
+/* In hoover styling */
 
+#menu #header{
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  width: 80px;
+  font-family: Helvetica, sans-serif;
+}
+#menu #header .avatar{
+  margin-left: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px #ccc;
+  opacity: .8;
+}
+#menu #header .avatar:hover{
+  opacity: 1;
+}
+#menu #header a{
+  text-decoration: none;
+}
+#menu #header #me{
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+}
+#menu #header #cwoebker{
+  padding-left: 1px;
+  font-size: 23px;
+  letter-spacing: 5px;
+  color: #666;
+}
+#menu #header #cwoebker:hover {
+  color: #000;
+}
+#menu #header #cwoebker{
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000;
+}
+#menu #header .site{
+}
+#menu #header .site img{
+  padding: 0 3px;
+  border: 0;
+}
+#menu #header #mousing{
+  font-size: 12px;
+  color: #999;
+  padding-left: 2px;
+  letter-spacing: 1px;
+}
+#menu #header #sections{
+  margin: 25px 0 0 -15px;
+}
+#menu #header #sections div{
+  margin-bottom: 7px;
+}
+#menu #header #sections a{
+  background-color: #000;
+  padding: 3px 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+#menu #header #sections a:hover{
+  color: #ccc;
+}
 
