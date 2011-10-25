@@ -80,6 +80,14 @@ h3{
   margin-bottom: 10px;
 }
 
+#custom-header {
+	position: fixed;
+	background-color: #EEE;
+	top: 0px;
+	height: 37px;
+	margin-bottom: -32px;
+}
+
 #topbar{
   position: fixed;
   top: 0px;
@@ -251,23 +259,11 @@ h3{
 }     
 
 /*
-
-  TopBar
-
-*/
-  
-#custom-header {
-	position: fixed;
-	background-color: #EEE;
-	height: 37px;
-	margin-bottom: -32px;
-}
-
-/*
  
  TALKS
 
- */
+*/
+
 #talks h2{
   font-size: 18px;
   font-family: Helvetica, sans-serif;
