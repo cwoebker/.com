@@ -391,3 +391,17 @@ h3{
   font-size: 13px;
   font-weight: bold;
 }
+
+/* Some General style Hoover stuff */
+
+#main-content {
+
+    margin-left:500px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	}
+
+
