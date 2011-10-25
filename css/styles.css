@@ -119,16 +119,11 @@ h3{
   padding-left: 1px;
   padding-right: 15px;
   font-size: 23px;
-  letter-spacing: 5px;
-  color: #666;
-}
-#topbar #me #cwoebker:hover {
-  color: #000;
-}
-#topbar #me #cwoebker{
-  font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;
+  color: #000;
+}
+#topbar #me #cwoebker:hover {
   color: #000;
 }
 
@@ -254,7 +249,7 @@ h3{
 #custom-header {
 	background-color: #EEE;
 	height: 31px;
-	margin-bottom: -31px;
+	margin-bottom: -42px;
 }
 
 /*
