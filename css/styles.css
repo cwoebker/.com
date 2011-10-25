@@ -124,6 +124,7 @@ h3{
 #topbar #me #internal {
 	padding-left: 20px;
 	display: inline;
+	margin-bottom: 3px;
 }
 
 #topbar #me #cwoebker{
