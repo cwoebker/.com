@@ -138,6 +138,7 @@ h3{
 }
 #topbar #sections{
   margin: 25px 0 0 -15px;
+  display: inline;
 }
 #topbar #sections div{
   margin-bottom: 7px;
