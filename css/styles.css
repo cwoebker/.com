@@ -84,6 +84,9 @@ h3{
 	position: fixed;
 	background-color: #EEE;
 	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: auto;
 	height: 37px;
 	margin-bottom: -32px;
 }
