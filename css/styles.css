@@ -109,6 +109,11 @@ h3{
   text-transform: uppercase;
   margin: 10px 0 20px 0;
 }
+
+#topbar #me li{
+	display: inline;
+}
+
 #topbar #cwoebker{
   padding-left: 1px;
   font-size: 23px;
@@ -130,12 +135,7 @@ h3{
   padding: 0 3px;
   border: 0;
 }
-#topbar #mousing{
-  font-size: 12px;
-  color: #999;
-  padding-left: 2px;
-  letter-spacing: 1px;
-}
+
 #topbar #sections{
   margin: 25px 0 0 -15px;
   display: inline;
