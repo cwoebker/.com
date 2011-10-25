@@ -247,11 +247,18 @@ h3{
   TopBar
 
 */
+  
+#custom-header {
+	background-color: #EEE;
+	height: 31px;
+	margin-bottom: -31px;
+}
 
 #topbar {
   width: auto;
   padding: 3px 10px 0px 10px;
   float: top;
+  height: 30px;
   line-height: 22px;
   display: block;
 }
