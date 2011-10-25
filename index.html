@@ -1,10 +1,17 @@
 ---
 layout: default
-title: cwoebker
+title: "cwoebker"
 ---
 
-{% for post in site.posts limit:5 %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-{{ post.content }}
-<em>Posted on {{ post.date | date_to_long_string }}.</em>
-{% endfor %}
+<div class="content">
+	
+	<div class="related">
+		<ul>
+			{% for post in site.posts %}
+				<li>
+					<span>Posted on {{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+			{% endofr %}
+		</ul>
+	</div>
+</div>
