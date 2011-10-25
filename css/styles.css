@@ -116,6 +116,16 @@ h3{
 	padding-right: 10px;
 }
 
+#topbar #me #external {
+	padding-left: 20px;
+	display: inline;
+}
+
+#topbar #me #internal {
+	padding-left: 20px;
+	display: inline;
+}
+
 #topbar #me #cwoebker{
   padding-left: 1px;
   padding-right: 20px;
