@@ -2,6 +2,7 @@ body{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  min-width: 680px;
 }
 a{
   color: #227CE8;
@@ -24,10 +25,11 @@ hr{
   margin: 2em 1em;
 }
 .content{
+  position: static;
   margin-top: 60px;
-  margin-left: 210px;
-  margin-right: 20px;
-  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
   margin-bottom: 50px;
 }
 
@@ -82,6 +84,37 @@ h3{
   margin-bottom: 10px;
 }
 
+#custom-sidebar {
+	position: fixed;
+	top: 80px;
+	width: 220px;
+	left: 0px;
+	background-color: white;
+	z-index: 5;
+}
+
+#sidebar {
+	position: absolute;
+	top: 80px;
+	width: 210px;
+	left: 8px;
+	z-index: 10;
+}
+
+#sidebar #karma {
+
+}
+
+#sidebar #tweet_feed {
+	padding-top: 20px;
+}
+
+#page {
+	position: absolute;
+	left: 220px;
+	z-index: 0px;
+}
+
 #custom-header {
 	position: fixed;
 	background-color: #EEE;
@@ -106,7 +139,7 @@ h3{
   position: fixed;
   top: 0px;
   left: 15px;
-  right: 15px; 
+  right: 15px;
   font-family: Helvetica, sans-serif;
   width: auto;
   padding: 3px 10px 0px 10px;
@@ -177,20 +210,6 @@ h3{
 
 #topbar #me a.section:hover{
   color: #ccc;
-}
-
-#sidebar {
-	position: fixed;
-	top: 80px;
-	left: 5px;
-}
-
-#sidebar #karma {
-
-}
-
-#sidebar #tweet_feed {
-	padding-top: 20px;
 }
 
 #post{
