@@ -4,8 +4,17 @@ layout: default
 
 <div class="content">
   <div id="post">
-    {% include post_head.html %}
-    {{ content }}
+    <h1>
+	  <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    <br />
+    <div class="body">
+      {{ content }}
+    </div>
+    <br />
+    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
+	  -- {{ page.date | date: "%b %d, %Y" }}
+    </postamble>
   </div>
 
   <div class="post_end">
