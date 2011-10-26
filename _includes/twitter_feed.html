@@ -3,23 +3,23 @@
 new TWTR.Widget({
   version: 2,
   type: 'profile',
-  rpp: 3,
+  rpp: 10,
   interval: 30000,
   width: 190,
-  height: 300,
+  height: 400,
   theme: {
     shell: {
       background: '#333333',
       color: '#ffffff'
     },
     tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#dceb07'
+      background: '#ffffff',
+      color: '#000000',
+      links: '#444444'
     }
   },
   features: {
-    scrollbar: false,
+    scrollbar: true,
     loop: false,
     live: true,
     behavior: 'all'
