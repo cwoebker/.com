@@ -24,8 +24,8 @@ hr{
   margin: 2em 1em;
 }
 .content{
-  margin-top: 40px;
-  margin-left: 110px;
+  margin-top: 60px;
+  margin-left: 180px;
   width: 650px;
   margin-bottom: 50px;
 }
@@ -88,7 +88,16 @@ h3{
 	right: 0px;
 	width: auto;
 	height: 37px;
-	margin-bottom: -32px;
+}
+
+#custom-header-underline {
+	position: fixed;
+	background-color: black;
+	top: 37px;
+	left: 0px;
+	right: 0px;
+	height: 3px;
+	width: auto;
 }
 
 #topbar{
@@ -101,7 +110,6 @@ h3{
   padding: 3px 10px 0px 10px;
   height: 30px;
   line-height: 22px;
-  display: inline;
 }      
 
 #topbar .avatar{
@@ -128,14 +136,16 @@ h3{
 }
 
 #topbar #me #external {
-	padding-left: 20px;
+	padding-left: 10px;
 	display: inline;
 }
 
 #topbar #me #internal {
-	padding-left: 20px;
+	position: relative;
+	top: -5px;
+	padding-left: 50px;
 	display: inline;
-	padding-top: -5px;
+
 }
 
 #topbar #me #cwoebker{
@@ -162,8 +172,15 @@ h3{
   font-weight: bold;
   font-size: 12px;
 }
+
 #topbar #me a.section:hover{
   color: #ccc;
+}
+
+#sidebar {
+	position: fixed;
+	top: 80px;
+	left: 5px;
 }
 
 
