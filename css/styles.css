@@ -26,7 +26,8 @@ hr{
 .content{
   margin-top: 60px;
   margin-left: 180px;
-  width: 650px;
+  margin-right: 20px;
+  width: auto;
   margin-bottom: 50px;
 }
 .posts{
@@ -38,7 +39,7 @@ hr{
   padding: 0;
 }
 .posts li{
-  font-size: 13px;
+  font-size: 14px;
   list-style: none;
   padding: 5px 3px;
   margin: 0;
