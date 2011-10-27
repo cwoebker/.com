@@ -4,6 +4,32 @@ body{
   -webkit-font-smoothing: antialiased;
   min-width: 680px;
 }
+
+.clear {clear: both;}
+
+body div.content {}
+    body div.content pre {
+        background-color: #eee;
+        padding: 0.4em 1em;
+        border-left: 2px solid #ddd;
+    }
+    body div.content code {
+        background-color: #eee;
+        padding: 0 0.1em;
+    }
+    body div.content pre > code {
+        padding: 0; background-color: transparent;
+    }
+    body div.content code.has-jax {
+        font: inherit; 
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+    }
+    body div.gist {
+        font-size: 12px;
+    }
+
 a{
   color: #227CE8;
 }
@@ -29,7 +55,7 @@ hr{
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  width: 640px;
+  width: 800px;
   margin-bottom: 50px;
 }
 

@@ -21,6 +21,24 @@
   </script>
   <script type="text/javascript" src="/javascript/javascript.js"></script>
   <script type="text/javascript" src="/javascript/jquery.js"></script>
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    MathJax.Hub.Config({
+      tex2jax: {
+/*        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true */
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+  </script>
 </head>
 <body>
 
@@ -34,9 +52,9 @@
     </li>
     <div id="external">
     <li>
-	  <a href="https://github.com/cwoebker" id="github">
-	    <img src="/images/github.png" alt="github" title="@cwoebker on GitHub" height="16" width="16" />
-	  </a>
+	<a href="https://github.com/cwoebker" id="github">
+            <img src="/images/github.png" alt="github" title="@cwoebker on GitHub" height="16" width="16" />
+	</a>
     </li>
     <li>
       <a href="https://twitter.com/cwoebker" id="twitter">
