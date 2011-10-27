@@ -76,11 +76,16 @@ This is especially helpful if you want to example use disqus in your blog. I've 
 
 ### _layouts
 
-Files in here
+The files in here are going to be the basic building blocks of your site. At the top of this post:
+
+    layout: post
+
+therefore i access the `post.html` file in `_layouts`.
+That `post.html` file is based of a `default.html` file. Therefore I don't have to worry about any css or html after the site has been set up once.
 
 ### _posts 
 
-All your blog posts go in here
+All your blog posts go in here. Look at the end of this post to see how I have written this post.
 
 ### Automatic Post Generation
 
