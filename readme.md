@@ -4,4 +4,4 @@ Hi. This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on 
 
 Cheers!
 
-- cwoebker
+cwoebker
