@@ -1,9 +1,11 @@
 ---
 layout: post
 title: LaTeX Math Magic
-published: true
 tags:
-    - tag
+    - jekyll
+    - latex
+    - MathJax
+    - markdown
 ---
 
 So here comes, as promised, my tutorial to using LaTeX in your awesome jekyll-powered blog. 
