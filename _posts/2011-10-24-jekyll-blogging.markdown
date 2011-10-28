@@ -69,7 +69,7 @@ This might seem intimitaing initially but after you've wrapped your head around 
 
 You can place any `.html` files in here and then include them anywehre you want with the following tag: 
 
-`{% raw %}{% include FILE_NAME.html %}{% endraw %}`
+`{% include FILE_NAME.html %}`
 
 This is especially helpful if you want to example use disqus in your blog. I've included the javascript code in a `disqus.html` file and whenever I want to use it I can simply include it with the above tag.
 
