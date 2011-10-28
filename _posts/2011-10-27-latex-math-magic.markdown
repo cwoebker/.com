@@ -69,24 +69,20 @@ This works way better except that MathJax is skipping `<code>` tags by default s
 
 So somewhere in your main layout file you have to add a little javascript bounded by the usual `<script>…</script>` tags:
 
-{% highlight javascript %}
- MathJax.Hub.Config({
+    MathJax.Hub.Config({
       tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
       }
     });
-{% endhighlight %}
 
 Additionally we have to tell MathJax to ignore non-latex code-bloks or normal code blocks:
 
-{% highlight javascript %}
-MathJax.Hub.Queue(function() {
+    MathJax.Hub.Queue(function() {
         var all = MathJax.Hub.getAllJax(), i;
         for(i=0; i < all.length; i += 1) {
             all[i].SourceElement().parentNode.className += ' has-jax';
         }
     });
-{% endhighlight %}
 
 
 
