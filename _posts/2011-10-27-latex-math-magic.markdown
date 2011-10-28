@@ -94,6 +94,18 @@ At his point all our latex code blocks are going to have the `has-jax` string in
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
 {% endhighlight %}
 
+## Is this it?
+
+Although I have this really bad feeling that I forgot something essential I think this should be it. At least I can't remeber having made any other changes to my files.
+
+## It doesnt work yet ?!?
+
+Well I assume you checked all your code…
+
+So just send me an email with questions etc. 
+
+<cwoebker@gmail.com>
+
 [Markdown]: http://daringfireball.net/projects/markdown/
 [MathJax]: http://www.mathjax.org/
 [Github Pages]: http://pages.github.com/
