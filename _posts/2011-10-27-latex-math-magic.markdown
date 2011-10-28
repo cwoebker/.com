@@ -31,7 +31,7 @@ The approach I am taking to solving the LaTeX & Markdown problem is highlt based
 This post basically works with multiple layers:
 
 1. Right now I am using [rdiscount] which is an implementation for [John Gruber's markdown][Markdown]. For the ones interrested I am writing this with [Mou](http://mouapp.com/) which is an amazing Mac markdown editor. So all the normal markdown rules apply. In the end markdown is going to transform this text into valid html code.
-2. The next layer is Liquid which is part of Jekyll itself. It allows you to put fancy tags into your code for example: `{{ post.title }}` this would take the current's post title and just display it. Nice and simple.
+2. The next layer is Liquid which is part of Jekyll itself. It allows you to put fancy tags into your code for example: `{% raw %}{{ post.title }}{% endraw %}` this would take the current's post title and just display it. Nice and simple.
 3. And know we are in plain html and css that can be interpreted by most browsers. This is where the `MathJax` comes into play.
 
 ## So what's the problem?
