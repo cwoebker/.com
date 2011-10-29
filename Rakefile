@@ -16,7 +16,7 @@ layout: default
 title: Postings tagged "#{category}"
 ---
     <h1 id="#{category}">Postings tagged "#{category}"</h1>
-
+    HTML
     html << '<ul class="posts">'
     posts.each do |post|
       post_data = post.to_liquid
@@ -31,6 +31,7 @@ title: Postings tagged "#{category}"
     end
   end
   puts 'Done.'
+end
 
 desc 'Generate tag-cloud page'
 task :cloud do
@@ -45,7 +46,7 @@ task :cloud do
 
   html =<<-HTML
 ---
-layout: default
+layout: page
 title: Tag cloud
 ---
 
@@ -59,11 +60,12 @@ title: Tag cloud
 
       s = posts.count
       font_size = 12 + (s*1.5);
-      html << "<a href=\"/tags/#{category}.html\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+      html << "<a href=\"/tags/#{category}\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
     end
 
     File.open('tags.html', 'w+') do |file|
       file.puts html
     end
-  end
   puts 'Done.'
+end
+
