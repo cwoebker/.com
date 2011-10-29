@@ -60,10 +60,10 @@ title: Tag cloud
 
       s = posts.count
       font_size = 12 + (s*1.5);
-      html << "<a href=\"/tags/#{category}\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+      html << "<a href=\"/tag/#{category}\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
     end
 
-    File.open('cloud.html', 'w+') do |file|
+    File.open('tags.html', 'w+') do |file|
       file.puts html
     end
   puts 'Done.'
