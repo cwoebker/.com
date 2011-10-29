@@ -8,3 +8,4 @@ rdiscount:
 
 exclude:
   - newpost.rb
+  - kyll.py

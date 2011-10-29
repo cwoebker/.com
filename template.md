@@ -1,8 +1,7 @@
 ---
 layout: post
 title: %%TITLE%%
-tags:
-    - tag
+tags: %%TAGS%%
 ---
 
 Hello, Jekyll!
