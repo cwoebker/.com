@@ -12,7 +12,7 @@ task :tags do
     html = ''
     html << <<-HTML
 ---
-layout: default
+layout: page
 title: Postings tagged "#{category}"
 ---
     <h1 id="#{category}">Postings tagged "#{category}"</h1>
@@ -21,7 +21,7 @@ title: Postings tagged "#{category}"
     posts.each do |post|
       post_data = post.to_liquid
       html << <<-HTML
-        <li>#{post_data['title']}</li>
+        <li><a href="#{post_data['url']}" >#{post_data['title']}</a></li>
       HTML
     end
     html << '</ul>'
