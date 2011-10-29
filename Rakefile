@@ -63,7 +63,7 @@ title: Tag cloud
       html << "<a href=\"/tags/#{category}\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
     end
 
-    File.open('tags.html', 'w+') do |file|
+    File.open('cloud.html', 'w+') do |file|
       file.puts html
     end
   puts 'Done.'
