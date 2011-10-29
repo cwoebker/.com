@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LaTeX Math Magic
-tags:
+categories:
     - jekyll
     - latex
     - MathJax

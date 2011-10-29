@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Blogging
-tags:
+categories:
     - jekyll
     - programming
     - latex
