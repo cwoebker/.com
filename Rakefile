@@ -1,4 +1,4 @@
-desc 'Generate tags page'
+desc 'Generate tags pages'
 task :tags do
   puts "Generating tags..."
   require 'rubygems'
@@ -12,10 +12,10 @@ task :tags do
     html = ''
     html << <<-HTML
 ---
-layout: page
-title: Posts tagged: "#{category}"
+layout: post
+title: Tag - "#{category}"
 ---
-    <h1 id="#{category}">Posts tagged: "#{category}"</h1>
+    <h1 id="#{category}">Tag - "#{category}"</h1>
     HTML
     html << '<ul class="posts">'
     posts.each do |post|
@@ -59,8 +59,8 @@ title: Tag cloud
       HTML
 
       s = posts.count
-      font_size = 12 + (s*1.5);
-      html << "<a href=\"/tag/#{category}\" title=\"Posts tagged: #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+      font_size = 12 + (s*2.5);
+      html << "<a href=\"/tag/#{category}\" title=\"Tag - #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
     end
 
     File.open('tags.html', 'w+') do |file|
