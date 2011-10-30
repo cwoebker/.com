@@ -16,9 +16,9 @@
   <script type="text/javascript">
     window.onload = function() {
       try {
-        TagCanvas.interval = 50;
+        TagCanvas.interval = 80;
         TagCanvas.textColour = '#000000';
-        TagCanvas.textHeight = 64;
+        TagCanvas.textHeight = 160;
         TagCanvas.maxSpeed = 0.04;
         TagCanvas.minBrightness = 0.1;
         TagCanvas.outlineColour = '#f96';
@@ -34,7 +34,7 @@
         TagCanvas.shadowBlur = 3;
         TagCanvas.weight = true;
         TagCanvas.weightMode = 'size';
-        TagCanvas.weightSize = 10;
+        TagCanvas.weightSize = 16;
         TagCanvas.weightFrom = 'tag-weight';
         TagCanvas.Start('tags');
       } catch(e) {

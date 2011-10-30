@@ -52,14 +52,13 @@ title: Tag cloud
 <h1>Tag Cloud</h1>
 <br />
 
-<canvas width="800" height="800" id="tags">
+<canvas width="800" height="600" id="tags">
 <ul>
     HTML
 
     site.categories.sort.each do |category, posts|
       s = posts.count
-      font_size = 21 + (s*6.0);
-      html << "<a href=\"/tag/#{category}\" tag-weight=\"#{s*6.0}\" title=\"Tag - #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+      html << "<a href=\"/tag/#{category}\" tag-weight=\"#{s}\" title=\"Tag - #{category}\">#{category}</a> "
     end
 
     html << <<-HTML
