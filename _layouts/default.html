@@ -12,14 +12,44 @@
   <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/javascript/application.js"></script>
+  <script type="text/javascript" src="/javascript/tagcanvas.js"></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      try {
+        TagCanvas.interval = 50;
+        TagCanvas.textColour = '#000000';
+        TagCanvas.textHeight = 64;
+        TagCanvas.maxSpeed = 0.04;
+        TagCanvas.minBrightness = 0.1;
+        TagCanvas.outlineColour = '#f96';
+        TagCanvas.outlineThickness = 5;
+        TagCanvas.depth = 0.92;
+        TagCanvas.pulsateTo = 0.2;
+        TagCanvas.pulsateTime = 0.75;
+        TagCanvas.initial = [0.1, -0.1];
+        TagCanvas.decel = 0.98;
+        TagCanvas.reverse = true;
+        TagCanvas.hideTags = false;
+        TagCanvas.shadow = '#555555';
+        TagCanvas.shadowBlur = 3;
+        TagCanvas.weight = true;
+        TagCanvas.weightMode = 'size';
+        TagCanvas.weightSize = 10;
+        TagCanvas.weightFrom = 'tag-weight';
+        TagCanvas.Start('tags');
+      } catch(e) {
+        document.getElementById('tagsContainer').style.display = 'none';
+      }
+    };
+  </script>
   <script type="text/javascript">
     $(document).ready(function() {
       {{ page.script }}
     });
   </script>
-  <script type="text/javascript" src="/javascript/javascript.js"></script>
-  <script type="text/javascript" src="/javascript/jquery.js"></script>
+  <!--<script type="text/javascript" src="/javascript/javascript.js"></script>
+  <script type="text/javascript" src="/javascript/application.js"></script>
+  <script type="text/javascript" src="/javascript/jquery.js"></script>-->
   <script type="text/javascript"
    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script>

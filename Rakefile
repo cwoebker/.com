@@ -51,16 +51,21 @@ title: Tag cloud
 
 <h1>Tag Cloud</h1>
 <br />
+
+<canvas width="800" height="800" id="tags">
+<ul>
     HTML
 
     site.categories.sort.each do |category, posts|
-      html << <<-HTML
-      HTML
-
       s = posts.count
-      font_size = 12 + (s*2.5);
-      html << "<a href=\"/tag/#{category}\" title=\"Tag - #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+      font_size = 21 + (s*6.0);
+      html << "<a href=\"/tag/#{category}\" tag-weight=\"#{s*6.0}\" title=\"Tag - #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
     end
+
+    html << <<-HTML
+      </ul>
+    </canvas>
+    HTML
 
     File.open('tags.html', 'w+') do |file|
       file.puts html
