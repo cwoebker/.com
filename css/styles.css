@@ -342,7 +342,11 @@ postamble a:visited {
 }
 .footer .twitter-follow-button{
   width: 75px !important;
-}     
+}
+
+#post #tag {
+  margin-bottom: 0;
+}
 
 /*
  

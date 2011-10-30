@@ -20,7 +20,7 @@ title: Tag - "#{category}"
     posts.each do |post|
       post_data = post.to_liquid
       html << <<-HTML
-        <li><a href="#{post_data['url']}" >#{post_data['title']}</a></li>
+        <li id=\"tag\"><a href="#{post_data['url']}" >#{post_data['title']}</a></li>
       HTML
     end
     html << '</ul>'
