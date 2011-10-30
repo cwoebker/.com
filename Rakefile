@@ -12,10 +12,9 @@ task :tags do
     html = ''
     html << <<-HTML
 ---
-layout: post
+layout: tag
 title: Tag - "#{category}"
 ---
-    <h1 id="#{category}">Tag - "#{category}"</h1>
     HTML
     html << '<ul class="posts">'
     posts.each do |post|
@@ -51,7 +50,7 @@ title: Tag cloud
 ---
 
 <h1>Tag Cloud</h1>
-
+<br />
     HTML
 
     site.categories.sort.each do |category, posts|
