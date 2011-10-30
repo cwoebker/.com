@@ -23,7 +23,10 @@ title: Tag - "#{category}"
         <li id=\"tag\"><a href="#{post_data['url']}" >#{post_data['title']}</a></li>
       HTML
     end
-    html << '</ul>'
+    html << <<-HTML
+</ul>
+<bold><a href="/tags">Back To Tag List</a></bold>
+    HTML
 
     File.open("tag/#{category}.html", 'w+') do |file|
       file.puts html
