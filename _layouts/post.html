@@ -16,8 +16,12 @@ layout: default
 	  -- {{ page.date | date: "%b %d, %Y" }}
     </postamble>
   </div>
-
   <div class="post_end">
+    <h4>Tags:</h4>
+    {% for tag in page.categories %}
+      <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+    <br />
     {% include disqus.html %}
   </div>
 </div>
