@@ -48,12 +48,9 @@ task :cloud do
 
   html =<<-HTML
 ---
-layout: page
-title: Tag cloud
+layout: tag
+title: Tag Cloud
 ---
-
-<h1>Tag Cloud</h1>
-<br />
 
 <canvas width="800" height="600" id="tags">
 <ul>
