@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Jekyll Blogging
+published: true
 categories:
     - jekyll
     - programming

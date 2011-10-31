@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LaTeX Math Magic
+published: true
 categories:
     - jekyll
     - latex
