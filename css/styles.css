@@ -205,6 +205,13 @@ h3{
 	display: inline;
 }
 
+#topbar #me #titlediv {
+  display: inline;
+  padding-left: 5px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
 #topbar #me #internal {
 	position: relative;
 	top: -6px;
