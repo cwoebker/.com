@@ -162,6 +162,7 @@ h3{
 	right: 0px;
 	height: 3px;
 	width: auto;
+  z-index: 5;
 }
 
 #topbar{
