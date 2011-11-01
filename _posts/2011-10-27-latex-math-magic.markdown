@@ -95,11 +95,11 @@ At his point all our latex code blocks are going to have the `has-jax` string in
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
 {% endhighlight %}
 
-## Examples
+### Examples
 
 These examples have been taken from the MathJax [Demo Page](http://mathjax.org/demos/tex-samples/)
 
-### The Lorentz Equations
+#### The Lorentz Equations
 
 `\[
 \begin{aligned}
@@ -109,13 +109,13 @@ These examples have been taken from the MathJax [Demo Page](http://mathjax.org/d
 \end{aligned}
 \]`
 
-### The Cauchy-Schwarz Inequality
+#### The Cauchy-Schwarz Inequality
 
 `\[
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 \]`
 
-### A Cross Product Formula
+#### A Cross Product Formula
 
 `\[
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
@@ -125,13 +125,13 @@ These examples have been taken from the MathJax [Demo Page](http://mathjax.org/d
 \end{vmatrix}
 \]`
 
-### The probability of getting k heads when flipping n coins is
+#### The probability of getting k heads when flipping n coins is
 
 `\[
 P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 \]`
 
-### An Identity of Ramanujan
+#### An Identity of Ramanujan
 
 `\[
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -139,7 +139,7 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 {1+\frac{e^{-8\pi}} {1+\ldots} } } }
 \]`
 
-### A Rogers-Ramanujan Identity
+#### A Rogers-Ramanujan Identity
 
 `\[
 1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
@@ -147,7 +147,7 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 \quad\quad \text{for $|q|<1$}.
 \]`
 
-### Maxwell's Equations
+#### Maxwell's Equations
 
 `\[
 \begin{aligned}
@@ -160,7 +160,7 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 
 Although I have this really bad feeling that I forgot something essential I think this should be it. At least I can't remeber having made any other changes to my files.
 
-## It doesnt work yet ?!?
+### It doesnt work yet ?!?
 
 Well I assume you checked all your code…
 
