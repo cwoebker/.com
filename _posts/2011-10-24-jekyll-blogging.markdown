@@ -124,6 +124,12 @@ or you can do some inline implementations for example here : `\( P(E) = {n \choo
 
 Using Latex like this takes a little more than just writing down normal latex code but I am going to cover that in another post. But basically I am just using the [MathJax] library with some configuration changes.
 
+##### Note
+
+This post has been written:
+
+[`\( \LaTeX \)` Math Magic](/posts/latex-math-magic/)
+
 ## So how does this look?
 
 The source for this post:

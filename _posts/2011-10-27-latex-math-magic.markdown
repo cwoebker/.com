@@ -9,7 +9,7 @@ categories:
     - markdown
 ---
 
-So here comes, as promised, my tutorial to using LaTeX in your awesome jekyll-powered blog. 
+So here comes, as [promised](/posts/jekyll-blogging/#n7), my tutorial to using LaTeX in your awesome jekyll-powered blog. 
 
 Since many people started using Jekyll to power there blogs recently I figured it might be a good idea to share how I got my `\( \LaTeX \)`, which some of you  might want, to work.
 
@@ -64,7 +64,7 @@ Another idea is to use code blocks. So either using the 4+spaces before what you
 
 This works way better except that MathJax is skipping `<code>` tags by default since it doesn't want to convert code that it shouldn't.
 
-## This is where we start fixing stuff
+### This is where we start fixing stuff
 
 **Yes, you could have skipped everyting before this**
 
