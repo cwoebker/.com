@@ -52,7 +52,7 @@ layout: tag
 title: Tag Cloud
 ---
 
-<canvas width="800" height="600" id="tags">
+<canvas width="800" height="580" id="tags">
 <ul>
     HTML
 
