@@ -15,33 +15,41 @@
   <!-- OpenID Section -->
 
   <link rel="openid.server" href="http://www.myopenid.com/server" />
-  <link rel-"openid.delegate" href="http://cwoebker.myopenid.com/" />
+  <link rel="openid.delegate" href="http://cwoebker.myopenid.com/" />
 
   <!-- JQuery Section -->
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascript/jquery-1.5.1.min.js"></script>
 
+  {% for item in page.external %}
+  {% case item %}
+  {% when 'orbit' %}
+  <!-- Orbit Section -->
+
+  <script type="text/javascript" src="/javascript/jquery.orbit-1.2.3.min.js"></script>
+  <link rel="stylesheet" href="/css/orbit-1.2.3.css">
+
+  {% when 'flexnav' %}
   <!-- ScrollTo Section -->
 
   <script type="text/javascript" src="/javascript/jquery.scrollTo-min.js"></script>
   <script type="text/javascript" src="/javascript/jquery.localscroll-1.2.7-min.js"></script>
 
-  <!-- Flattr Section -->
+  <!-- Flexible Nav Section -->
+
+  <link rel="stylesheet" href="/css/flexible-nav.min.css" type="text/css" />
+  <script type="text/javascript" src="/javascript/flexible-nav.js"></script>
 
   <script type="text/javascript">
-/* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-/* ]]> */
+    $(function(){
+        new FlexibleNav ( new FlexibleNavMaker().make().prependTo('body') );
+        new FlexibleNav($("#disqus_thread"));
+    });
   </script>
 
+  {% when 'tagcanvas' %}
   <!-- Tag Canvas Section -->
-  
+
   <script type="text/javascript" src="/javascript/tagcanvas.js"></script>
   <script type="text/javascript">
     window.onload = function() {
@@ -72,7 +80,24 @@
       }
     };
   </script>
-   
+  {% endcase %}
+  {% endfor %}
+
+  <!-- Flattr Section -->
+
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+  /* ]]> */
+  </script>
+
+
   <!-- MathJax Section -->
 
   <script type="text/javascript"
@@ -88,18 +113,6 @@
         for(i=0; i < all.length; i += 1) {
             all[i].SourceElement().parentNode.className += ' has-jax';
         }
-    });
-  </script>
-
-  <!-- Flexible Nav Section -->
-  
-  <link rel="stylesheet" href="/css/flexible-nav.min.css" type="text/css" />
-  <script type="text/javascript" src="/javascript/flexible-nav.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-        new FlexibleNav ( new FlexibleNavMaker().make().prependTo('body') );
-        new FlexibleNav($("#disqus_thread"));
     });
   </script>
 
@@ -165,7 +178,7 @@
     <div id="internal">
     <li><a class="section" href="/about">about</a></li>
     <li><a class="section" href="http://vimeo.com/cwoebker">videos</a></li>
-    <li><a class="section" href="http://github.com/cwoebker">projects</a></li>
+    <li><a class="section" href="/projects">projects</a></li>
     <li><a class="section" href="/physics">physics</a></li>
     <li><a class="section" href="/tags">tags</a></li>
     </div>

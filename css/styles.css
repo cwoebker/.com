@@ -137,10 +137,6 @@ h3{
 }
 
 #page {
-	position: absolute;
-	left: 220px;
-	width: 620px;
-	z-index: 0px;
 }
 
 #custom-header {
