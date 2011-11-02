@@ -171,6 +171,18 @@ h3{
   z-index: 10;
 }
 
+#footerbar {
+  position: fixed;
+  bottom: 0px;
+  left 20px;
+  font-family: Helvetica, sans-serif;
+  width: auto;
+  padding: 3px 10px 0px 10px;
+  height: 30px;
+  line-height: 22px;
+  z-index: 
+}
+
 #topbar .avatar{
   margin-left: 2px;
   -webkit-border-radius: 5px;
