@@ -206,7 +206,7 @@
           closest = link;
       });
       closest && closest.node.addClass('current');
-      //$('#titlediv').text($('a.current').text());
+      $('#titlediv').text($('a.current').text());
     }
     // ### Init ###
     // Bind scroll event and init nav.
