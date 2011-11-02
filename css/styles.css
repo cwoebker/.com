@@ -172,9 +172,6 @@ h3{
 }
 
 #footerbar {
-  position: fixed;
-  bottom: 0px;
-  left 20px;
   font-family: Helvetica, sans-serif;
   width: auto;
   padding: 3px 10px 0px 10px;
