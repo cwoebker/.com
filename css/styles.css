@@ -136,9 +136,6 @@ h3{
 	padding-top: 20px;
 }
 
-#page {
-}
-
 #custom-header {
 	position: fixed;
 	background-color: #EEE;
@@ -249,6 +246,10 @@ h3{
 
 #topbar #me a.section:hover{
   color: #ccc;
+}
+
+#links {
+  display: inline;
 }
 
 #post{
