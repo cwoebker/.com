@@ -50,6 +50,7 @@ task :cloud do
 ---
 layout: tag
 title: Tag Cloud
+external: [tagcanvas]
 ---
 
 <canvas width="800" height="580" id="tags">
