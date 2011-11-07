@@ -1,0 +1,26 @@
+---
+layout: post
+title: Science
+published: false
+categories: 
+    - science
+    - future
+    - technology
+    - research
+---
+
+## Science is amazing.
+
+>It makes life simpler and better.
+
+## Science is dangerous.
+
+>It is unknown and unpredictable.
+
+## Science is the future.
+
+>Things that we think of as impossible might be already available tomorrow.
+
+## Science needs help
+
+>

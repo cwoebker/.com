@@ -7,7 +7,7 @@
 # by cwoebker
 #
 
-import os, sys, datetime, argparse, re
+import os, sys, datetime, re
 
 POSTDIR = '_posts'
 TEMPLATE = 'template.md'
@@ -18,6 +18,9 @@ HELP = \
 Arguments:
 
     - create: creates a post with given title and tags
+    - info: prints out post meta info
+    - read: prints out the contents of a post
+    - list: lists all posts
 
     future:
 
@@ -39,31 +42,69 @@ def simplify(value):
 class Jekyll(object):
     pass
 
+class Tag(object):
+    def __init__(self):
+        pass
+    def load(self):
+        pass
+    def list(self):
+        pass
+
 class Post(object):
     def __init__(self):
         self.title = ""
-        self.date = datetime.date.today()
+        self.date = None
         self.tags = []
         self.layout = "post"
-        
+
+    def load(self, slug):
+        self.slug = slug
+        self.title = ""
+        self.date = None
+        self.tags = []
+        self.layout = "post"
+        self.fname = ""
+        self.fpath = ""
+
+        # DO STUFF HERE
+
+        self.loaded = True
+
+    def create(self):
         raw = open(TEMPLATE, "r")
 
-        self.template = raw.read()
-    def create(self):
-        self.content = self.template.replace('%%TITLE%%', self.title, 1)
-        self.simple_title = simplify(self.title)
-        self.date = str(self.date)
+        template = raw.read()
+        raw.close()
+        self.content = template.replace('%%TITLE%%', self.title, 1).replace('%%TAGS%%', template_tags, 1)
+        self.slug = simplify(self.title)
+        self.date = str(datetime.date.today())
 
         template_tags = ""
         for tag in self.tags:
             template_tags += "\n    - %s" % tag
 
-        self.content = self.content.replace('%%TAGS%%', template_tags, 1)
-
-        self.fname = "%s-%s.markdown" % (self.date, self.simple_title)
+        self.fname = "%s-%s.markdown" % (self.date, self.slug)
         self.fpath = os.path.join(POSTDIR, self.fname)
         self.write()
-
+    def read(self):
+        postList = os.listdir(POSTDIR)
+        for post in postList:
+            if self.slug in post:
+                self.fpath = os.path.join(POSTDIR, post)
+        post_file = open(self.fpath, "r")
+        self.content = post_file.read()
+        post_file.close()
+    def info(self):
+        if not self.loaded:
+            print 'ERROR: Not loaded yet!'
+            return False
+        print "Slug: " + self.slug
+        print "Title: " + self.title
+        print "Date: " + str(self.date)
+        print "Tags: " + str(self.tags)
+        print "Layout: " + self.layout
+        print "Filename: " + self.fname
+        print "Path: " + self.fpath
     def write(self):
         post_file = open(self.fpath, "w")
         post_file.writelines(self.content)
@@ -91,6 +132,28 @@ def createPost(argv):
     
     post.create()
 
+def readPost(argv):
+    print '\n----------Post----------\n'
+    slug = argv[0]
+    post = Post()
+    post.slug = slug
+    post.read()
+    print post.content
+
+def infoPost(argv):
+    print '\n----------Post Info----------\n'
+    slug = argv[0]
+    post = Post()
+    post.load(slug)
+    post.info()
+
+def listPosts(argv):
+    print '\n----------Jekyll Posts----------\n'
+    postList = os.listdir(POSTDIR)
+    for file in postList:
+        file = file.rstrip('.markdown')
+        print ' - ' + file[11:]
+    print ''
 def main(argv):
     """
     parses the arguments and starts the application
@@ -98,12 +161,18 @@ def main(argv):
     if len(argv) == 0:
         print HELP
         return 0
-    if argv[0] == 'create':
+    elif argv[0] == 'create':
         createPost(argv[1:])
+    elif argv[0] == 'list':
+        listPosts(argv[1:])
+    elif argv[0] == 'read':
+        readPost(argv[1:])
+    elif argv[0] == 'info':
+        infoPost(argv[1:])
+    else:
+        print HELP
+        return 0
     return 1
     
 if __name__ == "__main__":
-    if main(sys.argv[1:]):
-        print "Succeed"
-    else:
-        print "Failure"
+    main(sys.argv[1:])

@@ -19,12 +19,16 @@ But furthermore I think that something odd is going on…
 
 ## Technology
 
+*When I say technology here I refer only refer to Computer Technology.*
+
+### The Babbage Engine
+
 ## Science
 
 Science isn't just another subject. It is the subject. Technology is just part of science in my opinion. If we look back at the past decades science has always been there and progressed at an immense speed that helped create many beautiful things.
 
-## The odd Problem
-
-
-
 ## The solution: Unity
+
+
+
+## Conclusion
