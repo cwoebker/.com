@@ -3,18 +3,16 @@ layout: page
 title: Physics
 ---
 
-## Physics
-
 Here I am going to post links to different Physics related things I worked on. Just cause I love Physics and want to share.
 
-### Classical mechanics
+## Classical mechanics
 
-### Thermodynamics
+## Thermodynamics
 
-### Electromagnetism
+## Electromagnetism
 
-#### Optics
+### Optics
 
-### Relativity
+## Relativity
 
-### Quantum mechanics
+## Quantum mechanics
