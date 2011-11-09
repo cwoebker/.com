@@ -1,0 +1,54 @@
+\documentclass[titlepage]{article}
+
+\usepackage{makeidx}
+\usepackage[toc]{glossaries}
+
+\title{Newton's Laws}
+\author{Cecil Woebker}
+\date{7 Nov, 2011}
+
+\makeindex
+\makeglossaries
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This is a very short abstract.
+\end{abstract}
+
+\printindex
+
+\section{Introduction}
+
+Content
+
+\footnote{An example footnote.}
+
+\index{Content}
+\cite{kn:gnus}.
+
+\section{The Laws}
+
+\subsection{The First Law}
+
+\subsection{The Second Law}
+
+\subsection{The Third Law}
+
+
+\section{Conclusion}
+
+\begin{thebibliography}{99}
+\bibitem{kn:gnus} D. E. Knudson. {\em 1966 World Gnus Almanac.}
+\end{thebibliography}
+
+\newglossaryentry{computer}
+{
+  description={is a programmable machine that receives input,
+               stores and manipulates data, and provides
+               output in a useful format}
+}
+
+\printglossaries
+\end{document}
