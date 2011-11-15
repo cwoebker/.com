@@ -20,6 +20,7 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 * Curl
 
 * [Taylor Series](/scientia/math/taylor-series)
+* [Fourier Series](/scientia/math/fourier-series)
 
 # Physics
 

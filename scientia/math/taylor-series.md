@@ -45,7 +45,7 @@ The core idea here is to be able to write all functions in one common, differien
 
 ## The Concept
 
-Using the Power Series one can represent complex function as a simple chain of powers, just like in a polynomial.
+Using the Power Series (or the more specific Taylor Series) one can represent complex function as a simple chain of powers, just like in a polynomial.
 This can drastically improve the way we handle certain functions.
 
 ### Power Series
