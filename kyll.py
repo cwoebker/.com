@@ -75,13 +75,15 @@ class Post(object):
 
         template = raw.read()
         raw.close()
-        self.content = template.replace('%%TITLE%%', self.title, 1).replace('%%TAGS%%', template_tags, 1)
+        self.content = template.replace('%%TITLE%%', self.title, 1)
         self.slug = simplify(self.title)
         self.date = str(datetime.date.today())
 
         template_tags = ""
         for tag in self.tags:
             template_tags += "\n    - %s" % tag
+
+        self.content = self.content.replace('%%TAGS%%', template_tags, 1)
 
         self.fname = "%s-%s.markdown" % (self.date, self.slug)
         self.fpath = os.path.join(POSTDIR, self.fname)
