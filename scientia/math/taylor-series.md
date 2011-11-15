@@ -8,7 +8,7 @@ edited: 2011-11-14
 
 Basically the Taylor Series is a function represented as an infinite sum of terms that are ordered like an infinite polynomial.
 
-## Background:
+## Background
 
 Introduced in 1715 by Brook Taylor
 
@@ -29,7 +29,7 @@ Introduced in 1715 by Brook Taylor
   * Maclaurin Series
     * special case of Taylor Series
 
-## The Idea:
+## The Idea
 
 `\[
 f(a)+\frac {f'(a)}{1!} (x-a)+ \frac{f''(a)}{2!} (x-a)^2+\frac{f'''(a)}{3!}(x-a)^3+ \cdots
@@ -43,12 +43,12 @@ or for fans of the sigma notation:
 
 The core idea here is to be able to write all functions in one common, differientiable and generic way.
 
-## The Concept:
+## The Concept
 
 Using the Power Series one can represent complex function as a simple chain of powers, just like in a polynomial.
 This can drastically improve the way we handle certain functions.
 
-### Power Series:
+### Power Series
 
 A power series is a simple infinite polynomial:
 
@@ -60,7 +60,7 @@ f(x) = a_0+a_1 (x-a)+a_2 (x-a)^2+a_3 (x-a)^3 \cdots
 
 The power series is very simple. Every term in the function has some arbitrary coefficient in front that could be anything.
 
-### Taylor Series:
+### Taylor Series
 
 Brook Taylor furthermore said that most(every?) functions could be represented as such an power series.
 
