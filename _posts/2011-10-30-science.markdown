@@ -2,7 +2,7 @@
 layout: post
 title: Science
 published: false
-categories: 
+tags: 
     - science
     - future
     - technology

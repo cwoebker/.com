@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Blogging
 published: true
-categories:
+tags:
     - jekyll
     - programming
     - latex

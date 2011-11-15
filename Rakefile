@@ -8,12 +8,12 @@ task :tags do
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
   site.read_posts('')
-  site.categories.sort.each do |category, posts|
+  site.tags.sort.each do |tag, posts|
     html = ''
     html << <<-HTML
 ---
 layout: tag
-title: Tag - "#{category}"
+title: Tag - "#{tag}"
 ---
     HTML
     html << '<ul class="posts">'
@@ -28,7 +28,7 @@ title: Tag - "#{category}"
 <bold><a href="/tags">Back To Tag List</a></bold>
     HTML
 
-    File.open("tag/#{category}.html", 'w+') do |file|
+    File.open("tag/#{tag}.html", 'w+') do |file|
       file.puts html
     end
   end
@@ -57,9 +57,9 @@ external: [tagcanvas]
 <ul>
     HTML
 
-    site.categories.sort.each do |category, posts|
+    site.tags.sort.each do |tag, posts|
       s = posts.count
-      html << "<a href=\"/tag/#{category}\" tag-weight=\"#{s}\" title=\"Tag - #{category}\">#{category}</a> "
+      html << "<a href=\"/tag/#{tag}\" tag-weight=\"#{s}\" title=\"Tag - #{tag}\">#{tag}</a> "
     end
 
     html << <<-HTML

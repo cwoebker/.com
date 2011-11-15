@@ -2,7 +2,7 @@
 layout: post
 title: What about Science
 published: false
-categories: 
+tags: 
     - science
     - future
     - technology

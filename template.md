@@ -2,7 +2,7 @@
 layout: post
 title: %%TITLE%%
 published: false
-categories: %%TAGS%%
+tags: %%TAGS%%
 ---
 
 Hello, Jekyll!
