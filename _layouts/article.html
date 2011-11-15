@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="content" id="page">
+  <div id="post">
+    <h1>
+    <a href"{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    <div class="body">
+      {{ content }}
+    </div>
+    <br />
+    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
+	  -- {{ page.date | date: "%b %d, %Y" }}
+    </postamble>
+  </div>
+  <div class="post_end">
+    {% include disqus.html %}
+  </div>
+</div>
