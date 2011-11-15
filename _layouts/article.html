@@ -12,7 +12,9 @@ layout: default
     </div>
     <br />
     <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
-	  -- {{ page.date | date: "%b %d, %Y" }}
+	  -- Published: {{ page.published | date: "%b %d, %Y" }} 
+    <br />
+    ---- (Last Edited: {{ page.edited | date: "%b %d, %Y" }})
     </postamble>
   </div>
   <div class="post_end">

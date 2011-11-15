@@ -5,6 +5,7 @@ title: "cwoebker"
 
 <div class="content">
 <div class="posts">
+    <h1>Posts</h1>
     <ul>
     {% for post in site.posts %}
         <li>
@@ -13,4 +14,5 @@ title: "cwoebker"
     {% endfor %}
     </ul>
 </div>
+{% include articles.html %}
 </div>
