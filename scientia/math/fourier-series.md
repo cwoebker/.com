@@ -72,11 +72,21 @@ When plugging in `\(0\)` we get an interresting result, that gets rid of many of
 \varphi(0)=b_0 + b_1 + b_2 + \cdots = \sum_{n=0}^{\infty} b_n
 \]`
 
+### Orthogonality of periodic functions
+
+See Lebesgue Measure
+
 #### cos(x) * cos(x)
 
-<script type="text/javascript" id="WolframAlphaScriptec78b0700064223c5cd7898812ecffae" src="http://www.wolframalpha.com/widget/widget.jsp?id=ec78b0700064223c5cd7898812ecffae&output=lightbox"></script>
+<script type="text/javascript" id="WolframAlphaScript360882f81985e81cb99c1fe7acff4a06" src="http://www.wolframalpha.com/widget/widget.jsp?id=360882f81985e81cb99c1fe7acff4a06"></script>
 
 All the values that can be put in will result in the area under the curve being 0, but when using the same values the area becomes some certain number.
+
+#### sin(x) * cos(x)
+
+<script type="text/javascript" id="WolframAlphaScript9ea68e97266389f3fe227b9c0e0084f3" src="http://www.wolframalpha.com/widget/widget.jsp?id=9ea68e97266389f3fe227b9c0e0084f3"></script>
+
+### Finding the Terms
 
 ### Non-Periodic Functions
 
