@@ -29,7 +29,7 @@ Published in 1807 by Joseph Fourier
 ## The Idea
 
 `\[
-\varphi(y)=a\cos\frac{\pi y}{2}+a'\cos 3\frac{\pi y}{2}+a''\cos5\frac{\pi y}{2}+\cdots
+\varphi(y)=a\cos\frac{\pi y}{2}+\dot{a}\cos 3\frac{\pi y}{2}+\ddot{a}\cos5\frac{\pi y}{2}+\cdots
 \]`
 
 Multiplying both sides by `\(\cos(2k+1)\frac{\pi y}{2}\)`, and then integrating from `\(y=-1\)` to `\(y=+1\)` yields:
@@ -44,12 +44,47 @@ The core idea here is, just like the Taylor Series, to be able to write all func
 
 ## The Concept
 
-Using the Power Series one can represent complex function as a simple chain of powers, just like in a polynomial.
+Using the Fourier Series one can represent complex function as a simple chain of powers, just like in a polynomial.
 This can drastically improve the way we handle certain functions.
 
 ### Fourier Series
 
-PLACEHOLDER
+So the Fourier Series is basically this:
+
+`\[
+\varphi(x)=\sum_{n=0} ^ {\infty} 
+a_n\sin\frac{2\pi x n}{T} + b_n\cos\frac{2\pi x n}{T}
+\]`
+
+When writing the function out we can ignore the first `\(sin\)` term since its `\(0\)`. And `\(cos\)` ends up being 1 wherefore we only get the `\(b_0\)` constant.
+
+`\[
+\varphi(x)=b_0+ a_1 \sin(\frac{2\pi x}{T}) + b_1 \cos(\frac{2\pi x}{T}) + a_2 \sin(\frac{4\pi x}{T}) + b_2 \cos(\frac{4\pi x}{T}) + \cdots 
+\]`
+
+When plugging in `\(0\)` we get an interresting result, that gets rid of many of those terms.
+
+`\[
+\varphi(0)=b_0+ a_1 \sin(0) + b_1 \cos(0) + a_2 \sin(0) + b_2 \cos(0) + \cdots 
+\]`
+
+`\[
+\varphi(0)=b_0 + b_1 + b_2 + \cdots = \sum_{n=0}^{\infty} b_n
+\]`
+
+#### cos(x) * cos(x)
+
+<script type="text/javascript" id="WolframAlphaScriptec78b0700064223c5cd7898812ecffae" src="http://www.wolframalpha.com/widget/widget.jsp?id=ec78b0700064223c5cd7898812ecffae&output=lightbox"></script>
+
+All the values that can be put in will result in the area under the curve being 0, but when using the same values the area becomes some certain number.
+
+### Non-Periodic Functions
+
+The Fourier Series, is a series based on preiodic fucntions: `\(\sin\)` and `\(\cos\)`. An interresting idea is that although these function are periodic we can represent non-periodic functions with them. Some might say right now that this is impossible because its composed of functions that repeat and therefore the Fourier Series of a function should repeat too.
+
+The trick is that we can make the fourier series repeat at `\(+\infty\)` and `\(-\infty\)`. Therefore it wouldn't actually repeat. At least kind of. A nice mathematic hack. ;-)
+
+Look in the next section for an example of this.
 
 ### Examples
 
