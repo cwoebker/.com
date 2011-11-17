@@ -86,7 +86,11 @@ All the values that can be put in will result in the area under the curve being 
 
 <script type="text/javascript" id="WolframAlphaScript9ea68e97266389f3fe227b9c0e0084f3" src="http://www.wolframalpha.com/widget/widget.jsp?id=9ea68e97266389f3fe227b9c0e0084f3"></script>
 
+Note that what ever integers you plug in the result will always be 0.
+
 ### Finding the Terms
+
+Alright so how does this help us? We will see that soon! We now have to figure out how to find `\(a_0 \to a_\infty\)` and `\(b_0 \to b_\infty\)`...
 
 ### Non-Periodic Functions
 
