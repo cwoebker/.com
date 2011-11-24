@@ -1,9 +1,9 @@
 ---
 layout: article
 title: Fourier Series
-external: [flexnav]
+external:
 published: 2011-11-14
-edited: 2011-11-14
+edited: 2011-11-24
 ---
 
 Basically the Taylor Series is a function represented as an infinite sum of terms that are ordered like an infinite polynomial.
@@ -148,7 +148,7 @@ a_0 &=&\displaystyle  \frac{1}{2\pi} \int_{-\pi}^{\pi} \varphi(x) dx,& \\
 a_n &=&\displaystyle  \frac{1}{\pi} \int_{-\pi}^{\pi} \varphi(x) \cos(nx)dx,\hspace{6pt}& 1 \leq n\\
 &&&\\
 b_n &=&\displaystyle \frac{1}{\pi} \int_{-\pi}^{\pi} \varphi(x) \sin(nx)dx,\hspace{6pt} & 1 \leq n\\
-\end{array}\right
+\end{array}\right.
 \]`
 
 ## Euler's Simplicity
@@ -238,7 +238,8 @@ c_n = \frac{a_n - j b_n}{2}
 
 `\[
 a_n = \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} \varphi(t) \cos(n w_0 t)dt
-\quad \text{&} \quad
+\]`
+`\[
 b_n = \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} \varphi(t) \sin(n w_0 t)dt
 \]`
 
