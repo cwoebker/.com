@@ -21,3 +21,11 @@ Feel free to ask me a question - <me@cwoebker.com>
   <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 </div>
 
+### Built with...
+
+I wanna say thanks to a couple of people and projects that helped me create this blog:
+
+* test
+* test 2
+* test 3
+
