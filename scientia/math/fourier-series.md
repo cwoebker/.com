@@ -6,7 +6,7 @@ published: 2011-11-14
 edited: 2011-11-24
 ---
 
-Basically the Taylor Series is a function represented as an infinite sum of terms that are ordered like an infinite polynomial.
+Basically the Fourier Series is a function represented as an infinite sum of sine and cosine terms.
 
 ## Background
 
