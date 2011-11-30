@@ -14,15 +14,22 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 
 # Math
 
-* [Del](/scientia/math/calculus/del)
-* Gradient
-* Divergence
-* Curl
+* **General**
+  * [Euler's formula](/scientia/math/euler-formula)
 
-* [Euler's formula](/scientia/math/euler-formula)
+* ([**Vector Mathematics**](http://en.wikipedia.org/wiki/Euclidean_vector))
+  * [Del](/scientia/math/calculus/del)
+  * Gradient
+  * Divergence
+  * Curl
 
-* [Taylor Series](/scientia/math/taylor-series)
-* [Fourier Series](/scientia/math/fourier-series)
+* **Sequence & Series**
+  * [Taylor Series](/scientia/math/taylor-series)
+  * ([Fourier Analysis](http://en.wikipedia.org/wiki/Fourier_analysis))
+    * [Fourier Series](/scientia/math/fourier-series)
+    * [Fourier Transform](/scientia/math/fourier-transform)
+    * [Convolution Theorem](/scientia/math/convolution)
+
 
 # Physics
 
