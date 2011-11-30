@@ -44,6 +44,16 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 
 ## Classical mechanics
 
+### Kinematics
+
+### Forces
+
+### Work & Energy
+
+## Fluid Dynamics
+
+## Solid Dynamics
+
 ## Thermodynamics
 
 ## Electromagnetism
@@ -52,6 +62,11 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 
 ## Relativity
 
+* [Special Relativity](/scientia/physics/relativity/special)
+* [General Relativity](/scientia/physics/relativity/general)
+
 ## Quantum mechanics
 
 # Astronomy
+
+* Kepler's laws of planetary motion
