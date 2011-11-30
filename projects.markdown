@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Projects
-external: [orbit]
+external: []
 ---
 
+<!--
 <script type="text/javascript">
   $(window).load(function() {
     $('#featured').orbit({
@@ -37,6 +38,16 @@ data-caption="#htmlCaption" />
 More" />
   <img src="/orbit/dummy-images/features.jpg" alt="and more features" />
 </div>
-
-<!-- Captions for Orbit -->
+Captions for Orbit
 <span class="orbit-caption" id="htmlCaption">I'm a Badass Caption</span>
+-->
+
+## Scientia
+
+Physics stuff
+
+## Relo
+
+Search
+
+
