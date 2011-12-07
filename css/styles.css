@@ -7,6 +7,8 @@ body{
 
 .clear {clear: both;}
 
+.break {page-break-before: always;}
+
 body div.content {}
     body div.content pre {
         background-color: #eee;

@@ -42,6 +42,8 @@ For an Electric Field:
 E = k \frac{Q}{r^2}
 \]`
 
+<p class="break"></p>
+
 ## Line of Charge
 
 <img src="http://s3.amazonaws.com/answer-board-image/4b20ac70-f985-442e-86b7-8ca88f51f497.png" align="left" style="margin-right: 10px"/>
