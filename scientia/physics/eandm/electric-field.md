@@ -42,7 +42,7 @@ For an Electric Field:
 E = k \frac{Q}{r^2}
 \]`
 
-<p class="break"></p>
+<div class="break"></div>
 
 ## Line of Charge
 
@@ -104,6 +104,8 @@ So now as `\(a\)` and `\(b\)` approach `\(\infty\)`:
 E_x = \frac{2k \sigma}{x} = \frac{\sigma}{2\pi x \epsilon_0}
 \]`
 
+<div class="break"></div>
+
 ## Ring of Charge
 
 <img src="http://www.ic.sunysb.edu/Class/phy141md/lib/exe/fetch.php?media=phy142:lectures:ringofchargepotential.png" align="left" style="margin-right: 10px"/>
@@ -153,6 +155,8 @@ Evaluating this from the center to the outer parts of the disc gives us:
 `\[
 E_x = k \sigma 2\pi x \int_0^{R_{total}} \frac{R * dR}{(x^2+R^2)^{\frac{3}{2}}}
 \]`
+
+<div class="break"></div>
 
 Now with some [integral table magic](http://integral-table.com/):
 
