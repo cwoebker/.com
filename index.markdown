@@ -14,5 +14,5 @@ title: "cwoebker"
     {% endfor %}
     </ul>
 </div>
-{% include articles.html %}
+<!--{% include articles.html %}-->
 </div>

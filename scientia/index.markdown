@@ -56,7 +56,14 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 
 ## Thermodynamics
 
+* Zeroth law
+* First law
+* Second law
+* Thrid law
+
 ## Electromagnetism
+
+* [Electric Field](/scientia/physics/EandM/electric-field)
 
 ### Optics
 
