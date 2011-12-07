@@ -10,15 +10,15 @@ layout: default
     <div class="body">
       {{ content }}
     </div>
-    <br />
-    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
-	  -- Published: {{ page.published | date: "%b %d, %Y" }} 
-    <br />
-    ---- (Last Edited: {{ page.edited | date: "%b %d, %Y" }})
-    </postamble>
   </div>
   <div class="post_end">
     {% include readability.html %}
+    <br />
+    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
+    -- Published: {{ page.published | date: "%b %d, %Y" }} 
+    <br />
+    ---- (Last Edited: {{ page.edited | date: "%b %d, %Y" }})
+    </postamble>
     <br />
     {% include disqus.html %}
   </div>

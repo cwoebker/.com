@@ -18,6 +18,8 @@ external: [flexnav]
     </postamble>
   </div>
   <div class="post_end">
+    {% include readability.html %}
+    <br />
     <h4>Tags:</h4>
     {% for tag in page.categories %}
       <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
