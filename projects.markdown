@@ -46,7 +46,7 @@ Captions for Orbit
 
 Physics stuff
 
-## Relo
+## [Relo](/relo)
 
 Search
 
