@@ -112,7 +112,7 @@ f(x) = f(a)+\frac {\dot{f}(a)}{1!} (x-a)+ \frac{\ddot{f}(a)}{2!} (x-a)^2+\frac{\
 If we use `\(a = 0\)`, so we are talking about the Taylor Series about x = 0, we call the series a **Maclaurin Series** for f(x):
 
 `\[
-f(x) = f(0)+\frac {\dot{f}(0)}{1!} (x-a)+ \frac{\ddot{f}(0)}{2!} (x)^2+\frac{\dddot{f}(0)}{3!}(x)^3+ \cdots =  \sum_{n=0} ^ {\infty } \frac {f^{(n)}(0)}{n!} \, (x)^{n}
+f(x) = f(0)+\frac {\dot{f}(0)}{1!} x+ \frac{\ddot{f}(0)}{2!} (x)^2+\frac{\dddot{f}(0)}{3!}(x)^3+ \cdots =  \sum_{n=0} ^ {\infty } \frac {f^{(n)}(0)}{n!} \, (x)^{n}
 \]`
 
 ### Examples
