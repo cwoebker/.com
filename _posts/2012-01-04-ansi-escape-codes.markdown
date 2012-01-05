@@ -22,22 +22,22 @@ ANSI (American national standard institute) codes, or escape sequences are codes
 
 Some options include:
 
-	- Bold/Faint
-	- Italics
-	- Underline
-	- Blink
-	- Fonts
-	- Color
-	- Background Color
+- Bold/Faint
+- Italics
+- Underline
+- Blink
+- Fonts
+- Color
+- Background Color
 
-## What to do.
+## What to do
 
     This is going to be really basic for easy formatting.
 
 I am going to cover SGR, Select Graphic Rendition.
 Initially you need to tell the terminal that you are going to use an ANSI Escape Code.
 
-	- CSI n [;k] m
+- CSI n [;k] m
 
 So here comes a small python module that implements all of this.
 
@@ -54,7 +54,7 @@ class ANSIEscapeCodes(object):
 	FAST_BLINK = '6;%s' # Not widely supported
 
 	COLORS = {
-		'black': 30
+		'black': 30,
 		'red': 31,
 		'green': 32,
 		'yellow': 33,
@@ -93,9 +93,9 @@ def decorate(cls, format, msg):
 
 Here we simple join all the parts together:
 
-	- Formatting Sequence
-	- Actual Text
-	- Reseting Sequence
+- Formatting Sequence
+- Actual Text
+- Reseting Sequence
 
 {% highlight python %}
 BOLD = '1;%s'
