@@ -2,6 +2,7 @@
 layout: post
 title: LaTeX Math Magic
 published: true
+hn: false
 tags:
     - jekyll
     - latex

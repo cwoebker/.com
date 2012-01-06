@@ -16,8 +16,10 @@ external: [flexnav]
     <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
 	  -- {{ page.date | date: "%b %d, %Y" }}
     </postamble>
-  </div>
-  <div class="post_end">
+    <br />
+    {% if page.hn %}
+      {% include ycombinator.html %}
+    {% endif %}
     {% include readability.html %}
     <br />
     <h4>Tags:</h4>

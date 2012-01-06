@@ -2,6 +2,7 @@
 layout: post
 title: Jekyll Blogging
 published: true
+hn: false
 tags:
     - jekyll
     - programming
