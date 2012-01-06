@@ -1,1 +1,5 @@
-<iframe frameborder="no" scrolling="no" height="50px" width="350px" src="http://hnlike.com/upvote.php?link={{ page.id }}&title={{ page.title }}">iframes not supported by your browser</iframe>
+{% if page.hn %}
+  <p>
+    You can discuss, upvote, downvote, and poke fun of this post over at <a href="{{ page.hn }}">Hacker News</a>.
+  </p>
+{% endif %}

@@ -136,3 +136,10 @@ def white_bold_underlined(cls, msg)
 {% endhighlight %}
 
 This function can be used to print a bold white and underlined text to the terminal other formatting options can be achieved exactly in the same way.
+
+# Why use them?
+
+Shells don't have to be plain, white/black and colorless. 
+ANSI Formatting can help command line apps to display information better and more efficiently.
+
+

@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Blogging
 published: true
-hn: false
+hn: http://news.ycombinator.com/item?id=3431807
 tags:
     - jekyll
     - programming
