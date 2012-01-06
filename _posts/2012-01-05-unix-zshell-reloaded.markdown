@@ -178,7 +178,9 @@ A quick list of features:
 - **Filtered History** for quicker history searching
 	- `$ l` pressing the up button now will only result in elements starting with l
 
+## End Note
 
+**This is a call to every shell user: Change now! Beause zsh will make your life easier, a lot easier.**
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Robby Russell]: https://github.com/robbyrussell/
