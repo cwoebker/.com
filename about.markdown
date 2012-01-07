@@ -21,14 +21,19 @@ Feel free to ask me a question - <me@cwoebker.com>
   <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 </div>
 
-## I use!
+## I Use!
 
 A list of things I use.
 
 ### Hardware
 
-I am currently runnign an 
+I am currently using a Mac
 
 ### Software
 
+- Sublime Text 2
+
 ### The Web
+
+- Github
+- Read the Docs
