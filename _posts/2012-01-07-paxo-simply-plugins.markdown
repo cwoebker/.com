@@ -21,3 +21,11 @@ tags:
 ### Whats different?
 
 ## Tutorial
+
+# Sources
+
+http://martyalchin.com/2008/jan/10/simple-plugin-framework/
+
+plugnplay
+
+yapsy
