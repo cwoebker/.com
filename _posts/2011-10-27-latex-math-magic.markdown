@@ -2,7 +2,7 @@
 layout: post
 title: LaTeX Math Magic
 published: true
-hn: false
+hn: http://news.ycombinator.com/item?id=3431867
 tags:
     - jekyll
     - latex

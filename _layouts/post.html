@@ -16,16 +16,14 @@ external: [flexnav]
     <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
 	  -- {{ page.date | date: "%b %d, %Y" }}
     </postamble>
-    <br />
-    {% if page.hn %}
-      {% include ycombinator.html %}
-    {% endif %}
-    {% include readability.html %}
-    <br />
     <h4>Tags:</h4>
+    <ul id="post_tags">
     {% for tag in page.tags %}
       <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
     {% endfor %}
+    </ul>
+    <h2>About</h2>
+    {% include about.html %}
     <br />
     {% include disqus.html %}
   </div>
