@@ -26,6 +26,8 @@ tags:
 
 http://martyalchin.com/2008/jan/10/simple-plugin-framework/
 
+http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python
+
 plugnplay
 
 yapsy
