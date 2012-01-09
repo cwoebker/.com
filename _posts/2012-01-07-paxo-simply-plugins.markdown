@@ -14,7 +14,13 @@ tags:
 
 ## How are they implemented?
 
-## What frameworks are out there?
+## What can I do?
+
+### plugnplay
+
+### yapsy
+
+### A nice and easy `__import__` custom hack.
 
 # Paxo
 
@@ -22,11 +28,19 @@ tags:
 
 ## Tutorial
 
-# Sources
+### More information!
 
-http://martyalchin.com/2008/jan/10/simple-plugin-framework/
+Check out the documentation!
 
-http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python
+### Sources
+
+- http://martyalchin.com/2008/jan/10/simple-plugin-framework/
+
+- http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python
+
+Links:
+
+documentation
 
 plugnplay
 
