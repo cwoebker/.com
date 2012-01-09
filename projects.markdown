@@ -19,4 +19,4 @@ Scientia is a collection of articles about different mathematical and physical p
 Relo is a simple, lightweight and extensible Search tool and framework for Python_. It is distributed as a
 single script `relopy` and a library that can be used in other python apps.
 
-{ [relo.cwoebker.com](htttp://relo.cwoebker.com) }
+{ [relo.cwoebker.com](http://relo.cwoebker.com) }
