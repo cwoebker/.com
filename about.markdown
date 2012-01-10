@@ -20,7 +20,7 @@ Feel free to ask me a question - <me@cwoebker.com>
   <a href="http://twitter.com/cwoebker" class="twitter-follow-button" data-show-count="true">Follow</a>
   <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
   <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=cwoebker&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="132px" height="20px"></iframe>
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20px"></iframe>
 </div>
 
 ## I Use!
