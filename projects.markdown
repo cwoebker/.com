@@ -20,3 +20,11 @@ Relo is a simple, lightweight and extensible Search tool and framework for Pytho
 single script `relopy` and a library that can be used in other python apps.
 
 { [relo.cwoebker.com](http://relo.cwoebker.com) }
+
+### Minis
+
+Some small tools and webapps I developed over time.
+
+- { [anagram.ep.io](anagram.ep.io) }
+	- an anagram solver
+	- uses [Big English Word Lists](http://www.keithv.com/software/wlist/) match10
