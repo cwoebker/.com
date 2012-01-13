@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Colophon
 ---
 
 I am German. Thats all you have to know for now.
@@ -40,3 +40,4 @@ I am currently using a Mac
 
 - Github
 - Read the Docs
+- gaug.es
