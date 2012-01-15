@@ -3,7 +3,7 @@ layout: page
 title: Colophon
 ---
 
-I am German. Thats all you have to know for now.
+My name is Cecil Woebker. I am German. Thats all you have to know for now.
 
 ## Find me
 

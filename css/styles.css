@@ -362,6 +362,35 @@ postamble a:link, postamble a:active {
 postamble a:visited {
   color: #A591AA;
 }
+
+a.tag {
+    background: #41B7D8;
+    transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.1em 0.5em 0.25em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: -moz-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(233, 92, 51, 1)),color-stop(100%,rgba(229, 59, 44, 1)));
+    background: -webkit-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
+    background: -o-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
+    background: -ms-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
+    background: linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
+    background-color: #E95C33;
+}
+
 .footer{
   margin: 30px 0;
   padding: 10px 0;

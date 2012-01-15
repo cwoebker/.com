@@ -19,10 +19,9 @@ external: [flexnav]
     <h4>Tags:</h4>
     <ul id="post_tags">
     {% for tag in page.tags %}
-      <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+      <li><a class="tag" href="/tag/{{ tag }}">{{ tag }}</a></li>
     {% endfor %}
     </ul>
-    <h2><a href="/about">About</a></h2>
     {% include about.html %}
     <br />
     {% include disqus.html %}
