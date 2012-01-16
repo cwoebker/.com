@@ -25,6 +25,8 @@ single script `relopy` and a library that can be used in other python apps.
 
 Some small tools and webapps I developed over time.
 
-- { [anagram.ep.io](http://anagram.ep.io) }
-	- an anagram solver
-	- uses [Big English Word Lists](http://www.keithv.com/software/wlist/) - `match10`
+- { [anagram.cwoebker.com](http://anagram.cwoebker.com) }
+	- A anagram solver that can help you with scrabble
+
+- { [sudoku.cwoebker.com](http://sudoku.cwoebker.com) }
+    - A sudoku solver
