@@ -60,6 +60,7 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 ## Electromagnetism
 
 * [Electric Field](/scientia/physics/eandm/electric-field)
+* [Capacitance](/scientia/physics/eandm/capacitance)
 
 ### Optics
 
