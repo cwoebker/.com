@@ -172,4 +172,4 @@ E_x = \frac{\sigma x }{2\epsilon_0} \left[ 1 - \frac{ x }{\sqrt{x^2+R_{total}^2}
 
 ## Sources
 
-http://en.wikipedia.org/wiki/Coulomb's_law
+* http://en.wikipedia.org/wiki/Coulomb's_law

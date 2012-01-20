@@ -155,3 +155,5 @@ hut sum -n to n of f hut (k) e^2pi i k t
 
 * http://en.wikipedia.org/wiki/Fourier_transform
 * http://www.youtube.com/view_play_list?p=B24BC7956EE040CD
+* http://mathworld.wolfram.com/FourierTransform.html
+* http://mathworld.wolfram.com/FourierTransformSine.html
