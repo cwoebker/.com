@@ -23,7 +23,7 @@ A Capacitor is an electrical component that can store energy in an electric fiel
 <br />
 <br />
 
-A potential voltage difference between the two fields will create a static electri field develops across the dielectric. Positive charge will collect on one of the plates and negative charge on the other one.
+A potential voltage difference between the two fields will create a static electric field develops across the dielectric. Positive charge will collect on one of the plates and negative charge on the other one.
 
 
 
@@ -58,7 +58,7 @@ dE = q * dV
 At this point we can take our Capacitance expression and plug it in.
 
 `\[
-dE = q  /frac{dq}{C}
+dE = q  \frac{dq}{C}
 \]`
 
 Then we can add all these infinitesimal small Energies up to get the total amount of energy:

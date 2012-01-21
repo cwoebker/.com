@@ -6,10 +6,6 @@ external: [flexnav]
 
 Here I am going to post links to different Physics related things I worked on. (Mainly proves and explanations) Just cause I love Physics and want to share.
 
-BTW: I called this page Scientia because I took 4 years of latin and feel like i need to use it somewhere.
-
-    Note: links in paranthesis are external ones
-
 # Math
 
 ### General
@@ -55,7 +51,7 @@ BTW: I called this page Scientia because I took 4 years of latin and feel like i
 * Zeroth law
 * First law
 * Second law
-* Thrid law
+* Third law
 
 ## Electromagnetism
 
