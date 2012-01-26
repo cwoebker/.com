@@ -12,12 +12,6 @@ Here I am going to post links to different Physics related things I worked on. (
 
 * [Euler's formula](/scientia/math/euler-formula)
 
-### Vector Mathematics
-  * [Del](/scientia/math/calculus/del)
-  * Gradient
-  * Divergence
-  * Curl
-
 ### Sequence and Series
 * [Taylor Series](/scientia/math/taylor-series)
 * ([Fourier Analysis](http://en.wikipedia.org/wiki/Fourier_analysis))
@@ -25,16 +19,23 @@ Here I am going to post links to different Physics related things I worked on. (
   * [Fourier Transform](/scientia/math/fourier-transform)
   * [Convolution Theorem](/scientia/math/convolution)
 
-
+<!--
 ## Calculus
 
 ### Derivative Proofs
 
 ### Integral Proofs
 
+### Vector Mathematics
+  * [Del](/scientia/math/calculus/del)
+  * Gradient
+  * Divergence
+  * Curl
+-->
+
 # Physics
 
-## Classical mechanics
+<!-- ## Classical mechanics
 
 ### Kinematics
 
@@ -51,22 +52,22 @@ Here I am going to post links to different Physics related things I worked on. (
 * Zeroth law
 * First law
 * Second law
-* Third law
+* Third law-->
 
 ## Electromagnetism
 
 * [Electric Field](/scientia/physics/eandm/electric-field)
 * [Capacitance](/scientia/physics/eandm/capacitance)
 
-### Optics
+<!--### Optics-->
 
 ## Relativity
 
 * [Special Relativity](/scientia/physics/relativity/special)
 * [General Relativity](/scientia/physics/relativity/general)
 
-## Quantum mechanics
+<!--## Quantum mechanics
 
 # Astronomy
 
-* Kepler's laws of planetary motion
+* Kepler's laws of planetary motion-->
