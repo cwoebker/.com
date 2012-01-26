@@ -57,11 +57,11 @@ i^7 &{}= -i,
 And the [Taylor Series](/scientia/math/taylor-series) of `\(\sin\)` and `\(\cos\)`:
 
 `\[
-\sin x = \sum^{\infin}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots\text{ for all } x\
+\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots\text{ for all } x\
 \]`
 
 `\[
-\cos x = \sum^{\infin}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots\text{ for all } x\!
+\cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots\text{ for all } x\!
 \]`
 
 We can proove:
