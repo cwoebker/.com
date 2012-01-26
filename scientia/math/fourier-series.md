@@ -151,23 +151,7 @@ b_n &=&\displaystyle \frac{1}{\pi} \int_{-\pi}^{\pi} \varphi(x) \sin(nx)dx,\hspa
 
 ## Euler's Simplicity
 
-Leonhard Euler's formula has often been stated as the most beautiful formulas in the world and its usage with the Fourier Series is quite important.
-
-### Euler's formula
-
-Euler's formula would probaly deserve a whole nother article but for now I am just gonna throw it right at you.
-
-For any real number x:
-
-`\[
-e^{ix} = \cos x + i \sin x
-\]`
-
-As seen it establishes a connection between the complex exponential function and the trigonometric functions.
-
-It can easily be proven using the power series and the basic facts about the powers of `\(i\)`: `\(
-i^0 = 1, \hspace{6pt}i^1 = i, \hspace{6pt}i^2= -1, \hspace{6pt}i^3 = -i, \hspace{6pt}i^4 = 1 \hspace{1.5pc}
-\)` and so on...
+Leonhard [Euler's formula](/scientia/math/eulers-formula)  has often been stated as the most beautiful formulas in the world and its usage with the Fourier Series is quite important.
 
 ### Euler and Fourier
 
@@ -176,8 +160,8 @@ Since the Fourier series is build out of `\(sin\)` and `\(cos\)` functions we sh
 Lets define some things for the series: `\(w_0 = \frac{2\pi}{T}\)` (angular frequency) and `\(j=sqrt(-1)\)`. We are going to use j cause i is sometimes already used for other things in physics. Therefore we can write the Fourier Series:
 
 `\[
-\varphi (t) = \frac{a_0}{2} + 
-\sum_{n=1}^{\infty} a_n \cos(w_0 n t) + 
+\varphi (t) = \frac{a_0}{2} +
+\sum_{n=1}^{\infty} a_n \cos(w_0 n t) +
 \sum_{n=1}^{\infty} b_n \sin(w_0 n t)
 \]`
 
