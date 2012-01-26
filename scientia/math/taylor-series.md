@@ -117,9 +117,7 @@ f(x) = f(0)+\frac {\dot{f}(0)}{1!} x+ \frac{\ddot{f}(0)}{2!} (x)^2+\frac{\dddot{
 
 ### Examples
 
-Interresting examples and their real-world application.
-
-
+**__PLACEHOLDER__**
 
 ## Sources
 
