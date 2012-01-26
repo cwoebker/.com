@@ -16,9 +16,7 @@ layout: default
     {% include readability.html %}
     <br />
     <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
-    -- Published: {{ page.published | date: "%b %d, %Y" }} 
-    <br />
-    ---- (Last Edited: {{ page.edited | date: "%b %d, %Y" }})
+    -- Published: {{ page.published | date: "%b %d, %Y" }}
     </postamble>
     <br />
     {% include disqus.html %}
