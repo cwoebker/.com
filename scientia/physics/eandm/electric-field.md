@@ -19,7 +19,7 @@ Coulomb's law (Coulomb's inverse-square law) describes forces between charged pa
   * best known for:
     * Coulomb's Law
       * definition of electrostatic force between particles
-    * SI Unit of charge: 
+    * SI Unit of charge:
       * The coulomb
 
 Other constributors:
@@ -112,8 +112,8 @@ E_x = \frac{2k \sigma}{x} = \frac{\sigma}{2\pi x \epsilon_0}
 
     Note: only the ring matters do not worry about the disc just yet.
 
-We are only going to find the field on the axis of the ring. 
-It can easily be seen that the `\(x\)` and `\(y\)` parts of the field will cancel out as wherever you are on the `\(z\)`-axis:
+We are only going to find the field on the axis of the ring.
+It can easily be seen that the `\(z\)` and `\(y\)` parts of the field will cancel out as wherever you are on the `\(x\)`-axis.
 
 Let `\(\theta\)` be the angle between the `\(z\)`-axis and the ring: `\(\cos{\theta} = \frac{x}{r}\)`.
 Thanks to the Pythagorean Theorem: `\(r = \sqrt{x^2+R^2}\)`.
