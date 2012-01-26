@@ -10,7 +10,7 @@ Here I am going to post links to different Physics related things I worked on. (
 
 ### General
 
-* [Euler's formula](/scientia/math/euler-formula)
+* [Euler's formula](/scientia/math/eulers-formula)
 
 ### Sequence and Series
 * [Taylor Series](/scientia/math/taylor-series)
