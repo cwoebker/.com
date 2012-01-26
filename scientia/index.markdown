@@ -6,7 +6,7 @@ external: [flexnav]
 
 Here I am going to post links to different Physics related things I worked on. (Mainly proves and explanations) Just cause I love Physics and want to share.
 
-# Math
+## Math
 
 ### General
 
@@ -20,54 +20,59 @@ Here I am going to post links to different Physics related things I worked on. (
   * [Convolution Theorem](/scientia/math/convolution)
 
 <!--
-## Calculus
+### Calculus
 
-### Derivative Proofs
+#### Derivative Proofs
 
-### Integral Proofs
+#### Integral Proofs
 
-### Vector Mathematics
+#### Vector Mathematics
   * [Del](/scientia/math/calculus/del)
   * Gradient
   * Divergence
   * Curl
 -->
 
-# Physics
+## Physics
 
-<!-- ## Classical mechanics
+<!-- ### Classical mechanics
 
-### Kinematics
+#### Kinematics
 
-### Forces
+#### Forces
 
-### Work & Energy
+#### Work & Energy
 
-## Fluid Dynamics
+### Fluid Dynamics
 
-## Solid Dynamics
+### Solid Dynamics
 
-## Thermodynamics
+### Thermodynamics
 
 * Zeroth law
 * First law
 * Second law
 * Third law-->
 
-## Electromagnetism
+### Electromagnetism
 
 * [Electric Field](/scientia/physics/eandm/electric-field)
 * [Capacitance](/scientia/physics/eandm/capacitance)
 
-<!--### Optics
+### Circuitry
 
-## Relativity
+* [Circuit Elements](/scientia/physics/circuitry/circuit-elements)
+* [Kirchhoff's Laws](/scientia/physics/circuitry/kirchhoffs-laws)
+
+<!--#### Optics
+
+### Relativity
 
 * [Special Relativity](/scientia/physics/relativity/special)
 * [General Relativity](/scientia/physics/relativity/general)
 
-## Quantum mechanics
+### Quantum mechanics
 
-# Astronomy
+## Astronomy
 
 * Kepler's laws of planetary motion-->
