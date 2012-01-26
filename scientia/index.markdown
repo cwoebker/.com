@@ -59,14 +59,14 @@ Here I am going to post links to different Physics related things I worked on. (
 * [Electric Field](/scientia/physics/eandm/electric-field)
 * [Capacitance](/scientia/physics/eandm/capacitance)
 
-<!--### Optics-->
+<!--### Optics
 
 ## Relativity
 
 * [Special Relativity](/scientia/physics/relativity/special)
 * [General Relativity](/scientia/physics/relativity/general)
 
-<!--## Quantum mechanics
+## Quantum mechanics
 
 # Astronomy
 
