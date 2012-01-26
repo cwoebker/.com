@@ -3,7 +3,7 @@ layout: article
 title: Fourier Series
 external:
 published: 2011-11-14
-edited: 2011-11-24
+edited: 2012-01-26
 ---
 
 Basically the Fourier Series is a function represented as an infinite sum of sine and cosine terms.
@@ -101,11 +101,9 @@ All the values that can be put in will result in the area under the curve being 
 
 #### sin(x) * sin(x)
 
-> SCRIPT PLACEHOLDER
+<script type="text/javascript" id="WolframAlphaScript360882f81985e81cb99c1fe7acff4a06" src="http://www.wolframalpha.com/widget/widget.jsp?id=360882f81985e81cb99c1fe7acff4a06"></script>
 
-`<script type="text/javascript" id="WolframAlphaScript360882f81985e81cb99c1fe7acff4a06" src="http://www.wolframalpha.com/widget/widget.jsp?id=360882f81985e81cb99c1fe7acff4a06"></script>`
-
-**Change widget and table!!!**
+<!--**Change widget and table!!!**-->
 
 All the values that can be put in will result in the area under the curve being 0, but when using the same values the area becomes some certain number, again.
 
@@ -280,9 +278,7 @@ Look in the next section for an example of this.
 
 Interresting examples and their real-world application.
 
-### The Easy Way
-
-These Examples can be very complicated, but there is also an easier way of doing them.
+Check back soon!
 
 ## Sources
 
