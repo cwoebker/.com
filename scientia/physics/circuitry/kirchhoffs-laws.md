@@ -10,7 +10,23 @@ Euler's Formula is one of the most important formula's in mathematics since it a
 
 ## Background
 
+* Gustav Kirchhoff:
+  * Born 12 March 1824
+    * Koenigsberg, Kingdom of Prussia
+    * Today: Koenigsberg, Germany
+  * Death 17 October 1887
+    * Berlin, Kingdom of Prussia
+    * Today: Berlin, Germany
+  * German physicist
+  * best known for:
+    * Kirchoff's Laws
+    * black body radiation
+    * Bunsen-Kirchhoff Award
+      * named after him and colleague, Robert Bunsen
+
 ## Kirchhoff's current law (KCL)
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/46/KCL_-_Kirchhoff%27s_circuit_laws.svg" align="left" style="margin-right: 25px; width:256px; height:256px;"/>
 
 Conversation of electric charge leads to the following:
 
@@ -35,6 +51,8 @@ Since current is just charge per second the conversation of charge can be applie
 
 ## Kirchhoff's voltage law (KVL)
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/40/Kirchhoff_voltage_law.svg" align="left" style="margin-right: 25px; width:256px; height:256px;"/>
+
 Conversation of Energy leads to the following:
 
 * The sum of electrical potential differences (voltage) around any closed circuit is `\(0\)`
@@ -55,8 +73,10 @@ The voltages may also be complex:
 
 ## Applications & Examples
 
-*Come Back soon!*
+*Come back soon!*
 
 ## Sources
 
-*
+* http://physics.mercer.edu/labs/manuals/manual162lab/Kirchhoff.pdf
+* http://www.facstaff.bucknell.edu/mastascu/elessonshtml/Basic/Basic4Ki.html
+* http://www.facstaff.bucknell.edu/mastascu/elessonshtml/Basic/Basic5Kv.html
