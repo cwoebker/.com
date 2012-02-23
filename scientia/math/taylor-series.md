@@ -14,7 +14,7 @@ Introduced in 1715 by Brook Taylor
 
 * Brook Taylor:
   * Born 18 August 1685
-    * Edmonton, Middlesex, England   
+    * Edmonton, Middlesex, England
   * Death 30 November 1731 (aged 46)
     * London, England
   * English mathematician

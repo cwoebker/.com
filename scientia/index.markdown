@@ -13,13 +13,22 @@ Here I am going to post links to different Physics related things I worked on. (
 * [Euler's formula](/scientia/math/eulers-formula)
 
 ### Sequence and Series
+
 * [Taylor Series](/scientia/math/taylor-series)
 * ([Fourier Analysis](http://en.wikipedia.org/wiki/Fourier_analysis))
   * [Fourier Series](/scientia/math/fourier-series)
   * [Fourier Transform](/scientia/math/fourier-transform)
-  * [Convolution Theorem](/scientia/math/convolution)
+
+### Differential Equations
+
+  * [Laplace Transform](/scientia/math/laplace-transform)
 
 <!--
+  * [Convolution Theorem](/scientia/math/convolution)
+
+
+
+
 ### Calculus
 
 #### Derivative Proofs
