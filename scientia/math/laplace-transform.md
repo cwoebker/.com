@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Laplace Transform
-external: 
+external: [flexnav]
 published: 2012-02-17
 edited: 2011-02-17
 ---
@@ -296,7 +296,7 @@ First we take these two equations as given:
 \left\{ \sin{at} \right\}= \frac{a}{s^2+a^2}
 \]`
 
-From here we can derive `\(\\mathcal{L}\left\{ \cos{at} \right\}\)`:
+From here we can derive `\(\mathcal{L}\left\{ \cos{at} \right\}\)`:
 
 `\[
 f'(t) = \cos{at}
@@ -403,7 +403,7 @@ Plugging in from earlier we get
 
 <table style="margin-left: auto; margin-right: auto;">
   <tr style="border-bottom: thin single black collapse;">
-    <td>f(t)</td>
+    <td>\(f(t)\)</td>
     <td>\(\mathcal{L}\left\{ f(t) \right\}\)</td>
   </tr>
   <tr>
@@ -427,11 +427,11 @@ Plugging in from earlier we get
     <td>\(\frac{n!}{s^{n+1}}\)</td>
   </tr>
   <tr>
-    <td>\(\mathcal{L}\left\{f'(t)\right\}\)</td>
+    <td>\(f'(t)\)</td>
     <td>\(s \mathcal{L}\left\{f(t)\right\} - f_0\)</td>
   </tr>
   <tr>
-    <td>\(\mathcal{L}\left\{f''(t)\right\}\)</td>
+    <td>\(f''(t)\)</td>
     <td>\(s^2 \mathcal{L}\left\{f(t)\right\} - sf(0) - f'(0)\)</td>
   </tr>
   <tr>
@@ -439,6 +439,145 @@ Plugging in from earlier we get
     <td>\( \)</td>
   </tr>
 </table>
+
+## Applications
+
+### Solving differential equations
+
+As noted earlier, the Laplace Transform is really good as turning difficult derivatives in simples algebra multiplication systems.
+For some equations this approach might seem like it is harder than actually solving old-school but as problems get more complex this Transform is pure gold.
+
+Keep these to equations in mind while doing this:
+
+`\[
+\mathcal{L}\left\{f'(t)\right\} = s \mathcal{L}\left\{f(t)\right\} - f_0 \, \, \, \left(1\right)
+\]`
+
+`\[
+\mathcal{L}\left\{f''(t)\right\} = s^2 \mathcal{L}\left\{f(t)\right\} - sf(0) - f'(0) \, \, \, \left(2\right)
+\]`
+
+`\[
+y'' + 5y' + 6y = 0
+\]`
+
+`\[
+y(0) = 2 \, y'(0) = 3
+\]`
+
+Due to the Linearity:
+
+`\[
+\mathcal{L}\left\{y''\right\} + 5 \mathcal{L}\left\{y'\right\} + 6 \mathcal{L}\left\{y\right\} = 0
+\]`
+
+**Note: Laplace Transform of `\(\mathcal{L}\left\{0\right\}\)` just equals `\(0\)`!**
+
+
+First we can use equation `\(\left(2\right)\)`:
+
+`\[
+s \mathcal{L}\left\{y'\right\} - y'(0) + 5 \mathcal{L}\left\{y'\right\} + 6 \mathcal{L}\left\{y\right\} = 0
+\]`
+
+Then equation `\(\left(1\right)\)`:
+
+`\[
+s \left[ s \mathcal{L}\left\{y\right\} - y(0) \right] - y'(0) + 5 \left[ s \mathcal{L}\left\{y\right\} - y(0) \right] + 6 \mathcal{L}\left\{y\right\} = 0
+\]`
+
+Now with simplification and substitution:
+
+`\[
+s^2 \mathcal{L}\left\{y\right\} - 2s - 3 + 5s \mathcal{L}\left\{y\right\} - 5*2 + 6 \mathcal{L}\left\{y\right\} = 0
+\]`
+
+Lets group our Laplace Transform terms:
+
+`\[
+\mathcal{L}\left\{y\right\} * \left( s^2 + 5s + 6 \right) - 2s - 3 - 10 = 0
+\]`
+
+**Note: The `\(s\)`-based polynomial equation look just like our original differential equation.
+
+`\[
+\mathcal{L}\left\{y\right\} = \frac{2s+13}{s^2+5s+6}
+\]`
+
+`\[
+y = \mathcal{L}^-1\left\{ \frac{2s+13}{s^2+5s+6} \right\}
+\]`
+
+Now that we figured out what the Laplace transform of `\(y\)` is we can look into our table to find an answer, but as of now none of those entries match the expression that we have here.
+The only thing left to do is to manipulate this expression a bit so that it matches one of the entries in our Laplace Transform table.
+
+`\[
+\frac{2s+13}{(s+2)(s+3)}
+\]`
+
+This means we need something like the following since we now how to solve the inverse Laplace transform of such expressions:
+
+`\[
+\frac{A}{s+2} + \frac{B}{s+3}
+\]`
+
+Now lets work backwards:
+
+`\[
+\frac{(As + 3A)+(Bs + 2B)}{(s+2)(s+3)}
+\]`
+
+For our purposes lets try to figure out what A and B are:
+
+`\[
+\frac{(As + 3A)+(Bs + 2B)}{(s+2)(s+3)} = \frac{2s+13}{(s+2)(s+3)}
+\]`
+
+`\[
+(A+B)s + 3A + 2B = 2s + 13
+\]`
+
+Therefore we get:
+
+`\[
+A+B=2
+\]`
+
+`\[
+3A + 2B = 13
+\]`
+
+After Solving we have:
+  * `\(A=9\)`
+  * `\(B=-7\)`
+
+Now we can rewrite our original equation:
+
+`\[
+\mathcal{L}\left\{y\right\} = \frac{9}{s+2} - \frac{7}{s+3} = 9 \frac{1}{s+2} - 7 \frac{1}{s+3}
+\]`
+
+Now when looking into our table:
+
+`\[
+\mathcal{L}\left\{e^{at}\right\} = \frac{1}{s-a}
+\]`
+
+Therefore:
+
+`\[
+\mathcal{L}\left\{y\right\} = 9 \mathcal{L}\left\{e^{-2t}\right\} - 7 \mathcal{L}\left\{e^{-3t}\right\}
+\]`
+
+`\[
+\mathcal{L}\left\{y\right\} = \mathcal{L}\left\{9 e^{-2t} - 7e^{-3t}\right\}
+\]`
+
+Luckily the inverse Laplace transform is a one-to-one function. One function has only one transform and the other way around.
+
+`\[
+y=9 e^{-2t} - 7e^{-3t}
+\]`
 
 ## Sources
 
