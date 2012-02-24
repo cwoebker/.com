@@ -61,7 +61,7 @@ But seeing the program run and do what it is supposed to do made me happy. I suc
 
 #### 10pm
 
-I looked at the program and determined that it wasn't really nice the way it was at this point. I wanted the user to decide how long the produced 'permutations' should be. Unfortunately I did not know the word permutation back than mostly cause i was very young and not going to school in the U.S. yet. If I would have known it a quick [google search](http://docs.python.org/library/itertools.html#itertools.permutations) (1st result) could have saved me all of that work. But back than I was still learning so after some more goggling i found `raw_input()` which seemed to be perfect for me.
+I looked at the program and determined that it wasn't really nice the way it was at this point. I wanted the user to decide how long the produced 'permutations' should be. Unfortunately I did not know the word permutation back than mostly cause i was very young and not going to school in the U.S. yet. If I would have known it a quick `python permutation` [google search](http://docs.python.org/library/itertools.html#itertools.permutations) (1st result) could have saved me all of that work. But back than I was still learning so after some more goggling i found `raw_input()` which seemed to be perfect for me.
 
 {% highlight python %}
 

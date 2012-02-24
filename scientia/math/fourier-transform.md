@@ -55,15 +55,15 @@ Under some conditions the sum of the Fourier series of `\(f\)` will equal the fu
 f(x) = \frac{1}{T} \sum_{n=-\infty}^{\infty} \hat{f}\left(\frac{n}{T}\right) e^{2\pi j \left(\frac{n}{T}\right) x} = \sum_{n=-\infty}^{\infty} \hat{f}(\xi_n) e^{2\pi j \xi_n x} \Delta \xi
 \]`
 
-where the last sum is simply the first sum rewritten using the difinitions `\(\xi_n = \frac{n}{T}\)`, and `\(\Delta \xi = \frac{n+1}{T} - \frac{n}{T} = \frac{1}{T}\)`.
+where the last sum is simply the first sum rewritten using the definitions `\(\xi_n = \frac{n}{T}\)`, and `\(\Delta \xi = \frac{n+1}{T} - \frac{n}{T} = \frac{1}{T}\)`.
 
-The second sum is a Riemann sum: by letting `\(T \to \infty\)` it will converge to the integral of the inverse Fourier transdoem given in the idea section.
+The second sum is a Riemann sum: by letting `\(T \to \infty\)` it will converge to the integral of the inverse Fourier transform given in the idea section.
 
 ## Applications
 
 ## Video Notes
 
-as a limiting case a fourier series is concerned with the analysis of nonperiodic phenomena
+as a limiting case a Fourier series is concerned with the analysis of non-periodic phenomena
 
 some ideas carry easily back and forth between the two
 

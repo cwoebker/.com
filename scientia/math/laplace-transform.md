@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Laplace Transform
-external:
+external: 
 published: 2012-02-17
 edited: 2011-02-17
 ---
@@ -30,11 +30,127 @@ The Laplace Transform is related to the [Fourier Transform](/scientia/math/fouri
 The Laplace transform of a function `\(f(t)\)`, defined for all real numbers `\(t\)` ≥ 0, is the function `\(F(s)\)`, defined by:
 
 `\[
-F(s) = \mathcal{L} 
+F(s) = \mathcal{L}
 \left\{ f(t) \right\}= \int_0^{\infty} e^{-st} f(t) \,dt
 \]`
 
 The parameter `\(s\)` is a complex number: `\( s = \sigma + i \omega, \, \)` with real numbers σ and ω.
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
+
+## Interesting properties
+
+Remember
+
+`\[
+F(s) = \mathcal{L}
+\left\{ f(t) \right\}= \int_0^{\infty} e^{-st} f(t) \,dt
+\]`
+
+### Linearity
+
+The Laplace transform is a linear operator.
+Transform of the weighted sum of two function.
+
+`\[
+\mathcal{L}
+\left\{ c_1 f(t) + c_2 g(t) \right\} = \int_0^{\infty} e^{-st} (c_1 f(t) + c_2 g(t)) \,dt = \int_0^{\infty} e^{-st} c_1 f(t) + e^{-st} c_2 g(t) \,dt
+\]`
+
+`\[
+c_1 \int_0^{\infty} e^{-st} f(t) \,dt + c_2 \int_0^{\infty} e^{-st} g(t) \,dt
+\]`
+
+In the end this means:
+
+
+`\[
+\mathcal{L}
+\left\{ c_1 f(t) + c_2 g(t) \right\} = c_1 \mathcal{L}
+\left\{ f(t) \right\} + c_2 \mathcal{L}
+\left\{ g(t) \right\}
+\]`
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
+
+### Transform of derivative
+
+`\[
+\mathcal{L}
+\left\{ f'(t) \right\} = \int_0^{\infty} e^{-st} f'(t) \,dt
+\]`
+
+For this one we need integration by parts again:
+
+`\[
+u = e^{-st}
+u' = -se^{-st}
+v' = f'(t)
+v = f(t)
+\]`
+
+This, `\(\int_0^{\infty} e^{-st} f'(t) \,dt\)` will therefore turn into this:
+
+`\[
+\left[ e^{-st} f(t) \right]_0^{\infty} - \int_0^{\infty} -se^{-st} f(t) \,dt
+\]`
+
+`\[
+\left[ e^{-st} f(t) \right]_0^{\infty} + s \int_0^{\infty} e^{-st} f(t) \,dt
+\]`
+
+Note that `\(\int_0^{\infty} e^{-st} f(t) \,dt\)` is the Laplace transform of a function `\(f(t)\)`:
+
+`\[
+\left[ e^{-st} f(t) \right]_0^{\infty} + s \mathcal{L}\left\{f(t)\right\}
+\]`
+
+Evaluating the first part of this formula is quite hard since we cannot be sure of what `\(f(t)\)` approaches as `\(t \to \infty\)`. 
+For now lets assume that it will go to infinity slower than `\(e^{-st}\)` will go to `\(0\)`. 
+Therefore we can rewrite the first part as:
+
+`\[
+0 - f(0) + s \mathcal{L}\left\{f(t)\right\}
+\]`
+
+In the end we now:
+
+`\[
+\mathcal{L}\left\{f'(t)\right\} = s \mathcal{L}\left\{f(t)\right\} - f_0
+\]`
+
+With some pattern finding we can also figure out `\(\mathcal{L}\left\{f''(t)\right\}\)`:
+
+`\[
+\mathcal{L}\left\{f''(t)\right\} = s \mathcal{L}\left\{f'(t)\right\} - f'(0)
+\]`
+
+`\[
+\mathcal{L}\left\{f''(t)\right\} = s \left(s \mathcal{L}\left\{f(t)\right\} - f(0) \right) - f'(0)
+\]`
+
+`\[
+\mathcal{L}\left\{f''(t)\right\} = s^2 \mathcal{L}\left\{f(t)\right\} - sf(0) - f'(0)
+\]`
+
+The Laplace Transform therefore is able to turn derivatives in simple multiplications with the complex variable `\(s\)`.
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
 
 ## Examples
 
@@ -58,6 +174,13 @@ F(s) = \mathcal{L}
 \lim_{A \to \infty} \left[ -\frac{1}{s} e^{-sA} + \frac{1}{s} \right] = \frac{1}{s}
 \]`
 
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
+
 ### `\(\mathcal{L}\left\{ e^{at} \right\}\)`
 
 `\[
@@ -76,6 +199,13 @@ F(s) = \mathcal{L}
 
   * `\(a-s > 0\)` or `\(a>s\)` -> No Limit
   * `\(a-s < 0\)` or `\(a<s\)` -> Need to make this assumption
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
 
 ### `\(\mathcal{L}\left\{ \sin{at} \right\}\)`
 
@@ -146,6 +276,128 @@ Now evaluate around the boundaries from `\(0 \to \infty\)`:
 y = \frac{a}{s^2} * \frac{s^2}{s^2+a^2} = \frac{a}{s^2 + a^2}
 \]`
 
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
+
+### `\(\mathcal{L}\left\{ \cos{at} \right\}\)`
+
+First we take these two equations as given:
+
+`\[
+\mathcal{L}\left\{f'(t)\right\} = s \mathcal{L}\left\{f(t)\right\} - f_0
+\]`
+
+`\[
+\mathcal{L}
+\left\{ \sin{at} \right\}= \frac{a}{s^2+a^2}
+\]`
+
+From here we can derive `\(\\mathcal{L}\left\{ \cos{at} \right\}\)`:
+
+`\[
+f'(t) = \cos{at}
+f(t) = \frac{1}{a}\sin{at}
+\]`
+
+`\[
+\mathcal{L}\left\{ \cos{at} \right\} = s \mathcal{L}\left\{ \frac{1}{a} \sin{at} \right\} - \frac{1}{a} \sin{a * 0}
+\]`
+
+The sin part goes away since `\(\sin{0} = 0\)`:
+
+`\[
+s \mathcal{L}\left\{ \frac{1}{a} \sin{at} \right\}
+\]`
+
+`\[
+\frac{s}{a} \mathcal{L}\left\{ \sin{at} \right\}
+\]`
+
+`\[
+\frac{s}{a} \frac{a}{s^2+a^2} = \frac{s}{s^2+a^2}
+\]`
+
+So in the end we have:
+
+`\[
+\mathcal{L}\left\{ \cos{at} \right\} = \frac{s}{s^2+a^2}
+\]`
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
+
+### Laplace Transform of polynomials
+
+Remember from earlier:
+
+`\[
+\mathcal{L}\left\{1\right\} = \frac{1}{s}
+\]`
+
+`\[
+\mathcal{L}\left\{f'(t)\right\} = s \mathcal{L}\left\{f(t)\right\} - f_0
+\]`
+
+We can take the latter and rewrite it so we can get the Laplace Transform of `\(\mathcal{L}\left\{f(t)\right\}\)`
+
+`\[
+\mathcal{L}\left\{f(t)\right\} = \frac{1}{s} \left( \mathcal{L}\left\{f'(t)\right\} + f_0 \right)
+\]`
+
+**Now a first oder polynomial:**
+
+`\[
+\mathcal{L}\left\{t\right\} = \frac{1}{s} \mathcal{L}\left\{1\right\} - 0
+\]`
+
+`\[
+\mathcal{L}\left\{t\right\} = \frac{1}{s^2}
+\]`
+
+**Now for a second order polynomial:**
+
+`\[
+\mathcal{L}\left\{t^2\right\} = \frac{1}{s} \mathcal{L}\left\{2t\right\} - 0 = \frac{2}{s} \mathcal{L}\left\{t\right\}
+\]`
+
+Plugging in from earlier we get
+
+`\[
+\mathcal{L}\left\{t^2\right\} = \frac{2}{s} \frac{1}{s^2} = \frac{2}{s^3}
+\]`
+
+**Now for a third order polynomial:**
+
+`\[
+\mathcal{L}\left\{t^3\right\} = \frac{1}{s} \mathcal{L}\left\{3t^2\right\} - 0 = \frac{3}{s} \mathcal{L}\left\{t^2\right\}
+\]`
+
+Plugging in from earlier we get
+
+`\[
+\frac{3}{s} \mathcal{L}\left\{t^2\right\} = \frac{3*2}{s^4}
+\]`
+
+**A pattern is emerging:**
+
+`\[
+\mathcal{L}\left\{t^n\right\} = \frac{n!}{s^{n+1}}
+\]`
+
+<!--
+  ####################
+  ####################
+  ####################
+  ####################
+-->
 
 ## Laplace Transform Table
 
@@ -167,16 +419,26 @@ y = \frac{a}{s^2} * \frac{s^2}{s^2+a^2} = \frac{a}{s^2 + a^2}
     <td>\(\frac{a}{s^2+a^2}\)</td>
   </tr>
   <tr>
+    <td>\(\cos{at}\)</td>
+    <td>\(\frac{s}{s^2+a^2}\)</td>
+  </tr>
+  <tr>
+    <td>\(t^n\)</td>
+    <td>\(\frac{n!}{s^{n+1}}\)</td>
+  </tr>
+  <tr>
+    <td>\(\mathcal{L}\left\{f'(t)\right\}\)</td>
+    <td>\(s \mathcal{L}\left\{f(t)\right\} - f_0\)</td>
+  </tr>
+  <tr>
+    <td>\(\mathcal{L}\left\{f''(t)\right\}\)</td>
+    <td>\(s^2 \mathcal{L}\left\{f(t)\right\} - sf(0) - f'(0)\)</td>
+  </tr>
+  <tr>
     <td>\( \)</td>
     <td>\( \)</td>
   </tr>
 </table>
-
-## Interesting properties
-
-### Linearity
-
-
 
 ## Sources
 
