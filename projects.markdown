@@ -21,6 +21,14 @@ single script `relopy` and a library that can be used in other python apps.
 
 { [relo.cwoebker.com](http://relo.cwoebker.com) }
 
+### Pen
+
+##### Work in Progress
+
+Pen is a simple and lightweight note program that can be used from the command line. It can be used on all systems that offer a command line interface via a single script `pen`.
+
+{ [pen.cwoebker.com](http://pen.cwoebker.com) }
+
 ### Minis
 
 Some small tools and webapps I developed over time.
