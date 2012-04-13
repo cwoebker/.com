@@ -38,3 +38,6 @@ Some small tools and webapps I developed over time.
 
 - { [sudoku.cwoebker.com](http://sudoku.cwoebker.com) }
     - A sudoku solver
+
+- { [cwoebker.com/coco](http://cwoebker.com/coco) }
+    - battery health & more
