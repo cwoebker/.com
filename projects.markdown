@@ -41,6 +41,8 @@ Some small tools and webapps I developed over time.
 
 #### [Anigma](http://anigma.cwoebker.com)
 
+Puzzles and Math-based Games
+
 - { [anagram.cwoebker.com](http://anagram.cwoebker.com) }
 	- A anagram solver that can help you with scrabble
 
