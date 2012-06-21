@@ -1,35 +1,31 @@
-safe: false
-auto: false
-server: false
-server_port: 4000
-base-url: /
-
-source: .
-destination: ./_site
-plugins: ./_plugins
-
-future: true
-lsi: false
-pygments: true
-markdown: rdiscount 
-permalink: /posts/:title
-
-rdiscount:
-    extensions: [smart]
-
-title: cwoebker
-production_url: http://cwoebker.com
-
-author:
-  name: Cecil Woebker
+--- 
+author: 
   email: me@cwoebker.com
   github: cwoebker
+  name: "Cecil Woebker"
   twitter: cwoebker
-
-exclude:
+auto: false
+base-url: /
+destination: ./_site
+exclude: 
   - newpost.rb
   - kyll.py
   - Gemfile
   - Gemfile.lock
   - Procfile
   - vendor
+future: true
+lsi: false
+markdown: rdiscount
+permalink: "/posts/:title"
+plugins: ./_plugins
+production_url: "http://cwoebker.com"
+pygments: true
+rdiscount: 
+  extensions: 
+    - smart
+safe: false
+server: false
+server_port: 4000
+source: "."
+title: cwoebker
