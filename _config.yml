@@ -1,5 +1,5 @@
-auto: false
 safe: false
+auto: false
 server: false
 server_port: 4000
 base-url: /
@@ -14,11 +14,17 @@ pygments: true
 markdown: rdiscount 
 permalink: /posts/:title
 
+rdiscount:
+    extensions: [smart]
+
 title: cwoebker
 production_url: http://cwoebker.com
 
-rdiscount:
-    extensions: [smart]
+author:
+  name: Cecil Woebker
+  email: me@cwoebker.com
+  github: cwoebker
+  twitter: cwoebker
 
 exclude:
   - newpost.rb
@@ -27,9 +33,3 @@ exclude:
   - Gemfile.lock
   - Procfile
   - vendor
-
-author:
-  name: Cecil Woebker
-  email: me@cwoebker.com
-  github: cwoebker
-  twitter: cwoebker
