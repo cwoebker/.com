@@ -1,5 +1,15 @@
 auto: true
 safe: true
+server: false
+server_port: 4000
+base-url: /
+
+source: .
+destination: ./_site
+plugins: ./_plugins
+
+future: true
+lsi: false
 pygments: true
 markdown: rdiscount 
 permalink: /posts/:title
@@ -13,6 +23,9 @@ rdiscount:
 exclude:
   - newpost.rb
   - kyll.py
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
 
 author:
   name: Cecil Woebker
