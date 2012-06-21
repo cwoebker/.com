@@ -1,5 +1,5 @@
-auto: true
-safe: true
+auto: false
+safe: false
 server: false
 server_port: 4000
 base-url: /
@@ -26,6 +26,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Procfile
+  - vendor
 
 author:
   name: Cecil Woebker
