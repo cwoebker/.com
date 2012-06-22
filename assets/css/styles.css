@@ -71,11 +71,11 @@ hr{
 
 #post_about{ overflow:hidden; }
 
-#post_about #left{
+#left{
   float: left;
 }
 
-#post_about #right{
+#right{
   float: right;
   padding-right: 100px;
 }
