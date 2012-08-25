@@ -3,7 +3,7 @@ layout: post
 title: Unix ZSHell Reloaded
 published: true
 hn: false
-tags: 
+tags:
     - zsh
     - terminal
     - unix
@@ -13,7 +13,7 @@ In the good old days, when there were no such things as Graphical User Interface
 This system was intensively refined and even today can still be used really efficinetly to accomplish some tasks.
 One of the major initial shells was the `Bourne-Shell` that uses the short abbreviation `sh`. It was used widely and at one point it received an update
 called `Bourne-Again Shell` - `bash`. Bash is the standard on many operating systems today. Although it is so popular there have been some other contestants
-which have even more features. One of them is `zsh` the `Z-Shell`. 
+which have even more features. One of them is `zsh` the `Z-Shell`.
 
 **Problem:**
 
@@ -34,14 +34,14 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 Hopefullt you will get to see this awesome piece of ASCII art at one point:
 
-	         __                                     __  
- 	  ____  / /_     ____ ___  __  __   ____  _____/ /_ 
- 	 / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
-	/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
-	\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+	         __                                     __
+ 	  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ 	 / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+	/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+	\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
 	                        /____/
 
-At one point this will ask you for an admin password. It needs that to change your default shell to zsh. 
+At one point this will ask you for an admin password. It needs that to change your default shell to zsh.
 If you have a brew version of zsh installed this will not succeed since the chsh (change shell) command
 only allows system shells. (At least it did so for me.)
 If you run into the same problem just quickly type this into your current shell.
@@ -112,7 +112,7 @@ _c() { _files -W ~/some/important/dir -/; }
 compdef _c c
 {% endhighlight %}
 
-This will add the `c` command that can quickly `cd` into an **importan** directory. 
+This will add the `c` command that can quickly `cd` into an **importan** directory.
 The second line even makes autocompletion possible, it will list all the directories that are so important to you.
 
 #### Theming your ZSHELL
@@ -130,7 +130,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 It is pretty basic:
 
-<img src="https://a248.e.akamai.net/assets.github.com/img/9d56332cf5570818289c1855a925140e62bf9227/687474703a2f2f696d672e736b697463682e636f6d2f32303039313232382d71636b65336b75656e7036316377636e777163643732347072372e6a7067" alt="">
+<img src="http://img.skitch.com/20091228-qcke3kuenp61cwcnwqcd724pr7.jpg" alt="">
 
 ##### Explanation
 
@@ -164,7 +164,7 @@ Last but not least you can reset everything.
 #### And now?
 
 In the end you can customize your shell however you want. If you need some inspiration and help look at both the [themes wiki] and the [themes directory].
-You can get some ideas of what you want to do and of how to add some other information. 
+You can get some ideas of what you want to do and of how to add some other information.
 Look at some of the [Prompt Options] to add more system info.
 
 ### Usage

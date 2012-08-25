@@ -2,7 +2,7 @@
 layout: post
 title: What about Science
 published: false
-tags: 
+tags:
     - science
     - future
     - technology
@@ -32,3 +32,20 @@ Science isn't just another subject. It is the subject. Technology is just part o
 
 
 ## Conclusion
+
+
+## Science is amazing.
+
+>It makes life simpler and better.
+
+## Science is dangerous.
+
+>It is unknown and unpredictable.
+
+## Science is the future.
+
+>Things that we think of as impossible might be already available tomorrow.
+
+## Science needs help
+
+>

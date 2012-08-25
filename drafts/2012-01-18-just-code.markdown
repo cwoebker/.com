@@ -10,14 +10,14 @@ tags:
     - learning
 ---
 
-This is a story. A story about how I learned how to code and make software. It really started a couple of years ago, after always having tried some big names like `c++` and `java`. I bought a programming book or something (with 'I' i mean I asked m parents to buy me one) and tried to learn to programming. It didnt work, at least not for me. I quickly got fed up with how they worked. BUT THEN I FOUND PYTHON. And I am not going to make this a post about Python is better than anything else, becuase lets be honest there is always a different tool for a different problem. It was the first simple programming language that I found on the Internet. 
+This is a story. A story about how I learned how to code and make software. It really started a couple of years ago, after always having tried some big names like `c++` and `java`. I bought a programming book or something (with 'I' i mean I asked m parents to buy me one) and tried to learn to programming. It didnt work, at least not for me. I quickly got fed up with how they worked. BUT THEN I FOUND PYTHON. And I am not going to make this a post about Python is better than anything else, becuase lets be honest there is always a different tool for a different problem. It was the first simple programming language that I found on the Internet.
 
 	Note: this post is not meant to help to teach how to program in python but to help people learn how to learn
 
 
 #### 8pm
 
-I found [ python.org ](http://python.org). Installed the current Python 2 version on my macbook and googled some basic tutorials, mostly from the Python site itself. So i just got used to all the standard functions that I would use pretty often. 
+I found [ python.org ](http://python.org). Installed the current Python 2 version on my macbook and googled some basic tutorials, mostly from the Python site itself. So i just got used to all the standard functions that I would use pretty often.
 
 #### 9pm
 
@@ -55,9 +55,9 @@ generate()
 {% endhighlight %}
 
 
-And that would take me like an hour, mostly checking syntax and stuff like that and trying to even get the basic stuff running. 
+And that would take me like an hour, mostly checking syntax and stuff like that and trying to even get the basic stuff running.
 
-But seeing the program run and do what it is supposed to do made me happy. I suceeded. 
+But seeing the program run and do what it is supposed to do made me happy. I suceeded.
 
 #### 10pm
 

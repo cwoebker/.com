@@ -17,23 +17,23 @@ options = {}
 optparse = OptionParser.new do|opts|
     # Set a banner, displayed at the top of the help screen.
     opts.banner = "Usage: ./jekyll-seo -k keywords FILE"
-    
+
     # Define the options, and what they do
     options[:verbose] = false
     opts.on( '-v', '--verbose', 'Output more information' ) do
         options[:verbose] = true
     end
-    
+
     options[:keyword] = nil
     opts.on( '-k', '--keyword KEYWORD', 'keyword your post should be optimized for' ) do|keyword|
         options[:keyword] = keyword
     end
-    
+
     options[:post] = nil
     opts.on( '-p', '--post FILE', 'post to be analyzed' ) do|post|
         options[:post] = post
     end
-    
+
     opts.on( '-h', '--help', 'Display this screen' ) do
         puts opts
         exit
@@ -51,45 +51,45 @@ end
 ARGV.each do|f|
     puts "Analyzing Post: #{f}..."
     post = Nokogiri::HTML(open(f))
-    
+
     # Search for keyword in heading
     post.css('h1').each do |this|
         if options[:verbose]
             puts "heading found"
             puts "heading: #{this}"
         end
-        
+
         heading = this.to_s.scan(/#{options[:keyword]}/i)
-        
+
         if options[:verbose]
             puts "heading-found: #{title}"
         end
     end
-    
+
     # Search for keyword in title
     post.css('title').each do |this|
         if options[:verbose]
             puts "title found"
             puts "title: #{this}"
         end
-        
+
         title = this.to_s.scan(/#{options[:keyword]}/i)
-        
+
         if options[:verbose]
             puts "title-found: #{title}"
         end
     end
-    
+
     # Search for keyword in body
     post.css('body').each do |this|
         if options[:verbose]
             puts "content found"
             puts "content: #{this}"
         end
-        
+
         content = this.to_s.scan(/#{options[:keyword]}/i)
     end
-    
+
     # Search for keyword in Meta Description
     post.css('meta').each do |this|
         if this.attribute("name").to_s == "description"
@@ -97,7 +97,7 @@ ARGV.each do|f|
                 puts "Meta Description found"
                 puts "Meta Description: #{this.attribute('content')}"
             end
-            
+
             meta_description = this.attribute("content").to_s.scan(/#{options[:keyword]}/i)
         end
     end
