@@ -6,7 +6,8 @@ require 'rack/contrib/try_static'
 require 'rack/rewrite'
 
 use Rack::Rewrite do
-    rewrite '(.*)', '$1/'
+    #rewrite '(.*)', '$1/'
+    r301 %r{(.+)$}, '$1/'
 end
 
 use Rack::TryStatic,
