@@ -1,0 +1,3 @@
+[submodule "projects/coco"]
+	path = projects/coco
+	url = git://github.com/cwoebker/coco.git
