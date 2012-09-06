@@ -3,7 +3,6 @@ Bundler.setup
 Bundler.require
 
 require 'rack/contrib/try_static'
-require 'rack/slashenforce'
 
 #use Rack::Rewrite do
 #    #rewrite '(.*)', '$1/'
