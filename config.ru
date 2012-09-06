@@ -7,7 +7,8 @@ require 'rack/rewrite'
 
 use Rack::Rewrite do
     #rewrite '(.*)', '$1/'
-    r301 %r{(.+)$}, '$1/'
+    #r301 %r{(.+)$}, '$1/'
+    rewrite %r{^/([^.]*)[^/]$}, '/$1/'
 end
 
 use Rack::TryStatic,
