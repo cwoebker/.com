@@ -3,6 +3,11 @@ Bundler.setup
 Bundler.require
 
 require 'rack/contrib/try_static'
+require 'rack/rewrite'
+
+use Rack::Rewrite do
+    rewrite '(.*)', '$1/'
+end
 
 use Rack::TryStatic,
     :root => "_site",
