@@ -33,7 +33,7 @@ Pen is a simple and lightweight note program that can be used from the command l
 
 Some small tools and webapps I developed over time.
 
-- { [cwoebker.com/coco](http://cwoebker.com/coco) }
+- { [cwoebker.com/projects/coco](http://cwoebker.com/projects/coco) }
     - battery health & more
 
 - { [screen.cwoebker.com](http://screen.cwoebker.com) }
