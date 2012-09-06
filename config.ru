@@ -10,7 +10,7 @@ use Rack::Rewrite do
 #    #r301 %r{(.+)$}, '$1/'
 #    #rewrite %r{^/([^.]*)[^/]$}, '/$1/'
 #    r301 %r{(.*)[^/]$}, '$1/'
-     r301 %r{/projects/(.*)[^/]$}, '/projects/$1/'
+     r301 %r{/projects/(.*)[^/]}, '/projects/$1/'
 end
 
 #use Rack::AppendTrailingSlash
