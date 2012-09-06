@@ -25,6 +25,7 @@ GEM
     rack (1.4.1)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
+    rack-rewrite (1.2.1)
     rack-slashenforce (0.0.2)
       rack
     rdiscount (1.6.8)
@@ -41,6 +42,7 @@ DEPENDENCIES
   RedCloth
   jekyll (~> 0.11.2)
   rack-contrib
+  rack-rewrite
   rack-slashenforce
   rdiscount
   thin

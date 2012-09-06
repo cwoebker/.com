@@ -3,15 +3,17 @@ Bundler.setup
 Bundler.require
 
 require 'rack/contrib/try_static'
+require 'rack/rewrite'
 
-#use Rack::Rewrite do
+use Rack::Rewrite do
 #    #rewrite '(.*)', '$1/'
 #    #r301 %r{(.+)$}, '$1/'
 #    #rewrite %r{^/([^.]*)[^/]$}, '/$1/'
 #    r301 %r{(.*)[^/]$}, '$1/'
-#end
+     r301 %r{/projects/(.*)[^/]$}, '/projects/$1/'
+end
 
-use Rack::AppendTrailingSlash
+#use Rack::AppendTrailingSlash
 
 use Rack::TryStatic,
     :root => "_site",
