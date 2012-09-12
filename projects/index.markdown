@@ -6,8 +6,6 @@ external: []
 
 ### Scientia
 
-##### Work in Progress
-
 Scientia is a collection of articles about different mathematical and physical principles and other great stuff.
 
 { [cwoebker.com/scientia](/scientia) }

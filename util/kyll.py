@@ -30,6 +30,8 @@ Arguments:
 
 simple_re = re.compile(r'[^\w\s-]')
 simple_hyphen = re.compile(r'[-\s]+')
+
+
 def simplify(value):
     import unicodedata
     if not isinstance(value, unicode):
@@ -42,13 +44,17 @@ def simplify(value):
 class Jekyll(object):
     pass
 
+
 class Tag(object):
     def __init__(self):
         pass
+
     def load(self):
         pass
+
     def list(self):
         pass
+
 
 class Post(object):
     def __init__(self):
@@ -85,9 +91,10 @@ class Post(object):
 
         self.content = self.content.replace('%%TAGS%%', template_tags, 1)
 
-        self.fname = "%s-%s.markdown" % (self.date, self.slug)
+        self.fname = "../drafts/%s-%s.markdown" % (self.date, self.slug)
         self.fpath = os.path.join(POSTDIR, self.fname)
         self.write()
+
     def read(self):
         postList = os.listdir(POSTDIR)
         for post in postList:
@@ -96,6 +103,7 @@ class Post(object):
         post_file = open(self.fpath, "r")
         self.content = post_file.read()
         post_file.close()
+
     def info(self):
         if not self.loaded:
             print 'ERROR: Not loaded yet!'
@@ -107,12 +115,15 @@ class Post(object):
         print "Layout: " + self.layout
         print "Filename: " + self.fname
         print "Path: " + self.fpath
+
     def write(self):
         post_file = open(self.fpath, "w")
         post_file.writelines(self.content)
         post_file.close()
+
     def destroy(self):
         pass
+
 
 def createPost(argv):
     #if len(argv) > 0:
@@ -127,12 +138,12 @@ def createPost(argv):
     tag_str = raw_input("Tags:    > ")
     tags = tag_str.split()
 
-    
     post = Post()
     post.title = title
     post.tags = tags
-    
+
     post.create()
+
 
 def readPost(argv):
     print '\n----------Post----------\n'
@@ -142,12 +153,14 @@ def readPost(argv):
     post.read()
     print post.content
 
+
 def infoPost(argv):
     print '\n----------Post Info----------\n'
     slug = argv[0]
     post = Post()
     post.load(slug)
     post.info()
+
 
 def listPosts(argv):
     print '\n----------Jekyll Posts----------\n'
@@ -156,6 +169,8 @@ def listPosts(argv):
         file = file.rstrip('.markdown')
         print ' - ' + file[11:]
     print ''
+
+
 def main(argv):
     """
     parses the arguments and starts the application
@@ -175,6 +190,6 @@ def main(argv):
         print HELP
         return 0
     return 1
-    
+
 if __name__ == "__main__":
     main(sys.argv[1:])
