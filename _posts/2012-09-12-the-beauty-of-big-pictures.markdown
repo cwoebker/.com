@@ -22,6 +22,10 @@ Since some time now the Boston Globe does something similar. It curates the ["Bo
 About 15 times a month the Boston Globe posts an album of photography related to current events.
 Most of these images are in high quality and sometimes make great wallpapers.
 
+<img src="http://cache.boston.com/universal/site_graphics/blogs/bigpicture/saturn_05_30/cassini1.jpg" alt="">
+
+*The back side of Saturn with a solar eclipse.*
+
 I am a big fan and I always wanted to have all these beautiful Pictures on my computer
 so that I could use them as wallpapers easily and also just cause I can.
 
