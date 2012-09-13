@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Beauty of a Big Pictures
+title: The Beauty of Big Pictures
 published: false
 hn: false
 tags:
@@ -208,5 +208,7 @@ All the pictures are going to be on your computer now.
 Sorted by year, month and name.
 
 ## The Result ##
+
+I added some nice output that tells you about the current status thanks to [clint](http://github.com/kennethreitz/clint)
 
 <script src="https://gist.github.com/3695461.js"> </script>
