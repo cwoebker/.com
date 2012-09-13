@@ -5,7 +5,7 @@ Bundler.require
 require 'rack/contrib/try_static'
 require 'rack/rewrite'
 
-configure :production do
+if ENV['RACK_ENV'] == 'production'
     require 'newrelic_rpm'
 end
 
