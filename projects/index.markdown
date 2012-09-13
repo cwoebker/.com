@@ -47,4 +47,10 @@ Puzzles and Math-based Games
 - { [sudoku.cwoebker.com](http://sudoku.cwoebker.com) }
     - A sudoku solver
 
+### Scripts ###
+
+Some scripts that came along over time:
+
+- { [bigpic.py](http://cwoebker.com/posts/the-beauty-of-big-pictures/) }
+    - Crawler/Downloader Boston Big Picture Archive
 
