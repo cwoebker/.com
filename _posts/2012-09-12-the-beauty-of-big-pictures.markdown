@@ -65,11 +65,11 @@ Therefore we can deduce multiple steps in finding these pictures.
 Next up: How are we going to solve the problems from our outline?
 The Boston Globe has a small little archive box, but unfortunately it only goes back to about a year ago.
 
-<img src="/assets/images/posts/bigpicture1.jpeg" alt="">
+<img src="/assets/images/posts/bigpicture1.jpeg" alt="archive" title="Big Picture 1" />
 
 Luckily when looking at the source code I found out, that they actually have the complete archive there but in form of commented out HTML code. Therefore my browser wouldn't pick it up at first.
 
-<img src="/assets/images/posts/bigpicture2.jpeg" alt="">
+<img src="/assets/images/posts/bigpicture2.jpeg" alt="hidden archive" title="Big Picture 2" />
 
 I started with the `getArchive()` function.
 
