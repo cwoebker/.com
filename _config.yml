@@ -17,12 +17,16 @@ source: .
 destination: ./_site
 plugins: ./_plugins
 exclude:
-  - newpost.rb
-  - kyll.py
+  - README.md
+  - util
+  - drafts
+  - config
   - Gemfile
   - Gemfile.lock
   - Procfile
+  - Rakefile
   - vendor
+  - config.ru
 
 future: true
 lsi: false
@@ -30,6 +34,6 @@ pygments: true
 markdown: rdiscount
 permalink: "/posts/:title"
 
-rdiscount: 
-  extensions: 
+rdiscount:
+  extensions:
     - smart

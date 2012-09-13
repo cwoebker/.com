@@ -21,7 +21,6 @@ GEM
     liquid (2.3.0)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    newrelic_rpm (3.4.2)
     posix-spawn (0.3.6)
     rack (1.4.1)
     rack-contrib (1.1.0)
@@ -42,7 +41,6 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll (~> 0.11.2)
-  newrelic_rpm
   rack-contrib
   rack-rewrite
   rack-slashenforce
