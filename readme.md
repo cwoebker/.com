@@ -1,5 +1,7 @@
 # cwoebker.github.com #
 
+[![Build Status](https://secure.travis-ci.org/cwoebker/cwoebker.github.com.png)](http://travis-ci.org/cwoebker/cwoebker.github.com)
+
 Hi.
 
 This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [Heroku](http://heroku.com/) for [cwoebker.com](http://cwoebker.com).
