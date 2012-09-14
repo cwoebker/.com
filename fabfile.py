@@ -24,3 +24,4 @@ def deploy():
     if confirm("Ready. Deploy?"):
         local("git push heroku master")
         local("open http://cwoebker.com")
+        local("heroku logs --tail")
