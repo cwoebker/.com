@@ -2,24 +2,12 @@ GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.2.9)
-    addressable (2.3.2)
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
-    daemons (1.1.8)
     directory_watcher (1.4.1)
-    eventmachine (0.12.10)
-    excon (0.16.2)
     fast-stemmer (1.0.1)
-    heroku (2.31.2)
-      heroku-api (~> 0.3.4)
-      launchy (>= 0.3.2)
-      netrc (~> 0.7.7)
-      rest-client (~> 1.6.1)
-      rubyzip
-    heroku-api (0.3.5)
-      excon (~> 0.16.1)
     jekyll (0.11.2)
       albino (~> 1.3)
       classifier (~> 1.3)
@@ -29,30 +17,18 @@ GEM
       maruku (~> 0.5)
     kgio (2.7.4)
     kramdown (0.13.7)
-    launchy (2.1.2)
-      addressable (~> 2.3)
     liquid (2.3.0)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    mime-types (1.19)
-    netrc (0.7.7)
+    newrelic_rpm (3.4.2)
     posix-spawn (0.3.6)
     rack (1.4.1)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-rewrite (1.2.1)
-    rack-slashenforce (0.0.2)
-      rack
     raindrops (0.10.0)
     rdiscount (1.6.8)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    rubyzip (0.9.9)
     syntax (1.0.0)
-    thin (1.3.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     unicorn (4.3.1)
       kgio (~> 2.6)
       rack
@@ -63,11 +39,9 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
-  heroku
   jekyll (~> 0.11.2)
+  newrelic_rpm
   rack-contrib
   rack-rewrite
-  rack-slashenforce
   rdiscount
-  thin
   unicorn

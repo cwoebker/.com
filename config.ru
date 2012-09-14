@@ -5,9 +5,9 @@ Bundler.require
 require 'rack/contrib/try_static'
 require 'rack/rewrite'
 
-#if ENV['RACK_ENV'] == 'production'
-#    require 'newrelic_rpm'
-#end
+if ENV['RACK_ENV'] == 'production'
+    require 'newrelic_rpm'
+end
 
 use Rack::Rewrite do
 #    #rewrite '(.*)', '$1/'

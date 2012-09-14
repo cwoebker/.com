@@ -27,6 +27,8 @@ exclude:
   - Rakefile
   - vendor
   - config.ru
+  - unicorn.rb
+  - fabfile.py
 
 future: true
 lsi: false
