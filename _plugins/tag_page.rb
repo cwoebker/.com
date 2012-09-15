@@ -3,6 +3,7 @@ module Jekyll
     include Convertible
     attr_accessor :site, :pager, :name, :ext
     attr_accessor :basename, :dir, :data, :content, :output
+#<h3>{{ post.date | date: "%A %d.%m." }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a></h3>
 
     def initialize(site, tag, posts)
       @site = site
@@ -10,25 +11,17 @@ module Jekyll
       self.ext = '.html'
       self.basename = 'index'
       self.content = <<-EOS
+<ul class="posts">
 {% for post in page.posts %}
-<h3>{{ post.date | date: "%A %d.%m." }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-<p>{{ post.content | truncatewords: 20 }}</p>
-
-<p>
-{% if post.categories != empty %}
-In {{ post.categories | array_to_sentence_string }}.
-{% endif %}
-{% if post.tags != empty %}
-Tagged {{ post.tags | array_to_sentence_string }}.
-</p>
-{% endif %}
+<li id=\"tag\"><a href="{{ post.url }}" >{{ post.title }}</a></li>
 {% endfor %}
+</ul>
+<bold><a href="/tags">Back To Tag List</a></bold>
 EOS
       self.data = {
-        'layout' => 'default',
+        'layout' => 'tag',
         'type' => 'tag',
-        'title' => "Posts tagged #{@tag}",
+        'title' => "Tag - #{@tag}",
         'posts' => posts
       }
     end
