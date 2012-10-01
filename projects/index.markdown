@@ -47,6 +47,16 @@ Puzzles and Math-based Games
 - { [sudoku.cwoebker.com](http://sudoku.cwoebker.com) }
     - A sudoku solver
 
+### Games ###
+
+Some small abstract games.
+Mainly Artificial Intelligence Problems.
+
+- { [tic.cwoebker.com](http://tic.cwoebker.com) }
+    - A Tic Tac Toe game. It never looses.
+- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
+    - A Connect Four game. It sometimes looses.
+
 ### Scripts ###
 
 Some scripts that came along over time:
