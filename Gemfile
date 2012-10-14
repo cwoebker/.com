@@ -6,6 +6,9 @@ gem 'rack-rewrite'
 #gem 'rack-slashenforce'
 #gem 'thin'
 gem 'unicorn'
-#gem 'heroku'
 gem 'rdiscount'
 gem 'RedCloth'
+
+group :development do
+    gem 'heroku'
+end
