@@ -8,7 +8,4 @@ gem 'rack-rewrite'
 gem 'unicorn'
 gem 'rdiscount'
 gem 'RedCloth'
-
-group :development do
-    gem 'heroku'
-end
+#gem 'heroku'
