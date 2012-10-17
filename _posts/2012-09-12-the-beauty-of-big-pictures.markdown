@@ -38,10 +38,10 @@ and mass download script.
 
 I decided to use the following tools:
 
-- [Python](www.python.org) - my programming language of choice
-- [BeautifulSoup](www.crummy.com/software/BeautifulSoup/) - a library that makes working with html easily
-- [multiprocessing](docs.python.org/library/multiprocessing.html) - as part of python standard library for having concurrent downloads
-- [clint](github.com/kennethreitz/clint) - for some pretty printing :-)
+- [Python](http://www.python.org) - my programming language of choice
+- [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) - a library that makes working with html easily
+- [multiprocessing](http://docs.python.org/library/multiprocessing.html) - as part of python standard library for having concurrent downloads
+- [clint](http://github.com/kennethreitz/clint) - for some pretty printing :-)
 
 ## Outline
 

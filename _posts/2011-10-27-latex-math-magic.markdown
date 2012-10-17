@@ -159,7 +159,7 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 
 ## Is this it?
 
-Although I have this really bad feeling that I forgot something essential I think this should be it. At least I can't remeber having made any other changes to my files.
+Although I have this really bad feeling that I forgot something essential I think this should be it. At least I can't remember having made any other changes to my files.
 
 ### It doesnt work yet ?!?
 

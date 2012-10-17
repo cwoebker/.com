@@ -141,7 +141,7 @@ Nice, easy and simple, isn't it?
 
 ### Post Scriptum
 
-The best thing is that you can just use [Github Pages](pages.github.com) to deply you blog so a simple:
+The best thing is that you can just use [Github Pages](http://pages.github.com) to deply you blog so a simple:
 
     git push origin master
 
