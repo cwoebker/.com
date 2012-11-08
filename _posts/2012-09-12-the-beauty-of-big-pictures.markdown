@@ -11,8 +11,6 @@ tags:
 
 ### An example-based introduction to specialized crawling ###
 
-
-
 There are big pictures out there, those ones that you don't forget.
 Due to that the German channel ["Pro Sieben"](www.prosieben.de) started having a whole show
 called ["Galileo Big Pictures"](www.prosieben.de/tv/galileo/big-pictures/) every couple months.

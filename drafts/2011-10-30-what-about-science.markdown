@@ -44,7 +44,7 @@ Science isn't just another subject. It is the subject. Technology is just part o
 
 ## Science is the future.
 
->Things that we think of as impossible might be already available tomorrow.
+>Things that we think of as impossible might already be available tomorrow.
 
 ## Science needs help
 
