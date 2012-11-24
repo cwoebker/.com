@@ -15,7 +15,7 @@ Here I am going to post links to different Physics related things I worked on. (
 ### Sequence and Series
 
 * [Taylor Series](/scientia/math/taylor-series)
-* ([Fourier Analysis](http://en.wikipedia.org/wiki/Fourier_analysis))
+* Fourier Analysis
   * [Fourier Series](/scientia/math/fourier-series)
   * [Fourier Transform](/scientia/math/fourier-transform)
 

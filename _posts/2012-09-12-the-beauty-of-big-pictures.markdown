@@ -12,10 +12,10 @@ tags:
 ### An example-based introduction to specialized crawling ###
 
 There are big pictures out there, those ones that you don't forget.
-Due to that the German channel ["Pro Sieben"](www.prosieben.de) started having a whole show
-called ["Galileo Big Pictures"](www.prosieben.de/tv/galileo/big-pictures/) every couple months.
+The German channel ["Pro Sieben"](http://www.prosieben.de) even started having a whole show based on that idea
+called ["Galileo Big Pictures"](http://www.prosieben.de/tv/galileo/big-pictures/) every couple months.
 
-Since some time now the Boston Globe does something similar. It curates the ["Boston Globe: Big Picture"](www.boston.com/bigpicture).
+Since some time now the Boston Globe does something similar. It curates the ["Boston Globe: Big Picture"](http://www.boston.com/bigpicture).
 
 About 15 times a month the Boston Globe posts an album of photography related to current events.
 Most of these images are in high quality and sometimes make great wallpapers.
@@ -216,6 +216,6 @@ Sorted by year, month and name.
 
 ## The Result ##
 
-I added some nice output that tells you about the current status thanks to [clint](http://github.com/kennethreitz/clint)
+I added some nice output that tells you about the current status thanks to [clint](http://github.com/kennethreitz/clint).
 
 <script src="https://gist.github.com/3695461.js"> </script>

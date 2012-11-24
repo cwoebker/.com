@@ -99,7 +99,7 @@ A pattern is starting to form here:
 f^{n}(x) = n!a_n \rightarrow a_n = \frac{f^{(n)}(a)}{n!}
 \)`
 
-<img src="/images/downarrow.png" alt="therefore" title="Therefore" height="256" width="256" />
+<img src="/assets/images/downarrow.png" alt="therefore" title="Therefore" height="256" width="256" />
 
 ** Taylor Series for `\(f(x)\)` about `\(x=a\)` **
 

@@ -17,7 +17,7 @@ Published in 1807 by Joseph Fourier
 * Joseph Fourier:
   * Born 21 March 1768
     * Auxerre, Burgundy, Kingdom of France
-    * (now) Yonne, France   
+    * (now) Yonne, France
   * Death 16 May 1830 (aged 62)
     * London, England
   * French mathematician and physicist
@@ -52,20 +52,20 @@ This can drastically improve the way we handle certain functions.
 So the Fourier Series is basically this:
 
 `\[
-\varphi(x)= 
+\varphi(x)=
 \sum_{n=0} ^ {\infty} a_n\cos (nx) + b_n\sin (nx)
 \]`
 
 When writing the function out we can ignore the first `\(sin\)` term since its `\(0\)`. And `\(cos\)` ends up being 1 wherefore we only get the `\(a_0\)` constant.
 
 `\[
-\varphi(x)=a_0 + a_1 \cos(x) + b_1 \sin(x) + a_2 \cos(2x) + b_2 \sin(2x) + \cdots 
+\varphi(x)=a_0 + a_1 \cos(x) + b_1 \sin(x) + a_2 \cos(2x) + b_2 \sin(2x) + \cdots
 \]`
 
 When plugging in `\(0\)` we get an interresting result, that gets rid of many of those terms.
 
 `\[
-\varphi(0)=a_0 + a_1 \cos(0) + b_1 \sin(0) + a_2 \cos(0) + b_2 \sin(0) \cdots 
+\varphi(0)=a_0 + a_1 \cos(0) + b_1 \sin(0) + a_2 \cos(0) + b_2 \sin(0) \cdots
 \]`
 
 `\[
@@ -121,7 +121,7 @@ Alright so how does this help us? We will see that soon! We now have to figure o
 From the equations above we can now say `\(\cdots\)`
 
 `\[
-F_n(x)= a_0 + 
+F_n(x)= a_0 +
 \sum_{k=1} ^ {k=n} a_k\cos (kx) + b_k\sin (kx)
 \]`
 
@@ -177,16 +177,16 @@ e^{jwt} = \cos(wt) + j \sin(wt) \quad \text{&} \quad e^{-jwt} = \cos(wt) - j \si
 We can now take both statements and write:
 
 `\[
-\varphi (t) = \frac{a_0}{2} + 
-\sum_{n=1}^{\infty} a_n \frac{e^{jwt}+e^{-jwt}}{2} + 
+\varphi (t) = \frac{a_0}{2} +
+\sum_{n=1}^{\infty} a_n \frac{e^{jwt}+e^{-jwt}}{2} +
 \sum_{n=1}^{\infty} b_n \frac{e^{jwt}-e^{-jwt}}{2j}
 \]`
 
 For simplification reasons we are going to group similiar terms:
 
 `\[
-\varphi (t) = \frac{a_0}{2} + 
-\sum_{n=1}^{\infty} \frac{a_n - j b_n}{2} e^{jwt} + 
+\varphi (t) = \frac{a_0}{2} +
+\sum_{n=1}^{\infty} \frac{a_n - j b_n}{2} e^{jwt} +
 \sum_{n=1}^{\infty} \frac{a_n + j b_n}{2} e^{-jwt}
 \]`
 
@@ -199,7 +199,7 @@ c_0 = \frac{a_0}{2} \quad \text{&} \quad c_n = \frac{a_n - j b_n}{2} \quad \text
 The new series therefore looks like this now:
 
 `\[
-\varphi (t) = c_0 + 
+\varphi (t) = c_0 +
 \sum_{n=1}^{\infty} c_n e^{jwt} + c_{-n} e^{-jwt}
 \]`
 
@@ -230,7 +230,7 @@ Now we can plug and play a little...
 `\[
 c_n = \frac{
 \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} ( \varphi(t) \cos(n w_0 t)dt )
-- j 
+- j
 \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} ( \varphi(t) \sin(n w_0 t)dt )
 }{2}
 \]`
@@ -239,7 +239,7 @@ Now just some distributing etc...
 
 `\[
 c_n = \frac{1}{T}
-\int_{-\frac{T}{2}}^{\frac{T}{2}} \varphi(t) 
+\int_{-\frac{T}{2}}^{\frac{T}{2}} \varphi(t)
 ( \cos(n w_0 t) - j \sin(n w_0 t) )dt
 \]`
 
