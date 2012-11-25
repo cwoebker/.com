@@ -10,13 +10,12 @@ layout: default
     <div class="body">
       {{ content }}
     </div>
-    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
-    -- Published: {{ page.published | date: "%b %d, %Y" }}
-    </postamble>
   </div>
   <div class="post_end">
     {% include about.html %}
     <br />
-    {% include disqus.html %}
+    {% include adsense_leaderboard.html %}
+    <br />
+    {% include comments.html %}
   </div>
 </div>
