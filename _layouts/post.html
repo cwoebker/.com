@@ -16,7 +16,6 @@ external:
     <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
 	  -- {{ page.date | date: "%b %d, %Y" }}
     </postamble>
-    <!--<h4>Tags:</h4>-->
     <ul id="post_tags">
     {% for tag in page.tags %}
       <li><a class="tag" href="/tag/{{ tag }}">{{ tag }}</a></li>
