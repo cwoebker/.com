@@ -10,7 +10,7 @@ tags:
 ---
 
 In the good old days, when there were no such things as Graphical User Interfaces a computer could only be used with a Shell command-line interface.
-This system was intensively refined and even today can still be used really efficinetly to accomplish some tasks.
+This system was intensively refined and even today can still be used really efficiently to accomplish some tasks.
 One of the major initial shells was the `Bourne-Shell` that uses the short abbreviation `sh`. It was used widely and at one point it received an update
 called `Bourne-Again Shell` - `bash`. Bash is the standard on many operating systems today. Although it is so popular there have been some other contestants
 which have even more features. One of them is `zsh` the `Z-Shell`.
@@ -21,7 +21,7 @@ which have even more features. One of them is `zsh` the `Z-Shell`.
 
 ## Oh-My-ZSH
 
-[oh-my-zsh] which was written by [Robby Russell] tries to solve this problem and in my opinion, suceeds in doing so.
+[oh-my-zsh] which was written by [Robby Russell] tries to solve this problem and in my opinion, succeeds in doing so.
 It is easy to install, use and customize and makes everyday working with a shell a charm. Unfortunately
 
 ### Installation
@@ -32,7 +32,7 @@ Installation is as simple as a one-liner:
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 {% endhighlight %}
 
-Hopefullt you will get to see this awesome piece of ASCII art at one point:
+Hopefully you will get to see this awesome piece of ASCII art at one point:
 
 	         __                                     __
  	  ____  / /_     ____ ___  __  __   ____  _____/ /_
@@ -55,7 +55,7 @@ And voila! The next time you start a terminal or open a new tab you are good to 
 
 ### Customization
 
-In your homefolder you will now find your brand-new `.zshrc` configuration file.
+In your home-folder you will now find your brand-new `.zshrc` configuration file.
 
 {% highlight bash %}
 # Path to your oh-my-zsh configuration.
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 This file is pretty self explanatory. Two of the most important customization options are themes and plugins.
 The creator's theme is the default when first installed and only one plugin is active.
 
-For plugins I suggest you walk through the [plugin directory] or the [plugin wiki] and check out what is avaiable and just add whatever you think is needed to your config.
+For plugins I suggest you walk through the [plugin directory] or the [plugin wiki] and check out what is available and just add whatever you think is needed to your config.
 
 #### Extending Oh My ZSH
 
@@ -112,19 +112,19 @@ _c() { _files -W ~/some/important/dir -/; }
 compdef _c c
 {% endhighlight %}
 
-This will add the `c` command that can quickly `cd` into an **importan** directory.
-The second line even makes autocompletion possible, it will list all the directories that are so important to you.
+This will add the `c` command that can quickly `cd` into an **important** directory.
+The second line even makes auto completion possible, it will list all the directories that are so important to you.
 
 #### Theming your ZSHELL
 
 For now lets look at [Robby Russell]`s default theme.
 
 {% highlight bash %}
-PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='%{$fg_bold[red]%}-> %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}x%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 {% endhighlight %}
 
@@ -149,7 +149,7 @@ With the `%c` option you can display the current directory. Loot at some of the 
 {% highlight bash %}
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}x%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 {% endhighlight %}
 
@@ -180,7 +180,7 @@ A quick list of features:
 
 ## End Note
 
-**This is a call to every shell user: Change now! Beause zsh will make your life easier, a lot easier.**
+**This is a call to every shell user: Change now! Because zsh will make your life easier, a lot easier.**
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Robby Russell]: https://github.com/robbyrussell/
