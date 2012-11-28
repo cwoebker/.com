@@ -8,14 +8,11 @@ external:
     <h1>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
-    <br />
+    <section class="byline">{{ page.date | date: "%b %d, %Y" }}</section>
     <div class="body">
       {{ content }}
     </div>
     <br />
-    <postamble datetime="{{ post.date | date: "%Y-%m%d" }} ">
-	  -- {{ page.date | date: "%b %d, %Y" }}
-    </postamble>
     <ul id="post_tags">
     {% for tag in page.tags %}
       <li><a class="tag" href="/tag/{{ tag }}">{{ tag }}</a></li>
