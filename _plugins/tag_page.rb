@@ -16,12 +16,12 @@ module Jekyll
 <li id=\"tag\"><a href="{{ post.url }}" >{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-<bold><a href="/tags">Back To Tag List</a></bold>
+<bold><a href="/tags">back</a></bold>
 EOS
       self.data = {
         'layout' => 'tag',
         'type' => 'tag',
-        'title' => "Tag - #{@tag}",
+        'title' => "#{@tag}",
         'posts' => posts
       }
     end
