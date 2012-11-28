@@ -78,13 +78,6 @@ hr{
   z-index: 0;
 }
 
-#post_tags li{
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-  font-size: 20px;
-}
-
 #post_about{ overflow:hidden; }
 
 .posts{
@@ -351,6 +344,24 @@ h3{
   color: #111;
   font-style: normal;
 }
+
+/*
+############
+### TAGS ###
+############
+*/
+
+#post #tag {
+  margin-bottom: 0;
+}
+
+.post_taglist li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
 #post postamble {
   display: block;
   margin-bottom: 1em;
@@ -397,6 +408,17 @@ a.tag {
 ##############
 */
 
+footer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  bottom: 0;
+  left: 0;
+}
+
 footer hr {
   clear: both;
   margin: 10px 0 30px;
@@ -419,17 +441,6 @@ footer hr {
     rgba(0,0,0,0.05),
     rgba(0,0,0,0));
   background-color: #FFF;
-}
-
-#footer {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  padding-top: 20px;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  bottom: 0;
-  left: 0;
 }
 
 footer[role="contentinfo"] {
@@ -500,75 +511,3 @@ footer[role="contentinfo"] nav ul li:last-child {
 .footer .twitter-follow-button{
   width: 75px !important;
 }
-
-#post #tag {
-  margin-bottom: 0;
-}
-
-/*
-
- HACKER NEWS MAD KARMA
-
- */
-#hn{
-  margin: 30px 15px;
-}
-
-
-/*
-
- BOASTFUL
-
- */
-#boastful{
-  margin: 30px 0px 7em 0px;
-}
-#boastful .twitter-share-button{
-  float: right;
-  padding-top: 3px;
-  margin-right: 13px
-}
-.boastful{
-  display: inline;
-}
-.boastful img{
-  margin: 1px 2px;
-  border: 0;
-  width: 32px;
-  height: 32px;
-  display: inline !important;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-}
-.boastful .boastful_pointer{
-  position: absolute;
-  z-index: 999;
-  left: -9999px;
-  opacity: .7;
-  display: none;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #000;
-  border-top: 0;
-}
-.boastful .boastful_tweet{
-  position: absolute;
-  z-index: 999;
-  left: -9999px;
-  background-color: #222;
-  opacity: .8;
-  padding: 5px;
-  width: 250px;
-  font-size: 11px;
-  text-shadow: 1px 1px 0 #000;
-  color: #eee;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-}
-.boastful .boastful_handle{
-  font-size: 13px;
-  font-weight: bold;
-}
-
