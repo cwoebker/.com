@@ -12,6 +12,15 @@ body{
 
 .clear {clear: both;}
 
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+  padding-right: 100px;
+}
+
 .break {page-break-before: always;}
 
 body div.content {padding-bottom: 80px;}
@@ -27,13 +36,13 @@ body div.content {padding-bottom: 80px;}
     body div.content pre > code {
         padding: 0; background-color: transparent;
     }
-    body div.content code.has-jax {
-        font: inherit; 
+    body div.content .has-jax {
+        font: inherit;
         font-size: 100%;
         background: inherit;
         border: inherit;
     }
-    body div.gist {
+    body .gist {
         font-size: 12px;
     }
 
@@ -77,15 +86,6 @@ hr{
 }
 
 #post_about{ overflow:hidden; }
-
-#left{
-  float: left;
-}
-
-#right{
-  float: right;
-  padding-right: 100px;
-}
 
 .posts{
   padding-top: 10px;
@@ -138,30 +138,11 @@ h3{
   margin-bottom: 10px;
 }
 
-#custom-sidebar {
-	position: fixed;
-	top: 80px;
-	width: 220px;
-	left: 0px;
-	background-color: white;
-	z-index: 5;
-}
-
-#sidebar {
-	position: absolute;
-	top: 80px;
-	width: 210px;
-	left: 8px;
-	z-index: 10;
-}
-
-#sidebar #karma {
-
-}
-
-#sidebar #tweet_feed {
-	padding-top: 20px;
-}
+/*
+###########
+### TOP ###
+###########
+*/
 
 #custom-header {
 	position: fixed;
@@ -196,14 +177,6 @@ h3{
   height: 30px;
   line-height: 22px;
   z-index: 10;
-}
-
-#footerbar {
-  font-family: Helvetica, sans-serif;
-  width: auto;
-  padding: 3px 10px 0px 10px;
-  height: 30px;
-  line-height: 22px;
 }
 
 #topbar .avatar{
@@ -293,10 +266,26 @@ h3{
   display: inline;
 }
 
+/*
+############
+### POST ###
+############
+*/
+
 #post{
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+
+.byline {
+  margin-bottom: 17px;
+  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+  padding-left: 0px;
+  font-size: 17px;
+  color: #777;
+}
+}
+
 #post ul{
   font-size: 15px;
   margin: 20px 20px 20px 0;
@@ -402,6 +391,12 @@ a.tag {
     background-color: #E95C33;
 }
 
+/*
+##############
+### FOOTER ###
+##############
+*/
+
 footer hr {
   clear: both;
   margin: 10px 0 30px;
@@ -475,7 +470,7 @@ footer[role="contentinfo"] nav ul li:last-child {
     text-decoration: none;
     font-weight: bold;
     font-family: ff-milo-web-pro,Helvetica,Arial,sans-serif;
-    color: 
+    color:
     #A19C91;
     text-transform: none;
     letter-spacing: 0;
@@ -511,7 +506,7 @@ footer[role="contentinfo"] nav ul li:last-child {
 }
 
 /*
- 
+
  HACKER NEWS MAD KARMA
 
  */
@@ -521,7 +516,7 @@ footer[role="contentinfo"] nav ul li:last-child {
 
 
 /*
- 
+
  BOASTFUL
 
  */
