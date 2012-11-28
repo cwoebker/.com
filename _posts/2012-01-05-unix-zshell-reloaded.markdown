@@ -161,6 +161,8 @@ Last but not least you can reset everything.
 %{$reset_color%}
 {% endhighlight %}
 
+Make sure to check out my post about [ANSI Escape Codes](/posts/ansi-escape-codes)!
+
 #### And now?
 
 In the end you can customize your shell however you want. If you need some inspiration and help look at both the [themes wiki] and the [themes directory].
