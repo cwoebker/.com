@@ -17,7 +17,7 @@ tags:
 
 ## What is Tic Tac Toe? ##
 
-Tic Tac Toe is simply an awesome game. (Although I do have to say that I really think its original name - **noughts and crosses** - is a whole lot cooler). It is simple and easy to play wherever you are. The success of this simple but yet intriguing game is quite staggering and therefore even [mathematicians](http://mathworld.wolfram.com/Tic-Tac-Toe.html) had a peek at it. Who knew that those 4 lines that people draw on a piece of paper would gather such an attention.
+Tic Tac Toe is simply an awesome game. (Although I do have to say that I really think its original name - **noughts and crosses** - is a whole lot cooler). It is simple and easy to play wherever you are. The success of this simple but yet intriguing game is quite staggering and therefore even [mathematicians](http://mathworld.wolfram.com/Tic-Tac-Toe.html) had a peek at it. Who knew that those 4 lines that people draw on a piece of paper would gather such an attention?
 
 There is some debate on where this game originated; theories are ranging from ancient Egypt to the Roman Empire. Luckily the guy decided not to patent it.
 
@@ -413,9 +413,11 @@ if __name__ == "__main__":
 Feel free to `<iframe>` this wherever you want. Make sure to give credit!
 Everyone should play some Tic Tac Toe from day to day.
 
+{% highlight html %}
     <iframe src="http://tic.cwoebker.com/tic" width="520px" height="520px" frameBorder="0"
     style="display:block;margin-left:auto;margin-right:auto;
     -webkit-border-radius: 8px;-webkit-box-shadow: 0px 0px 5px #555;"></iframe>
+{% endhighlight %}
 
 ## Sources ##
 
