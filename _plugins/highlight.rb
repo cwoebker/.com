@@ -12,7 +12,7 @@ module Jekyll
     #
     # 1. name
     # 2. name=value
-    SYNTAX = /^([a-zA-Z0-9.+#-]+)((\s+\w+(=\w+)?)*)$/
+    #SYNTAX = /^([a-zA-Z0-9.+#-]+)((\s+\w+(=\w+)?)*)$/
     PYGMENTIZE_URL = URI.parse('http://pygmentize.herokuapp.com/')
 
     def initialize(tag_name, markup, tokens)
