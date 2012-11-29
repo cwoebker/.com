@@ -176,6 +176,8 @@ h3{
   position: fixed;
   top: 4px;
   margin-left: -25px;
+  height: 32px;
+  width: 32px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-box-shadow: 0px 0px 15px #ccc;
@@ -201,19 +203,9 @@ h3{
 	display: inline;
 }
 
-#topbar #me #titlediv {
-  display: inline;
-  padding-left: 5px;
-  letter-spacing: 1px;
-  color: #666;
-}
-
-#topbar #me #internal {
-	position: relative;
-	top: -6px;
-	padding-right: 300px;
-	display: inline;
-  float: right;
+#topbar #me #external .icon {
+    height: 16px;
+    width: 16px;
 }
 
 #topbar #me #other {
@@ -223,18 +215,19 @@ h3{
 }
 
 #topbar #me #cwoebker{
-  padding-left: 1px;
+  padding-left: 8px;
   padding-right: 20px;
   font-size: 23px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #000;
 }
+
 #topbar #me #cwoebker:hover {
   color: #000;
 }
 
-#topbar #me #section{
+#topbar #me #internal{
   margin-left: -20px;
 }
 
@@ -292,12 +285,14 @@ h3{
 #post li code{
   border: 1px solid #ccc;
 }
+
 #post p{
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 1.2em;
   line-height: 1.7em;
 }
+
 #post img{
   display: block;
   margin-left: auto;
@@ -306,10 +301,12 @@ h3{
   -webkit-border-radius: 8px;
   -webkit-box-shadow: 0px 0px 5px #555;
 }
+
 #post img.noclip{
   max-width: 650px !important;
   -webkit-box-shadow: none;
 }
+
 #post .aside{
   background-color: #eee;
   padding: 14px;
@@ -318,8 +315,10 @@ h3{
   font-family: Helvetica, sans-serif;
   line-height: 1.6em;
 }
+
 #post .aside strong{
 }
+
 #post .authoring{
   margin-bottom: 17px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -327,6 +326,7 @@ h3{
   font-size: 17px;
   color: #777;
 }
+
 #post blockquote{
   font-style: italic;
   font-size: 14px;
@@ -334,9 +334,11 @@ h3{
   margin: 1em 1em 0 1em;
   color: #444;
 }
+
 #post blockquote cite:before{
   content: '— ';
 }
+
 #post blockquote cite{
   display: block;
   margin-top: .5em;

@@ -1,0 +1,44 @@
+#custom-header {
+    height: 72px;
+}
+
+#custom-header-underline {
+    top: 72px;
+    height: 8px;
+}
+
+#topbar {
+
+}
+
+#topbar #me {
+    margin-top: 30px;
+}
+
+#topbar #me #cwoebker{
+    font-size: 58px;
+}
+
+#topbar .avatar{
+    height: 64px;
+    width: 64px;
+    margin-left: -75px;
+}
+
+#topbar #me #internal{
+    margin-left: -200px;
+    margin-top: 20px;
+}
+
+#topbar #me a.section{
+  padding: 3px 5px;
+  font-size: 28px;
+}
+
+#topbar #me #external {
+    display: none;
+}
+
+.content{
+  padding-top: 110px;
+}
