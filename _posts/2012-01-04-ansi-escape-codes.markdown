@@ -17,7 +17,7 @@ former is to complicated for simple printing output to the screen I wrote a simp
 
 ## What are ANSI Codes?
 
-ANSI (American national standard institute) codes, or escape sequences are codes, meaning characters, that are part of the printed text. Instead of being displayed like every other characters they are being recognized by terminals and used to change formatting.
+ANSI (American National Standard Institute) codes, or escape sequences are codes, meaning characters, that are part of the printed text. Instead of being displayed like every other characters they are being recognized by terminals and used to change formatting.
 
 Some options include:
 
@@ -121,9 +121,7 @@ COLORS = {
 
 This is just a simple dictionary object containing the color names and the codes that are associated to them.
 
-## Usage
-
-In the end the usage is pretty simple after the setup from before.
+### Custom styles ### ###
 
 {% highlight python %}
 def white_bold_underlined(self, msg):
@@ -131,6 +129,15 @@ def white_bold_underlined(self, msg):
 {% endhighlight %}
 
 This function can be used to print bold, white and underlined text in the terminal. Additional formatting options can be achieved exactly in the same way.
+
+## Usage
+
+In the end the usage is pretty simple after the setup from before:
+
+{% highlight python %}
+ansi = ANSIEscapeCodes()
+print ansi.white_bold_underlined("message")
+{% endhighlight %}
 
 # Why use them?
 
