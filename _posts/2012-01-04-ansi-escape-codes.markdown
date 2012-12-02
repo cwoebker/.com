@@ -3,7 +3,7 @@ layout: post
 title: ANSI Escape Codes
 published: true
 hn: false
-tags: 
+tags:
     - ansi
     - color
     - terminal
@@ -12,14 +12,12 @@ tags:
 
 ### Background
 
-Recentlty while working on a project I figured I should prettify my ouput a little bit.
-I tried to implement something that works with the python logging module. Since I personally think
-former is to complicated for simple printing output to the screen I wrote a simple module myself.
-After all this I looked around the web, I found a bunch of scripts and alike that implemented it but nothing that gave a nice and simple explanations.
+Recently while working on a project I figured I should prettify my output a little bit. I tried to implement something that works with the python logging module. Since I personally think
+former is to complicated for simple printing output to the screen I wrote a simple module myself. After all this I looked around the web, I found a bunch of scripts and alike that implemented it but nothing that gave a nice and simple explanation.
 
 ## What are ANSI Codes?
 
-ANSI (American national standard institute) codes, or escape sequences are codes, meaning characters, that are part of the printed text. Instead of being displayed like every other characters they are being recognzied by termainals and used to change formatting.
+ANSI (American national standard institute) codes, or escape sequences are codes, meaning characters, that are part of the printed text. Instead of being displayed like every other characters they are being recognized by terminals and used to change formatting.
 
 Some options include:
 
@@ -33,8 +31,7 @@ Some options include:
 
 ## What to do
 
-    This is going to be really basic for easy formatting.
-
+This is going to be really basic for easy formatting.
 I am going to cover SGR, Select Graphic Rendition.
 Initially you need to tell the terminal that you are going to use an ANSI Escape Code.
 
@@ -44,36 +41,35 @@ So here comes a small python module that implements all of this.
 
 {% highlight python %}
 class ANSIEscapeCodes(object):
-	ESCAPE = '\033[%sm'
-	ENDC = ESCAPE % '0'
+    ESCAPE = '\033[%sm'
+    ENDC = ESCAPE % '0'
 
-	BOLD = '1;%s'
-	FAINT = '2;%s' # Not widely supported
-	ITALIC = '3;%s'
-	UNDERLINE = '4;%s'
-	SLOW_BLINK = '5;%s'
-	FAST_BLINK = '6;%s' # Not widely supported
+    BOLD = '1;'
+    FAINT = '2;' # Not widely supported
+    ITALIC = '3;'
+    UNDERLINE = '4;'
+    SLOW_BLINK = '5;'
+    FAST_BLINK = '6;' # Not widely supported
 
-	COLORS = {
-		'black': 30,
-		'red': 31,
-		'green': 32,
-		'yellow': 33,
-		'blue': 34,
-		'magenta': 35,
-		'cyan': 36,
-		'white': 37,
-	}
+    COLORS = {
+        'black': 30,
+        'red': 31,
+        'green': 32,
+        'yellow': 33,
+        'blue': 34,
+        'magenta': 35,
+        'cyan': 36,
+        'white': 37,
+    }
 
-	@classmethod
-	def decorate(cls, format, msg):
-		return '%s%s%s' % (format, msg, cls.ENDC)
-	
-	 ### EXAMPLE USE ###
+    def decorate(self, format, msg):
+        format_sequence = self.ESCAPE % format
+        return format_sequence + msg + self.ENDC
 
-	 @classmethod
-	 def white_bold_underlined(cls, msg)
-	 	return cls.decorate(cls.ESCAPE % cls.BOLD % cls.UNDERLINE % cls.COLOR['white'] ,msg)
+    ### EXAMPLE USE ###
+
+    def white_bold_underlined(self, msg)
+        return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'] ,msg)
 
 {% endhighlight %}
 
@@ -87,9 +83,9 @@ ENDC = ESCAPE % '0'
 This is the core of everything. The Escape Sequence introduces the new formatting and the `ENDC` resets everything again.
 
 {% highlight python %}
-@classmethod
-def decorate(cls, format, msg):
-	return '%s%s%s' % (format, msg, cls.ENDC)
+def decorate(self, format, msg):
+    format_sequence = self.ESCAPE % format
+    return format_sequence + msg + self.ENDC
 {% endhighlight %}
 
 Here we simple join all the parts together:
@@ -99,47 +95,49 @@ Here we simple join all the parts together:
 - Reseting Sequence
 
 {% highlight python %}
-BOLD = '1;%s'
-FAINT = '2;%s' # Not widely supported
-ITALIC = '3;%s'
-UNDERLINE = '4;%s'
-SLOW_BLINK = '5;%s'
-FAST_BLINK = '6;%s' # Not widely supported
+BOLD = '1;'
+FAINT = '2;' # Not widely supported
+ITALIC = '3;'
+UNDERLINE = '4;'
+SLOW_BLINK = '5;'
+FAST_BLINK = '6;' # Not widely supported
 {% endhighlight %}
 
 Here we set up all the different options that we can reuse later.
-Note that some of them aren't supported very well since its always to the terminal application developers to implement such features.
+Note that some of them aren't supported very well since its always up to the terminal application to implement these features.
 
 {% highlight python %}
 COLORS = {
-	'black': 30,
-	'red': 31,
-	'green': 32,
-	'yellow': 33,
-	'blue': 34,
-	'magenta': 35,
-	'cyan': 36,
-	'white': 37,
+    'black': 30,
+    'red': 31,
+    'green': 32,
+    'yellow': 33,
+    'blue': 34,
+    'magenta': 35,
+    'cyan': 36,
+    'white': 37,
 }
 {% endhighlight %}
 
-This is just a simple dictinoary containing the color names and the codes that belong to them.
+This is just a simple dictionary object containing the color names and the codes that are associated to them.
 
 ## Usage
 
-In the end the usage is pretty simple after the setup done before.
+In the end the usage is pretty simple after the setup from before.
 
 {% highlight python %}
-@classmethod
-def white_bold_underlined(cls, msg)
- 	return cls.decorate(cls.ESCAPE % cls.BOLD % cls.UNDERLINE % cls.COLOR['white'] ,msg)
+def white_bold_underlined(self, msg)
+    return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'] ,msg)
 {% endhighlight %}
 
-This function can be used to print a bold white and underlined text to the terminal other formatting options can be achieved exactly in the same way.
+This function can be used to print bold, white and underlined text in the terminal. Additional formatting options can be achieved exactly in the same way.
 
 # Why use them?
 
-Shells don't have to be plain, white/black and colorless. 
-ANSI Formatting can help command line apps to display information better and more efficiently.
+Shells don't have to be plain white and black.
+ANSI Formatting can help command line applications to display information better and more efficiently.
 
+# And know #
+
+If you want to know more than this Google is your friend. I hope this gives you a background on the topic. There is a lot of material out there and a lot to learn.
 
