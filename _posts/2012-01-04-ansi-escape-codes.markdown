@@ -137,7 +137,7 @@ This function can be used to print bold, white and underlined text in the termin
 Shells don't have to be plain white and black.
 ANSI Formatting can help command line applications to display information better and more efficiently.
 
-# And know #
+# And now? #
 
 If you want to know more than this Google is your friend. I hope this gives you a background on the topic. There is a lot of material out there and a lot to learn.
 
