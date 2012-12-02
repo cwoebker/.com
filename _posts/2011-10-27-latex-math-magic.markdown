@@ -38,38 +38,29 @@ This post basically works with multiple layers:
 
 ## So what's the problem?
 
-All these parts work pretty nicely together, except…
+All these parts work pretty nicely together, except that **Markdown messes up MathJax!**
 
-**Markdown messes up MathJax**
-
-or as the original author of this problem said.
-
-> The main issue stemmed from Markdown not providing a way to temporarily escape from its text transformations, so some LATEX would get interpreted as Markdown.
-
+The main problem here is that some of the Latex would be interpreted as Markdown
 This means that in the end we wouldn't get our normal LaTeX output. The markdown interprets the LaTeX before MathJax can do that.
 
 ## So how can I fix this?
 
-The most obvious way to fix this is probaly to *tell markdown not to interpret the latex* with some kind of `raw` tag. This would probaly be the nicest solution. 
-
-Unfortunately as far as I know this is not possible.
-
-##### ok that was a lie
+The most obvious way to fix this is probably to tell markdown not to interpret the latex with some kind of `raw` tag. This is the nicest solution I could think of at that point.
 
 You could use: `[](raw: put latex here)`
-and this even works… partly…
+But this only works partly.
 
-the problem with this solution is that the markdown will interpret the first `)` as the closing tag for our raw-statement. So unless you promise to never ever use `)` in your LaTeX this is probaly not the best idea.
+The problem with this solution is that the markdown will interpret the first `)` as the closing tag for our raw-statement. So unless you promise to never ever use `)` in your LaTeX this is not going to be the best solution.
 
-Another idea is to use code blocks. So either using the 4+spaces before what you write or using `acute` symbols: `.
+Another idea is to use code blocks. So either using at least 4 spaces before you write something or using the `acute` symbol: `.
 
 This works way better except that MathJax is skipping `<code>` tags by default since it doesn't want to convert code that it shouldn't.
 
 ### This is where we start fixing stuff
 
-**Yes, you could have skipped everyting before this**
+**Yes, you could have skipped everything before this**
 
-So somewhere in your main layout file you have to add a little javascript bounded by the usual `<script>…</script>` tags:
+So somewhere in your main layout file you have to add a little javascript code bounded by the usual `<script>` tag:
 
 {% highlight javascript %}
     MathJax.Hub.Config({
@@ -79,7 +70,7 @@ So somewhere in your main layout file you have to add a little javascript bounde
     });
 {% endhighlight %}
 
-Additionally we have to tell MathJax to ignore non-latex code-bloks or normal code blocks:
+Additionally we have to tell MathJax to ignore non-latex code-blocks or normal code blocks:
 
 {% highlight javascript %}
     MathJax.Hub.Queue(function() {
@@ -99,6 +90,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 ### Examples
 
 These examples have been taken from the MathJax [Demo Page](http://mathjax.org/demos/tex-samples/)
+And voilà they all work!
 
 #### The Lorentz Equations
 
@@ -161,13 +153,13 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 
 Although I have this really bad feeling that I forgot something essential I think this should be it. At least I can't remember having made any other changes to my files.
 
-### It doesnt work yet ?!?
+### It doesn't work yet ?!?
 
-Well I assume you checked all your code…
+Triple check your code.
 
-So just send me an email with questions etc. 
+Otherwise just send me an email with questions etc.
 
-<cwoebker@gmail.com>
+<me@cwoebker.com>
 
 [Markdown]: http://daringfireball.net/projects/markdown/
 [MathJax]: http://www.mathjax.org/

@@ -51,7 +51,7 @@ chsh /bin/zsh
 {% endhighlight %}
 
 
-And voila! The next time you start a terminal or open a new tab you are good to go.
+And voilà! The next time you start a terminal or open a new tab you are good to go.
 
 ### Customization
 
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 This file is pretty self explanatory. Two of the most important customization options are themes and plugins.
 The creator's theme is the default when first installed and only one plugin is active.
 
-For plugins I suggest you walk through the [plugin directory] or the [plugin wiki] and check out what is available and just add whatever you think is needed to your config.
+For plugins I suggest you walk through the [plugin directory] or the [plugin wiki] and check out what is available and just add whatever you think is needed to your configuration file.
 
 #### Extending Oh My ZSH
 
@@ -173,7 +173,7 @@ Look at some of the [Prompt Options] to add more system info.
 
 A quick list of features:
 
-- **Autocompletion** everywhere thanks to the many plugins:
+- **Auto completion** everywhere thanks to the many plugins:
 	- Just press tab!
 - **Double Asterix** for deeply nested search
 	- `ls ~/**/*.py` all python files in your home directory
@@ -182,7 +182,7 @@ A quick list of features:
 
 ## End Note
 
-**This is a call to every shell user: Change now! Because zsh will make your life easier, a lot easier.**
+**This is a call to every shell user: Change now! Because ZSH will make your life a lot easier.**
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Robby Russell]: https://github.com/robbyrussell/

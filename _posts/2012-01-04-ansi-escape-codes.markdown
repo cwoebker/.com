@@ -4,7 +4,7 @@ title: ANSI Escape Codes
 published: true
 hn: false
 tags:
-    - ansi
+    - ANSI
     - color
     - terminal
     - programming
@@ -68,8 +68,8 @@ class ANSIEscapeCodes(object):
 
     ### EXAMPLE USE ###
 
-    def white_bold_underlined(self, msg)
-        return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'] ,msg)
+    def white_bold_underlined(self, msg):
+        return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'], msg)
 
 {% endhighlight %}
 
@@ -126,8 +126,8 @@ This is just a simple dictionary object containing the color names and the codes
 In the end the usage is pretty simple after the setup from before.
 
 {% highlight python %}
-def white_bold_underlined(self, msg)
-    return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'] ,msg)
+def white_bold_underlined(self, msg):
+    return self.decorate(self.BOLD + self.UNDERLINE + self.COLOR['white'], msg)
 {% endhighlight %}
 
 This function can be used to print bold, white and underlined text in the terminal. Additional formatting options can be achieved exactly in the same way.
