@@ -121,7 +121,7 @@ COLORS = {
 
 This is just a simple dictionary object containing the color names and the codes that are associated to them.
 
-### Custom styles ### ###
+### Custom styles ###
 
 {% highlight python %}
 def white_bold_underlined(self, msg):
