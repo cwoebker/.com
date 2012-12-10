@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scientia
-external: [flexnav]
+external:
 ---
 
 Here I am going to post links to different Physics related things I worked on. (Mainly proves and explanations) Just cause I love Physics and want to share.
