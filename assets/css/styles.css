@@ -23,7 +23,7 @@ body{
 
 .break {page-break-before: always;}
 
-body div.content {padding-bottom: 80px;}
+body div.content {padding-bottom: 120px;}
     body div.content pre {
         background-color: #eee;
         padding: 0.4em 1em;
@@ -78,10 +78,17 @@ hr{
   z-index: 0;
 }
 
+.intro{
+}
+
+.intro p{
+  margin-bottom: 27px;
+}
+
 #post_about{ overflow:hidden; }
 
 .posts{
-  padding-top: 10px;
+  padding-top: 0;
   font-family: "Helvetica", sans-serif;
 }
 .posts ul{
@@ -105,6 +112,7 @@ hr{
 .posts a:hover{
   text-decoration: underline;
 }
+
 h1,h2,h3,h4{
   color: #333;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -131,6 +139,12 @@ h3{
   margin-bottom: 10px;
 }
 
+.posts h2{
+  border-bottom-width: 0;
+  margin-bottom: 5px;
+}
+
+
 /*
 ###########
 ### TOP ###
@@ -140,9 +154,9 @@ h3{
 #custom-header {
 	position: fixed;
 	background-color: #EEE;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
 	width: auto;
 	height: 37px;
   z-index: 5;
