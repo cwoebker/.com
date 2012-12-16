@@ -214,6 +214,10 @@ This is it.
 All the pictures are going to be on your computer now.
 Sorted by year, month and name.
 
+---
+
+After reading this post about "[Python Libraries that I should know](http://doda.co/7-python-libraries-you-should-know-about)"" I learned about [PyQuery](http://packages.python.org/pyquery/) which might be interesting to look at in the future.
+
 ## The Result ##
 
 I added some nice output that tells you about the current status thanks to [clint](http://github.com/kennethreitz/clint).
