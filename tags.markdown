@@ -1,7 +1,7 @@
 ---
 layout: tag
 title: Tag Cloud
-external: [tagcanvas]
+external:
 ---
 
 {% tag_cloud %}
