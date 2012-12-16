@@ -6,7 +6,7 @@ external: []
 
 ### Scientia ###
 
-Scientia is a collection of articles about different mathematical and physical principles and other great stuff.
+Scientia is a collection of articles about different mathematical and physical principles and much more.
 
 { [cwoebker.com/scientia](/scientia) }
 
@@ -27,9 +27,20 @@ Pen is a simple and lightweight note program that can be used from the command l
 
 { [pen.cwoebker.com](http://pen.cwoebker.com) }
 
+### Anigma ###
+
+##### To be released #####
+
+An artificial intelligence library for abstract board games.
+
+- { [tic.cwoebker.com](http://tic.cwoebker.com) }
+    - A Tic Tac Toe game. It never looses.
+- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
+    - A Connect Four game. It sometimes looses.
+
 ### Minis ###
 
-Some small tools and webapps I developed over time.
+Some small tools and web applications I developed over time.
 
 - { [cwoebker/coco](http://github.com/cwoebker/coco) }
     - battery health & more
@@ -38,25 +49,15 @@ Some small tools and webapps I developed over time.
     - simple website screen shots
 
 - { [anagram.cwoebker.com](http://anagram.cwoebker.com) }
-	- A anagram solver that can help you with scrabble
+	- an anagram solver that can help you with scrabble
 
 - { [sudoku.cwoebker.com](http://sudoku.cwoebker.com) }
-    - A sudoku solver
-
-### Games ###
-
-Some small abstract games.
-Mainly Artificial Intelligence Problems.
-
-- { [tic.cwoebker.com](http://tic.cwoebker.com) }
-    - A Tic Tac Toe game. It never looses.
-- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
-    - A Connect Four game. It sometimes looses.
+    - a sudoku solver
 
 ### Scripts ###
 
 Some scripts that came along over time:
 
 - { [bigpic.py](http://cwoebker.com/posts/the-beauty-of-big-pictures/) }
-    - Crawler/Downloader Boston Big Picture Archive
+    - Crawler/Downloader for the Boston Big Picture Archive
 
