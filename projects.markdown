@@ -42,7 +42,7 @@ An artificial intelligence library for abstract board games.
 
 Some small tools and web applications I developed over time.
 
-- { [cwoebker/coco](http://github.com/cwoebker/coco) }
+- { [cwoebker/como](http://github.com/cwoebker/como) }
     - battery health & more
 
 - { [screen.cwoebker.com](http://screen.cwoebker.com) }
