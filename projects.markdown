@@ -6,7 +6,7 @@ external: []
 
 ### Como ###
 
-#### como: batteries complete ####
+##### como: batteries complete #####
 
 Como is a simple tool that runs on your computer and automatically collects information about your battery. It uploads this data anonymously to a nice webapp where you can check everything out.
 
