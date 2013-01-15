@@ -11,8 +11,7 @@ tags:
 ---
 
 
-[`como`](https://github.com/cwoebker/como) is a minimalistic utillity to monitor your battery. [![Status unavailable](https://secure.travis-ci.org/cwoebker/como.png?branch=master)](http://travis-ci.org/cwoebker/como)
-
+[`como`](https://github.com/cwoebker/como) is a minimalistic utillity to monitor your battery.
 
 ## Naming ##
 
@@ -64,5 +63,8 @@ Afterwards run the `init` command to get everything setup and stop worrying.
 `como reset` - Removes all entries in database.
 
 ## Source Code ##
+
+[![Status unavailable](https://secure.travis-ci.org/cwoebker/como.png?branch=master)](http://travis-ci.org/cwoebker/como)
+
 
 **Como** is open source. BSD licensed. Check out the [code](http://github.com/cwoebker/como) and contribute.
