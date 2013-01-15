@@ -25,16 +25,25 @@ body{
 
 body div.content {padding-bottom: 120px;}
     body div.content pre {
-        background-color: #eee;
-        padding: 0.4em 1em;
-        border-left: 2px solid #ddd;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
     }
     body div.content code {
-        background-color: #eee;
-        padding: 0 0.1em;
+        margin: 0 2px;
+        padding: 0px 5px;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
     }
     body div.content pre > code {
-        padding: 0; background-color: transparent;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
     }
     body div.content .has-jax {
         font: inherit;
