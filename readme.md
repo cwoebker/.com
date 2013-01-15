@@ -1,6 +1,6 @@
-# cwoebker.github.com #
+# cwoebker.com #
 
-[![Build Status](https://secure.travis-ci.org/cwoebker/cwoebker.github.com.png)](http://travis-ci.org/cwoebker/cwoebker.github.com)
+[![Build Status](https://secure.travis-ci.org/cwoebker/.com.png)](http://travis-ci.org/cwoebker/.com)
 
 Hi.
 
