@@ -4,13 +4,11 @@ title: Projects
 external: []
 ---
 
-### Como ###
-
-##### como: batteries complete #####
+### Como: Batteries Complete ###
 
 Como is a simple tool that runs on your computer and automatically collects information about your battery. It uploads this data anonymously to a nice webapp where you can check everything out.
 
-Check out the [code](http://github.com/cwoebker/como).
+Check out the code: [cwoebker/como](http://github.com/cwoebker/como).
 
 { [como.cwoebker.com](http://como.cwoebker.com) }
 
