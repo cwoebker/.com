@@ -374,6 +374,25 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 /*
+###############
+### ADSENSE ###
+###############
+*/
+
+#sidebar_ad {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  /*margin-left: -185px;
+  font-family: Helvetica, sans-serif;
+  width: auto;
+  padding: 3px 10px 0px 10px;
+  height: 30px;
+  line-height: 22px;*/
+  z-index: 10;
+}
+
+/*
 ############
 ### TAGS ###
 ############

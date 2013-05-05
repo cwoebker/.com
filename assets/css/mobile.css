@@ -42,3 +42,7 @@
 .content{
   padding-top: 110px;
 }
+
+#sidebar_ad {
+  display: none;
+}
