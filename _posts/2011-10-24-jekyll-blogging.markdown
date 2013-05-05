@@ -69,7 +69,7 @@ This might seem intimidating initially but after you've wrapped your head around
 
 ### _includes
 
-You can place any `.html` files in here and then include them anywhere you want with the following tag: 
+You can place any `.html` files in here and then include them anywhere you want with the following tag:
 
 `{ % include FILE_NAME.html % }`
 
@@ -86,7 +86,7 @@ That `post.html` file is based of a `default.html` file. Therefore I don't have 
 
 ### _posts
 
-All your blog posts go in here. Look at the end of this post to see how I have written this post.
+All your posts go in here. Look at the end of this post to see how I have written this post.
 
 ### Automatic Post Generation
 
@@ -94,7 +94,68 @@ All your blog posts go in here. Look at the end of this post to see how I have w
 
 [Cody Krieger][ck] wrote a small little script:
 
-<script src="https://gist.github.com/823013.js?file=newpost.rb"></script>
+{% highlight ruby linenos=table %}
+#!/usr/bin/env ruby
+
+# *********************************************
+# Jekyll Post Generator Awesomeness
+# by Cody Krieger (http://codykrieger.com)
+# *********************************************
+
+# Usage:
+# % ./newpost.rb POST NAME
+
+if ARGV.empty? or ARGV[0].downcase == "--help" or ARGV[0].downcase == "-h"
+  puts <<-USAGE
+
+  Usage:
+  % ./newpost.rb POST NAME
+
+  USAGE
+
+  exit (ARGV.empty? ? 1 : 0)
+end
+
+class String
+
+  # from ruby on rails (https://github.com/rails/rails)
+  # activesupport/lib/active_support/inflector/transliterate.rb
+  def parameterize(sep = '-')
+    # replace accented chars with their ascii equivalents
+    parameterized_string = self.dup
+    # Turn unwanted chars into the separator
+    parameterized_string.gsub!(/[^a-z0-9\-_]+/i, sep)
+    unless sep.nil? || sep.empty?
+      re_sep = Regexp.escape(sep)
+      # No more than one of the separator in a row.
+      parameterized_string.gsub!(/#{re_sep}{2,}/, sep)
+      # Remove leading/trailing separator.
+      parameterized_string.gsub!(/^#{re_sep}|#{re_sep}$/i, '')
+    end
+    parameterized_string.downcase
+  end
+
+end
+
+TEMPLATE = "template.markdown"
+POSTS_DIR = "_posts"
+
+# Get the title and use it to derive the new filename
+title = ARGV.join(" ")
+filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.markdown"
+filepath = File.join(POSTS_DIR, filename)
+
+# Load in the template and set the title
+post_text = File.read(TEMPLATE)
+post_text.gsub!('%%TITLE%%', title)
+
+# Write out the post
+post_file = File.open(filepath, 'w')
+post_file.puts post_text
+post_file.close
+
+puts "Successfully created file => #{filepath}"
+{% endhighlight %}
 
 Execution:
 
@@ -105,7 +166,12 @@ Execution:
 The script is going to look for a file named template.markdown in you Jekyll root directory.
 This template is a basic Jekyll post that you have to fill in with your content.
 
-<script src="https://gist.github.com/823013.js?file=template.markdown"></script>
+    ---
+    layout: post
+    title: %%TITLE%%
+    published: true
+    ---
+    Hello, Jekyll!
 
 more on this can be found at [Cody's Blog](http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html)
 
@@ -115,7 +181,7 @@ And if you are a Physics Lover like me you can easily embed [Maxwell's equations
 
 `\[
 \begin{aligned}
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
 \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
 \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
 \nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
@@ -125,19 +191,9 @@ or you can do some in-line implementations for example here : `\( P(E) = {n \cho
 
 Using Latex like this takes a little more than just writing down normal latex code but I am going to cover that in another post. But basically I am just using the [MathJax] library with some configuration changes.
 
-##### Note
-
-This post has been written:
+Check out my tutorial on how I did it!
 
 [`\( \LaTeX \)` Math Magic](/posts/latex-math-magic/)
-
-## So how does this look?
-
-The source for this post:
-
-<script src="https://gist.github.com/1314267.js"> </script>
-
-Nice, easy and simple, isn't it?
 
 ### Post Scriptum
 
@@ -146,6 +202,8 @@ The best thing is that you can just use [Github Pages](http://pages.github.com) 
     git push origin master
 
 It is as simple as that and you are all set!
+
+Check out the original markdown of this post [here](https://gist.github.com/cwoebker/1314267).
 
 [ck]: http://blog.codykrieger.com/
 [MathJax]: http://www.mathjax.org/
