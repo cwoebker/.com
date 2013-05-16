@@ -10,7 +10,7 @@ tags:
     - markdown
 ---
 
-So here comes, as [promised](/posts/jekyll-blogging/#n7), my tutorial to using LaTeX in your awesome jekyll-powered blog. 
+So here comes, as [promised](/posts/jekyll-blogging/#n7), my tutorial to using LaTeX in your awesome jekyll-powered blog.
 
 Since many people started using Jekyll to power there blogs recently I figured it might be a good idea to share how I got my `\( \LaTeX \)`, which some of you  might want, to work.
 
@@ -155,11 +155,9 @@ Although I have this really bad feeling that I forgot something essential I thin
 
 ### It doesn't work yet ?!?
 
-Triple check your code.
+Triple check the code.
 
-Otherwise just send me an email with questions etc.
-
-<me@cwoebker.com>
+Otherwise just send me an email, maybe I can help.
 
 [Markdown]: http://daringfireball.net/projects/markdown/
 [MathJax]: http://www.mathjax.org/

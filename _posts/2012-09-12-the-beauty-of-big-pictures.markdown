@@ -222,4 +222,103 @@ After reading this post about "[Python Libraries that I should know](http://doda
 
 I added some nice output that tells you about the current status thanks to [clint](http://github.com/kennethreitz/clint).
 
-<script src="https://gist.github.com/3695461.js"> </script>
+{% highlight python linenos=table %}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+*********************************************
+ The Beauty of Boston's Big Picture albums.
+ by Cecil Woebker (http://cwoebker.com)
+*********************************************
+
+ Usage:
+ $ ./bigpic.py
+
+ Saves all pictures from the Boston Glove Big Picture archive
+ to the current directory.
+"""
+
+import os
+
+import urllib2
+from BeautifulSoup import BeautifulSoup, Comment
+
+from clint.textui import progress, puts, colored
+
+
+def getArchive():
+    puts("Getting archvive list...")
+    urlList = []
+    data = urllib2.urlopen('http://www.boston.com/bigpicture').read()
+    soup = BeautifulSoup(data)
+    results = soup.findAll('td', {"class": "drp"})
+    results = results[0].findAll(text=lambda text: isinstance(text, Comment))
+    results = BeautifulSoup(results[0]).findAll('option')
+    del results[0]
+    for item in results:
+        urlList.append(item['value'])
+    puts(colored.green("Found %d links." % len(urlList)))
+    return urlList
+
+
+def getAlbums(urlList):
+    albums = []
+    puts("Locating Albums...")
+    for url in progress.bar(urlList):
+        data = urllib2.urlopen(url).read()
+        soup = BeautifulSoup(data)
+        results = soup.findAll('td', style="padding-top:18px;")
+        for item in results:
+            albums.append(item.find('a', style="font-size:14px;font-weight:bold;")['href'])
+    puts(colored.green("Found %d albums." % len(albums)))
+    return albums
+
+
+def getPhotos(albums):
+    puts("Locating Photos...")
+    count = 0
+    result = []
+    for album in progress.bar(albums):
+        photos = []
+        data = urllib2.urlopen(album).read()
+        soup = BeautifulSoup(data)
+        results = soup.findAll('img', {"class": "bpImage"})
+        for item in results:
+            photos.append(item['src'])
+        count += len(photos)
+        result.append(photos)
+    puts(colored.green("Found %d photos." % count))
+    return result
+
+
+def downloadPhoto(folder, photo):
+    u = urllib2.urlopen(photo)
+    localFile = open(os.path.join(folder, photo.split('/')[-1]), "wb")
+    localFile.write(u.read())
+    localFile.close()
+    u.close()
+
+
+def main():
+    print __doc__
+    urlList = getArchive()
+    albums = getAlbums(urlList)
+    photos = getPhotos(albums)
+    urls = dict(zip(albums, photos))
+    puts("--------------")
+    puts(colored.yellow("Downloading..."))
+    puts("--------------")
+    for key in progress.bar(urls.keys()):
+        splitted = key.split('/')
+        folder = os.path.join(splitted[-3], splitted[-2], splitted[-1].split('.')[0])
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        for item in urls[key]:
+            downloadPhoto(folder, item)
+        puts("%s done." % key)
+    puts(colored.green("Finished."))
+
+
+if __name__ == "__main__":
+    main()
+{% endhighlight %}
