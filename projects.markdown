@@ -4,6 +4,22 @@ title: Projects
 external: []
 ---
 
+### Anigmo ###
+
+##### Early-Stage #####
+
+A general artificial intelligence library for abstract board games.
+Makes it easy to play games against computer opponents.
+
+- { [tic.cwoebker.com](http://tic.cwoebker.com) }
+    - A Tic Tac Toe game. It never looses.
+- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
+    - A Connect Four game. It sometimes looses.
+
+Both of the above games make use of this library. I still have to work
+some things out and then I will make everything public with a documentation
+and everything.
+
 ### Como: Batteries Complete ###
 
 Como is a simple tool that runs on your computer and automatically collects information about your battery. It uploads this data anonymously to a nice webapp where you can check everything out.
@@ -14,13 +30,13 @@ Check out the code: [cwoebker/como](http://github.com/cwoebker/como).
 
 ### Scientia ###
 
-Scientia is a collection of articles about different mathematical and physical principles and much more.
+Logic, Mathematics, Physics and Paradoxes.
 
 { [cwoebker.com/scientia](/scientia) }
 
 ### Relo ###
 
-##### Work in Progress #####
+##### Dead till summer #####
 
 Relo is a simple, lightweight and extensible Search tool and framework for Python. It is distributed as a
 single script `relopy` and a library that can be used in other python apps.
@@ -29,22 +45,9 @@ single script `relopy` and a library that can be used in other python apps.
 
 ### Pen ###
 
-##### Work in Progress #####
-
 Pen is a simple and lightweight note program that can be used from the command line. It can be used on all systems that offer a command line interface via a single script `pen`.
 
 { [pen.cwoebker.com](http://pen.cwoebker.com) }
-
-### Anigma ###
-
-##### To be released #####
-
-An artificial intelligence library for abstract board games.
-
-- { [tic.cwoebker.com](http://tic.cwoebker.com) }
-    - A Tic Tac Toe game. It never looses.
-- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
-    - A Connect Four game. It sometimes looses.
 
 ### Minis ###
 
@@ -61,7 +64,7 @@ Some small tools and web applications I developed over time.
 
 ### Scripts ###
 
-Some scripts that came along over time:
+Just some other random stuff:
 
 - { [bigpic.py](http://cwoebker.com/posts/the-beauty-of-big-pictures/) }
     - Crawler/Downloader for the Boston Big Picture Archive
