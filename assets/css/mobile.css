@@ -40,9 +40,37 @@
 }
 
 .content{
-  padding-top: 110px;
+  padding-top: 0;
 }
 
 #sidebar_ad {
   display: none;
+}
+
+.navbar-inner {
+  background-color: #EEE;
+  background-image: none;
+  border-bottom: 3px solid rgb(14, 14, 14);
+  border-radius: 0;
+}
+
+/*
+.navbar .btn-navbar {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgb(14, 14, 14);
+    background-image: linear-gradient(to bottom, rgb(21, 21, 21), rgb(4, 4, 4));
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}*/
+
+.name {
+  padding-left: 8px;
+  padding-right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
 }

@@ -12,9 +12,11 @@
 <!-- My Section -->
 
   <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" type="text/css" media="handheld, only screen and (max-width: 767px), only screen and (max-device-width: 767px)" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="handheld, only screen and (max-width: 767px), only screen and (max-device-width: 767px)" />
   <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />
-  <link rel="stylesheet" href="/assets/css/mobile.css" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" />
+  <link rel="stylesheet" href="/assets/css/mobile.css" type="text/css" media="handheld, only screen and (max-width: 767px), only screen and (max-device-width: 767px)" />
 
   <!-- OpenID Section -->
 
@@ -40,6 +42,44 @@
 </head>
 <body>
 
+  <div class="navbar-wrapper visible-phone">
+    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+    <div class="container">
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=24" class="avatar"><span class="name">cwoebker</span></a>
+          <ul class="nav">
+              <li><a href="https://github.com/cwoebker" class="icon">
+                  <img src="/assets/images/github.png" alt="github" title="cwoebker on GitHub" /></a></li>
+              <li><a href="https://twitter.com/cwoebker" class="icon">
+                  <img src="/assets/images/twitter.png" alt="twitter" title="@cwoebker on Twitter" /></a></li>
+              <li><a href="feed://feeds.feedburner.com/cwoebker" class="icon">
+                  <img src="/assets/images/rss.png" alt="rss" title="Subscribe to this blog's RSS feed" /></a></li>
+            </ul>
+          <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a class="section" href="/colophon">colophon</a></li>
+              <li><a href="http://vimeo.com/cwoebker">videos</a></li>
+              <li><a href="/projects">projects</a></li>
+              <li><a href="/scientia">scientia</a></li>
+              <li><a href="/tags">tags</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+
+    </div> <!-- /.container -->
+  </div><!-- /.navbar-wrapper -->
+
+<div class="hidden-phone">
 <div id="custom-header"></div>
 <div id="custom-header-underline"></div>
 
@@ -79,6 +119,7 @@
     </div>
   </ul>
 </div>
+</div>
 
 {{ content }}
 
@@ -98,21 +139,22 @@
 </footer>
 
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 <!-- MathJax Section -->
-
-  <script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script>
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
       }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-  </script>
+  });
+</script>
 </html>
