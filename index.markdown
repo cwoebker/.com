@@ -12,14 +12,14 @@ title: "cwoebker"
         </span></p>
         <p>I have a passion for technology and <a href="/scientia">science</a>.
         <p>I write about education, science and technology and occasionally some philosophy.</p>
-        
+
     </div>
     <div class="posts">
         <h2>Posts</h2>
         <ul>
         {% for post in site.posts %}
             <li>
-            <span>{{ post.date | date: "%B %e, %Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%B %e, %Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
         {% endfor %}
         </ul>
