@@ -21,85 +21,6 @@
   <link rel="openid.server" href="http://www.myopenid.com/server" />
   <link rel="openid.delegate" href="http://cwoebker.myopenid.com" />
 
-  <!-- JQuery Section -->
-
-  <script type="text/javascript" src="/assets/javascript/jquery-1.5.1.min.js"></script>
-
-  {% for item in page.external %}
-  {% case item %}
-  {% when 'orbit' %}
-  <!-- Orbit Section -->
-
-  <script type="text/javascript" src="/assets/javascript/jquery.orbit-1.2.3.min.js"></script>
-  <link rel="stylesheet" href="/assets/css/orbit-1.2.3.css">
-
-  {% when 'flexnav' %}
-  <!-- ScrollTo Section -->
-
-  <script type="text/javascript" src="/assets/javascript/jquery.scrollTo-min.js"></script>
-  <script type="text/javascript" src="/assets/javascript/jquery.localscroll-1.2.7-min.js"></script>
-
-  <!-- Flexible Nav Section -->
-
-  <link rel="stylesheet" href="/assets/css/flexible-nav.min.css" type="text/css" />
-  <script type="text/javascript" src="/assets/javascript/flexible-nav.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-        new FlexibleNav ( new FlexibleNavMaker().make().prependTo('body') );
-        new FlexibleNav($("#disqus_thread"));
-    });
-  </script>
-
-  {% when 'tagcanvas' %}
-  <!-- Tag Canvas Section -->
-
-  <script type="text/javascript" src="/assets/javascript/tagcanvas.js"></script>
-  <script type="text/javascript">
-    window.onload = function() {
-      try {
-        TagCanvas.interval = 80;
-        TagCanvas.textColour = '#000000';
-        TagCanvas.textHeight = 160;
-        TagCanvas.maxSpeed = 0.08;
-        TagCanvas.minBrightness = 0.1;
-        TagCanvas.outlineColour = '#f96';
-        TagCanvas.outlineThickness = 5;
-        TagCanvas.depth = 0.92;
-        TagCanvas.pulsateTo = 0.2;
-        TagCanvas.pulsateTime = 0.75;
-        TagCanvas.initial = [0.1, -0.1];
-        TagCanvas.decel = 0.98;
-        TagCanvas.reverse = true;
-        TagCanvas.hideTags = false;
-        TagCanvas.shadow = '#555555';
-        TagCanvas.shadowBlur = 3;
-        TagCanvas.weight = true;
-        TagCanvas.weightMode = 'size';
-        TagCanvas.weightSize = 16;
-        TagCanvas.weightFrom = 'tag-weight';
-        TagCanvas.Start('tags');
-      } catch(e) {
-        document.getElementById('tagsContainer').style.display = 'none';
-      }
-    };
-  </script>
-  {% endcase %}
-  {% endfor %}
-
-  <!-- Flattr Section
-
-  <script type="text/javascript">
-  /* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-  /* ]]> */
-  </script>-->
   <!-- Google Section -->
 
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
@@ -115,20 +36,6 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  </script>
-
-  <!-- Document Ready -->
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $.localScroll.hash();
-      $.localScroll({
-        duration: 2000,
-        axis:'xy',
-        queue:true
-      });
-      {{ page.script }}
-      });
   </script>
 </head>
 <body>
