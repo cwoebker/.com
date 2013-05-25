@@ -627,7 +627,7 @@ footer[role="contentinfo"] nav ul li:last-child {
   }
 
   .navbar .brand {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .name {
