@@ -11,13 +11,14 @@ external: []
 A general artificial intelligence library for abstract board games.
 Makes it easy to play games against computer opponents.
 
-- { [tic.cwoebker.com](http://tic.cwoebker.com) }
-    - A Tic Tac Toe game. It never looses.
-- { [connect4.cwoebker.com](http://connect4.cwoebker.com) }
-    - A Connect Four game. It sometimes looses.
+{ [anigmo.org](http://anigmo.org) }
 
-Both of the above games make use of this library. I still have to work
-some things out and then I will make everything public with a documentation
+Or jump to the games right away:
+
+{ [play.anigmo.org](http://play.anigmo.org) }
+
+All games make use of this library. I still have to work
+some things out and then I will make everything open source with a documentation
 and everything.
 
 ### Como: Batteries Complete ###
