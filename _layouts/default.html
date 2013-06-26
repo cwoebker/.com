@@ -80,14 +80,14 @@
   </div><!-- /.navbar-wrapper -->
 
 <div class="hidden-phone">
-<div id="custom-header"></div>
-<div id="custom-header-underline"></div>
+<div id="custom-header" data-0="top: 0px;" data-100="top: -60px;"></div>
+<div id="custom-header-underline" data-0="top: 37px;" data-100="top: -23px;"></div>
 
-<div id="topbar">
+<div id="topbar" data-0="top: 0px;" data-100="top: -60px;">
   <ul id="me">
     <li>
       <a href="/">
-        <img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=64" class="avatar">
+        <img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=64" class="avatar" data-0="top:4px;margin-left:-25px;" data-100="top:44px;margin-left:-325px;">
       </a>
     </li>
     <li>
@@ -143,6 +143,19 @@
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Skrollr Parallalx Section -->
+<script type="text/javascript" src="/assets/js/skrollr.min.js"></script>
+<script type="text/javascript">
+var s = skrollr.init({
+edgeStrategy: 'set',
+easing: {
+WTF: Math.random,
+inverted: function(p) {
+return 1-p;
+}
+}
+});
+</script>
 <!-- MathJax Section -->
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
