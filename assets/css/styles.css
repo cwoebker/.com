@@ -103,7 +103,7 @@ hr{
 #post_about{ overflow:hidden; }
 
 .posts{
-  padding-top: 0;
+  padding-top: 20px;
   font-family: "Helvetica", sans-serif;
 }
 .posts ul{
