@@ -111,15 +111,16 @@ hr{
   padding: 0;
 }
 .posts li{
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
   padding: 5px 3px;
   margin: 0;
   color: #777;
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
 }
 .posts li span{
   float: right;
+  font-size: 14px;
 }
 .posts a{
   text-decoration: none;
