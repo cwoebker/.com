@@ -49,6 +49,7 @@ body div.content {padding-bottom: 120px;}
         font-size: 100%;
         background: inherit;
         border: inherit;
+        color: #333;
     }
     body .gist {
         font-size: 12px;
