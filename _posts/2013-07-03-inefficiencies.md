@@ -1,6 +1,6 @@
 ---
 published: true
-layout: default
+layout: post
 title: Inefficiencies
 hn: false
 tags: 
@@ -21,6 +21,3 @@ When I travel I sometimes need a vehicle so I can drive around wherever I am in 
 1. The Rental Car Company wants to charge you double for loosing the keys.
 2. The Rental Car Company wants to give you an extra remote key in case the battery in one of the others runs out. (But one wouldn't need the extra normal key)
 3. Feel free to comment if you know why
-
-
-
