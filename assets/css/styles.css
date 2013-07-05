@@ -208,6 +208,9 @@ blockquote h1, blockquote h2, blockquote h3{
   margin-left: -25px;
   height: 32px;
   width: 32px;
+}
+
+.avatar{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -216,6 +219,7 @@ blockquote h1, blockquote h2, blockquote h3{
   box-shadow: 0px 0px 15px #ccc;
   opacity: .8;
 }
+
 #topbar .avatar:hover{
   opacity: 1;
 }
@@ -639,7 +643,7 @@ footer[role="contentinfo"] nav ul li:last-child {
   .name {
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: bold;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     letter-spacing: 1px;
