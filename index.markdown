@@ -1,7 +1,7 @@
 ---
 layout: default
 title: cwoebker
-published: true
+hero: true
 ---
 
 <div class="content" id="page">

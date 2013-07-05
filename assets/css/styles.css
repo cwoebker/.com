@@ -94,9 +94,6 @@ hr{
   margin-top: 20px;
 }
 
-.intro{
-}
-
 .intro p{
   margin-bottom: 27px;
 }
@@ -104,7 +101,6 @@ hr{
 #post_about{ overflow:hidden; }
 
 .posts{
-  padding-top: 20px;
   font-family: "Helvetica", sans-serif;
 }
 .posts ul{
@@ -176,7 +172,7 @@ blockquote h1, blockquote h2, blockquote h3{
 	background-color: #EEE;
 	top: 0;
 	left: 0;
-	right: 0;
+  right: 0;
 	width: auto;
 	height: 37px;
   z-index: 5;
@@ -197,7 +193,7 @@ blockquote h1, blockquote h2, blockquote h3{
   position: fixed;
   top: 0px;
   left: 50%;
-  margin-left: -185px;
+  margin-left: -140px;
   font-family: Helvetica, sans-serif;
   width: auto;
   padding: 3px 10px 0px 10px;
@@ -214,7 +210,10 @@ blockquote h1, blockquote h2, blockquote h3{
   width: 32px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 0px 15px #ccc;
+  -moz-box-shadow: 0px 0px 15px #ccc;
+  box-shadow: 0px 0px 15px #ccc;
   opacity: .8;
 }
 #topbar .avatar:hover{
@@ -286,6 +285,13 @@ blockquote h1, blockquote h2, blockquote h3{
   display: inline;
 }
 
+.hero {
+    background-color: rgb(66, 66, 66);
+    background-size: cover;
+    height: 210px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9) inset;
+}
+
 /*
 ############
 ### POST ###
@@ -349,9 +355,6 @@ blockquote h1, blockquote h2, blockquote h3{
   margin: 5px 0 15px 0;
   font-family: Helvetica, sans-serif;
   line-height: 1.6em;
-}
-
-#post .aside strong{
 }
 
 #post .authoring{
