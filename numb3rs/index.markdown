@@ -85,6 +85,3 @@ Here I am going to post links to different Math, Physics, Logic and related thin
 ## Astronomy
 
 * Kepler's laws of planetary motion-->
-
-<br />
-{% include about.html %}
