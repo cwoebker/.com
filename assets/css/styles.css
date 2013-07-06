@@ -22,7 +22,6 @@ body{
 
 .break {page-break-before: always;}
 
-body div.content {padding-bottom: 120px;}
     body div.content pre {
         background-color: #f8f8f8;
         border: 1px solid #ccc;
@@ -83,10 +82,6 @@ hr{
   margin-right: auto;
   width: auto;
   max-width: 800px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 20px;
   z-index: 0;
 }
 
@@ -282,6 +277,7 @@ blockquote h1, blockquote h2, blockquote h3{
 
 .hero {
     margin-top: -40px;
+    margin-bottom: 20px;
     background-color: rgb(66, 66, 66);
     background-size: cover;
     height: 210px;
