@@ -168,7 +168,6 @@ blockquote h1, blockquote h2, blockquote h3{
 */
 
 #custom-header {
-	position: fixed;
 	background-color: #EEE;
 	top: 0;
 	left: 0;
@@ -179,7 +178,6 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 #custom-header-underline {
-	position: fixed;
 	background-color: black;
 	top: 37px;
 	left: 0px;
@@ -190,21 +188,19 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 #topbar{
-  position: fixed;
-  top: 0px;
-  left: 50%;
-  margin-left: -140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -87px;
+  width: 320px;
   font-family: Helvetica, sans-serif;
-  width: auto;
-  padding: 3px 10px 0px 10px;
-  height: 30px;
+  padding: 43px 10px 0px 10px;
   line-height: 22px;
   z-index: 10;
 }
 
 #topbar .avatar{
-  position: fixed;
-  top: 4px;
+  margin-top: -3px;
   margin-left: -25px;
   height: 32px;
   width: 32px;
@@ -246,7 +242,6 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 #topbar #me #other {
-  position: fixed;
   top: 9px;
   right: 220px;
 }
@@ -254,7 +249,7 @@ blockquote h1, blockquote h2, blockquote h3{
 #topbar #me #cwoebker{
   padding-left: 8px;
   padding-right: 20px;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #000;
@@ -262,10 +257,6 @@ blockquote h1, blockquote h2, blockquote h3{
 
 #topbar #me #cwoebker:hover {
   color: #000;
-}
-
-#topbar #me #internal{
-  margin-left: -20px;
 }
 
 #topbar #me .section{
@@ -290,6 +281,7 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 .hero {
+    margin-top: -40px;
     background-color: rgb(66, 66, 66);
     background-size: cover;
     height: 210px;
@@ -643,7 +635,7 @@ footer[role="contentinfo"] nav ul li:last-child {
   .name {
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     letter-spacing: 1px;
