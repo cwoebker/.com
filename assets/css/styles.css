@@ -307,16 +307,13 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 #post ul{
-  font-size: 15px;
   margin: 20px 20px 20px 0;
 }
 #post li{
-  line-height: 1.4em;
-  margin-bottom: 1em;
   padding: 7px 5px;
   color: #222;
-  list-style-type: square;
 }
+
 #post li code{
   border: 1px solid #ccc;
 }
@@ -416,7 +413,12 @@ blockquote h1, blockquote h2, blockquote h3{
   text-align: center;
 }
 
-#post #tag {
+.tag h1 {
+  border-bottom: none;
+}
+
+.tag li.tag_post {
+  list-style-type: none;
   margin-bottom: 0;
 }
 

@@ -13,10 +13,9 @@ module Jekyll
       self.content = <<-EOS
 <ul class="posts">
 {% for post in page.posts %}
-<li id=\"tag\"><a href="{{ post.url }}" >{{ post.title }}</a></li>
+<li class=\"tag_post\"><a href="{{ post.url }}" >{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-<bold><a href="/tags">back</a></bold>
 EOS
       self.data = {
         'layout' => 'tag',
