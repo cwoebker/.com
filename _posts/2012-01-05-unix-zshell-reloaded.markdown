@@ -6,7 +6,6 @@ hn: false
 tags:
     - zsh
     - terminal
-    - unix
 ---
 
 In the good old days, when there were no such things as Graphical User Interfaces a computer could only be used with a Shell command-line interface.

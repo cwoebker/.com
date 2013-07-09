@@ -4,10 +4,7 @@ title: ANSI Escape Codes
 published: true
 hn: false
 tags:
-    - ANSI
-    - color
     - terminal
-    - programming
 ---
 
 ### Background

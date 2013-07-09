@@ -5,9 +5,7 @@ published: true
 hn: http://news.ycombinator.com/item?id=3431807
 tags:
     - jekyll
-    - programming
-    - latex
-    - blogging
+    - blog
 ---
 
 A Jekyll blog might be more complicated than

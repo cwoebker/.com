@@ -6,8 +6,6 @@ hn: http://news.ycombinator.com/item?id=3431867
 tags:
     - jekyll
     - latex
-    - MathJax
-    - markdown
 ---
 
 So here comes, as [promised](/posts/jekyll-blogging/#n7), my tutorial to using LaTeX in your awesome jekyll-powered blog.

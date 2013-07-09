@@ -4,9 +4,8 @@ title: The Beauty of Big Pictures
 published: true
 hn: false
 tags:
-    - util
-    - python
-    - download
+    - script
+    - code
 ---
 
 ### An example-based introduction to specialized crawling ###
@@ -22,7 +21,7 @@ Most of these images are in high quality and sometimes make great wallpapers.
 
 <img src="http://cache.boston.com/universal/site_graphics/blogs/bigpicture/saturn_05_30/cassini1.jpg" alt="">
 
-*The back side of Saturn with a solar eclipse.*
+**The back side of Saturn with a solar eclipse.**
 
 I am a big fan and I always wanted to have all these beautiful Pictures on my computer
 so that I could use them as wallpapers easily and also just cause I can.

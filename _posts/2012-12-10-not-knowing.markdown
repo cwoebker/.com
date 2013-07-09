@@ -4,9 +4,7 @@ title: Not Knowing
 published: true
 hn: false
 tags:
-    - time
-    - knowledge
-    - future
+    - general
 ---
 
 Last week was a normal week for me. Nevertheless there was something extraordinary about it:

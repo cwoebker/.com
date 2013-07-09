@@ -7,7 +7,6 @@ tags:
     - code
     - python
     - battery
-    - utility
 ---
 
 

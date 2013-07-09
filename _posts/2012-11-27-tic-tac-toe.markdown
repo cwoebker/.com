@@ -3,10 +3,9 @@ layout: post
 title: Tic Tac Toe
 published: true
 hn: false
-tags: 
+tags:
   - code
   - python
-  - abstract
   - game
   - ai
 ---
