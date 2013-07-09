@@ -1,7 +1,7 @@
 ---
 layout: default
 title: cwoebker
-hero: true
+hero: /assets/images/boston.jpg
 ---
 
 <div class="content" id="page">
