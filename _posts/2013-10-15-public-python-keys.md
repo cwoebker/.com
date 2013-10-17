@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Public Python Keys
 hn: false
-tags: 
+tags:
   - python
   - security
 ---
@@ -25,7 +25,7 @@ The private key of the pair is what lies at the center of everything. One can ge
 >>> private_key
 {% endhighlight %}
 
-This private_key has several properties. 
+This private_key has several properties.
 - Decrypting
 - Signing
 - Can be used to create a public key.
