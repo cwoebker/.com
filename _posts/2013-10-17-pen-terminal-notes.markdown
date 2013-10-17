@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pen&#58; Terminal Notes
-published: false
+published: true
 hn: false
 tags:
     - terminal
@@ -21,7 +21,9 @@ Pen has a minimalistic interface and notes can be added and grouped in a simple 
 
 It's as simple as that:
 
-`$ pip install pen`
+`$ pip install penpal`
+
+Unfortunately pen was already taken.
 
 ## Usage
 
@@ -57,6 +59,5 @@ So go out there and hack some code!
 ## Source Code ##
 
 [![Status unavailable](https://secure.travis-ci.org/cwoebker/pen.png?branch=master)](http://travis-ci.org/cwoebker/pen)
-
 
 **Pen** is open source. BSD licensed. Check out the [code](http://github.com/cwoebker/pen) and contribute.
