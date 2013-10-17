@@ -29,11 +29,11 @@ Check out the code: [cwoebker/como](http://github.com/cwoebker/como).
 
 { [como.cwoebker.com](http://como.cwoebker.com) }
 
-### Scientia ###
+### Numb3rs ###
 
 Logic, Mathematics, Physics and Paradoxes.
 
-{ [cwoebker.com/scientia](/scientia) }
+{ [cwoebker.com/numb3rs](/numb3rs) }
 
 ### Relo ###
 
@@ -42,13 +42,14 @@ Logic, Mathematics, Physics and Paradoxes.
 Relo is a simple, lightweight and extensible Search tool and framework for Python. It is distributed as a
 single script `relopy` and a library that can be used in other python apps.
 
-{ [relo.cwoebker.com](http://relo.cwoebker.com) }
+{ [cwoebker/relo](http://github.com/cwoebker/relo) }
 
 ### Pen ###
 
 Pen is a simple and lightweight note program that can be used from the command line. It can be used on all systems that offer a command line interface via a single script `pen`.
 
-{ [pen.cwoebker.com](http://pen.cwoebker.com) }
+
+{ [cwoebker/pen](https://github.com/cwoebker/pen) }
 
 ### Minis ###
 
