@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Colophon
+title: About
 ---
 
 My name is Cecil Woebker. I am German. Thats all you have to know for now.
-
-{% include about.html %}
 
 ## I Use!
 

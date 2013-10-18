@@ -233,6 +233,10 @@ blockquote h1, blockquote h2, blockquote h3{
 	display: inline;
 }
 
+#topbar #me #internal {
+  margin-left: 20px;
+}
+
 #topbar #me #external .icon {
     height: 16px;
     width: 16px;
