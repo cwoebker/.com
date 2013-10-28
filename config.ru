@@ -16,7 +16,7 @@ require 'rack/rewrite'
 #   r301 %r{^/(.*)/$}, '/test/$1'
 #end
 
-#use Rack::RemoveTrailingSlash
+use Rack::RemoveTrailingSlash
 
 use Rack::TryStatic,
     :root => "_site",

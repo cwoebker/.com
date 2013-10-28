@@ -25,6 +25,8 @@ GEM
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-rewrite (1.2.1)
+    rack-slashenforce (0.0.2)
+      rack
     raindrops (0.10.0)
     rdiscount (1.6.8)
     syntax (1.0.0)
@@ -41,5 +43,6 @@ DEPENDENCIES
   jekyll (~> 0.11.2)
   rack-contrib
   rack-rewrite
+  rack-slashenforce
   rdiscount
   unicorn
