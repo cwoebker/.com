@@ -9,8 +9,8 @@ tags:
 
 ### Background
 
-Recently while working on a project I figured I should prettify my output a little bit. I tried to implement something that works with the python logging module. Since I personally think
-former is to complicated for simple printing output to the screen I wrote a simple module myself. After all this I looked around the web, I found a bunch of scripts and alike that implemented it but nothing that gave a nice and simple explanation.
+Recently while working on a project, I figured that I should prettify my output a little bit. First I tried to implement something that works with the python logging module.
+But since the logging module seemed too heavy for what I needed: easy pretty terminal printing. I decided to write a small little module myself. I looked around the web, found a bunch of scripts that implemented it but nothing that gave a nice and simple explanation. So here we go.
 
 ## What are ANSI Codes?
 
@@ -34,7 +34,7 @@ Initially you need to tell the terminal that you are going to use an ANSI Escape
 
 - CSI n [;k] m
 
-So here comes a small python module that implements all of this.
+So here comes the small python module I talked about that implements everything. (Explanation will follow)
 
 {% highlight python %}
 class ANSIEscapeCodes(object):
@@ -143,5 +143,5 @@ ANSI Formatting can help command line applications to display information better
 
 # And now? #
 
-If you want to know more than this Google is your friend. I hope this gives you a background on the topic. There is a lot of material out there and a lot to learn.
+If you want to know more than this, Google is your friend. I hope this gives you a basic background on the topic. There is a lot of material out there and a lot to learn.
 
