@@ -64,14 +64,14 @@ The power series is very simple. Every term in the function has some arbitrary c
 
 Brook Taylor furthermore said that most(every?) functions could be represented as such an power series.
 
-Lets make two assumptions. 
+Lets make two assumptions.
 
 1. f(x) does in fact have a power representation about x = a
 2. f(x) has derivatives of every order and we can find them all
 
 At this point we need to find the coefficients `\(
 a_0, a_1, a_2, a_3, …, a_{\infty}
-\)` 
+\)`
 
 Looking back at the original function (`\(a_0+a_1 (x-a)+a_2 (x-a)^2+a_3 (x-a)^3 \cdots\)`) we can try evaluating it at: `\(a\)`
 
@@ -98,8 +98,6 @@ A pattern is starting to form here:
 `\(
 f^{n}(x) = n!a_n \rightarrow a_n = \frac{f^{(n)}(a)}{n!}
 \)`
-
-<img src="/assets/images/downarrow.png" alt="therefore" title="Therefore" height="256" width="256" />
 
 ** Taylor Series for `\(f(x)\)` about `\(x=a\)` **
 
