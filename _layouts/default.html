@@ -14,7 +14,6 @@
 
   <link rel="shortcut icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css"/>
-  <link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css" type="text/css"/>
   <link rel="stylesheet" href="/assets/css/styles.min.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/assets/css/syntax.min.css" type="text/css" />
 
@@ -42,19 +41,18 @@
 </head>
 <body>
 
-  <div class="navbar-wrapper visible-phone">
-    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-    <div class="container">
-
+<nav class="navbar navbar-default visible-xs" role="navigation">    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+    <div class="container-fluid">
       <div class="navbar">
-        <div class="navbar-inner">
+        <div class="navbar-header">
           <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/"><img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=28" class="avatar"><span class="name">cwoebker</span></a>
+          <a class="navbar-brand" href="/"><img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=28" class="avatar"><span class="name">cwoebker</span></a>
           <ul class="nav">
             <li><a href="https://github.com/cwoebker" class="icon">
                 <img src="/assets/images/github.png" alt="github" title="cwoebker on GitHub" /></a></li>
@@ -64,8 +62,8 @@
                 <img src="/assets/images/rss.png" alt="rss" title="Subscribe to this blog's RSS feed" /></a></li>
           </ul>
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+          <div class="navbar-collapse nav-collapse collapse">
+            <ul class="nav navbar-nav">
               <li><a class="section" href="/about">about</a></li>
               <li><a class="section" href="/projects">projects</a></li>
               <li><a class="section" href="/numb3rs">numb3rs</a></li>
@@ -75,9 +73,9 @@
       </div><!-- /.navbar -->
 
     </div> <!-- /.container -->
-  </div><!-- /.navbar-wrapper -->
+</nav><!-- /.navbar-wrapper -->
 
-<div class="hidden-phone">
+<div class="hidden-xs">
 <div class="custom-header"></div>
 <div class="custom-header-underline"></div>
 <div id="topbar">
