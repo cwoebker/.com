@@ -68,7 +68,8 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-exec');
 
-grunt.registerTask('default', [ 'cssmin', 'less', 'uglify', 'copy', 'exec:build' ]);
+grunt.registerTask('mini', [ 'cssmin', 'less', 'uglify', 'copy' ]);
+grunt.registerTask('default', [ 'mini', 'exec:build' ]);
 grunt.registerTask('serve', [ 'exec:serve' ]);
 grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 
