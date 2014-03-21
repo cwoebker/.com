@@ -69,7 +69,7 @@ grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-exec');
 
 grunt.registerTask('default', [ 'cssmin', 'less', 'uglify', 'copy', 'exec:build' ]);
-grunt.registerTask('serve', [ 'default', 'exec:serve' ]);
+grunt.registerTask('serve', [ 'exec:serve' ]);
 grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 
 };
