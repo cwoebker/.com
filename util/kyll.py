@@ -9,7 +9,7 @@
 
 import os, sys, datetime, re
 
-POSTDIR = '_posts'
+POSTDIR = '../_posts'
 TEMPLATE = 'template.md'
 
 HELP = \
