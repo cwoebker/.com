@@ -15,7 +15,7 @@ module Jekyll
       tags.each {|tag| weights[tag[0]] = tag[1].length/avg}
       tags.each do |tag, posts|
         s = posts.count
-        html << "<li><a class=\"tag\" href=\"/tag/#{tag}\" title=\"Tag - #{tag}\">#{tag}</a><li>\n"
+        html << "<li><a class=\"tag\" href=\"/tag/#{tag}\" title=\"Tag - #{tag}\">#{tag}</a></li>\n"
         #{}"<span style='font-size: #{sprintf("%d", weights[tag] * 100)}%'><a href='/tag/#{tag}/'>#{tag}</a></span>\n"
       end
       html << "</ul>"
