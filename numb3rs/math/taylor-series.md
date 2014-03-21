@@ -99,7 +99,7 @@ A pattern is starting to form here:
 f^{n}(x) = n!a_n \rightarrow a_n = \frac{f^{(n)}(a)}{n!}
 \)`
 
-** Taylor Series for `\(f(x)\)` about `\(x=a\)` **
+**Taylor Series for** `\(f\(x\)\)` **about** `\(x=a\)`
 
 `\[
 f(x) = f(a)+\frac {\dot{f}(a)}{1!} (x-a)+ \frac{\ddot{f}(a)}{2!} (x-a)^2+\frac{\dddot{f}(a)}{3!}(x-a)^3+ \cdots =  \sum_{n=0} ^ {\infty } \frac {f^{(n)}(a)}{n!} \, (x-a)^{n}

@@ -18,5 +18,3 @@ Euler's Formula is one of the most important formula's in mathematics since it a
 
 
 ## Sources
-
-*

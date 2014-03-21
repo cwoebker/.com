@@ -32,7 +32,7 @@ This is going to be really basic for easy formatting.
 I am going to cover SGR, Select Graphic Rendition.
 Initially you need to tell the terminal that you are going to use an ANSI Escape Code.
 
-- CSI n [;k] m
+- CSI n \[;k\] m
 
 So here comes the small python module I talked about that implements everything. (Explanation will follow)
 
@@ -144,4 +144,3 @@ ANSI Formatting can help command line applications to display information better
 # And now? #
 
 If you want to know more than this, Google is your friend. I hope this gives you a basic background on the topic. There is a lot of material out there and a lot to learn.
-

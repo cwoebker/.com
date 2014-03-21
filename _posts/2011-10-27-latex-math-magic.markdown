@@ -50,7 +50,7 @@ But this only works partly.
 
 The problem with this solution is that the markdown will interpret the first `)` as the closing tag for our raw-statement. So unless you promise to never ever use `)` in your LaTeX this is not going to be the best solution.
 
-Another idea is to use code blocks. So either using at least 4 spaces before you write something or using the `acute` symbol: `.
+Another idea is to use code blocks. So either using at least 4 spaces before you write something or using the `acute` symbol: \`.
 
 This works way better except that MathJax is skipping `<code>` tags by default since it doesn't want to convert code that it shouldn't.
 

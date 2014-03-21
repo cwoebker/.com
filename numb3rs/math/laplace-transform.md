@@ -115,8 +115,8 @@ Note that `\(\int_0^{\infty} e^{-st} f(t) \,dt\)` is the Laplace transform of a 
 \left[ e^{-st} f(t) \right]_0^{\infty} + s \mathcal{L}\left\{f(t)\right\}
 \]`
 
-Evaluating the first part of this formula is quite hard since we cannot be sure of what `\(f(t)\)` approaches as `\(t \to \infty\)`. 
-For now lets assume that it will go to infinity slower than `\(e^{-st}\)` will go to `\(0\)`. 
+Evaluating the first part of this formula is quite hard since we cannot be sure of what `\(f(t)\)` approaches as `\(t \to \infty\)`.
+For now lets assume that it will go to infinity slower than `\(e^{-st}\)` will go to `\(0\)`.
 Therefore we can rewrite the first part as:
 
 `\[
@@ -246,7 +246,7 @@ v' = -\sin{at} * a
 \]`
 
 `\[
-y = -\frac{e^{-st} }{s} \sin{at} + \frac{a}{s} \int_0^{\infty} e^{-st} \cos{at} dt =-\frac{e^{-st} }{s} \sin{at} + \frac{a}{s} 
+y = -\frac{e^{-st} }{s} \sin{at} + \frac{a}{s} \int_0^{\infty} e^{-st} \cos{at} dt =-\frac{e^{-st} }{s} \sin{at} + \frac{a}{s}
 \left[
 -\frac{1}{s} e^{-st} \cos{at} - \int_0^{\infty} - \frac{1}{s} e^{-st} (-\sin{at}*a) dt
 \right]
@@ -471,7 +471,7 @@ Due to the Linearity:
 \mathcal{L}\left\{y''\right\} + 5 \mathcal{L}\left\{y'\right\} + 6 \mathcal{L}\left\{y\right\} = 0
 \]`
 
-**Note: Laplace Transform of `\(\mathcal{L}\left\{0\right\}\)` just equals `\(0\)`!**
+**Note:** Laplace Transform of `\(\mathcal{L}\left\{0\right\}\)` just equals `\(0\)`!
 
 
 First we can use equation `\(\left(2\right)\)`:
@@ -498,7 +498,7 @@ Lets group our Laplace Transform terms:
 \mathcal{L}\left\{y\right\} * \left( s^2 + 5s + 6 \right) - 2s - 3 - 10 = 0
 \]`
 
-**Note: The `\(s\)`-based polynomial equation look just like our original differential equation.
+**Note:** The `\(s\)`-based polynomial equation look just like our original differential equation.
 
 `\[
 \mathcal{L}\left\{y\right\} = \frac{2s+13}{s^2+5s+6}

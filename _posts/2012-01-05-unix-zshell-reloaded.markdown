@@ -116,7 +116,7 @@ The second line even makes auto completion possible, it will list all the direct
 
 #### Theming your ZSHELL
 
-For now lets look at [Robby Russell]`s default theme.
+For now lets look at [Robby Russell]'s default theme.
 
 {% highlight bash %}
 PROMPT='%{$fg_bold[red]%}-> %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'

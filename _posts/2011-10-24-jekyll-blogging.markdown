@@ -65,7 +65,7 @@ This is how my Jekyll folder tree looks like:
 
 This might seem intimidating initially but after you've wrapped your head around it should be easy to understand.
 
-### _includes
+### \_includes
 
 You can place any `.html` files in here and then include them anywhere you want with the following tag:
 
@@ -73,7 +73,7 @@ You can place any `.html` files in here and then include them anywhere you want 
 
 This is especially helpful if you want to example use [Disqus](http://disqus.com) in your blog. I've included the javascript code in a `disqus.html` file and whenever I want to use it I can simply include it with the above tag.
 
-### _layouts
+### \_layouts
 
 The files in here are going to be the basic building blocks of your site. At the top of this post:
 
@@ -82,7 +82,7 @@ The files in here are going to be the basic building blocks of your site. At the
 therefore i access the `post.html` file in `_layouts`.
 That `post.html` file is based of a `default.html` file. Therefore I don't have to worry about any CSS or HTML after the site has been set up once.
 
-### _posts
+### \_posts
 
 All your posts go in here. Look at the end of this post to see how I have written this post.
 
@@ -185,7 +185,7 @@ And if you are a Physics Lover like me you can easily embed [Maxwell's equations
 \nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
 \]`
 
-or you can do some in-line implementations for example here : `\( P(E) = {n \choose k} p^k (1-p)^{ n-k } \)` or if you have a long paragraph in another line `\( 0_{2} - 1_{2} \)` so you can make your posts, about whatever they might be, look really fancy and nice.
+or you can do some in-line implementations for example here : `\( P(E) = {n \choose k} p^k (1-p)^{ n-k } \)` or if you have a long paragraph in another line `\( 0_{2} - 1_{2} \)` so you can make your posts - whatever they might be about - look really fancy and nice.
 
 Using Latex like this takes a little more than just writing down normal latex code but I am going to cover that in another post. But basically I am just using the [MathJax] library with some configuration changes.
 
