@@ -25,7 +25,7 @@
 
   <!-- Google Section -->
 
-  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -69,7 +69,6 @@
               <li><a class="section" href="/about">about</a></li>
               <li><a class="section" href="/projects">projects</a></li>
               <li><a class="section" href="/numb3rs">numb3rs</a></li>
-              <li><a class="section" href="/tags">tags</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!-- /.navbar-inner -->
@@ -79,41 +78,29 @@
   </div><!-- /.navbar-wrapper -->
 
 <div class="hidden-phone">
-<div id="custom-header" data-60="top: 0px;" data-100="top: -60px;"></div>
-<div id="custom-header-underline" data-60="top: 37px;" data-100="top: -23px;"></div>
-<div id="topbar" data-60="top: 0px;" data-100="top: -60px;">
+<div class="custom-header"></div>
+<div class="custom-header-underline"></div>
+<div id="topbar">
   <ul id="me">
-    <li>
-      <a href="#">
-        <img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=64" class="avatar" data-0="top:4px;margin-left:-25px;" data-60="margin-left: -360px;" data-100="top:44px;">
-      </a>
-    </li>
-    <li>
-      <a href="/"><span id="cwoebker">cwoebker</span></a>
-    </li>
-    <div id="external">
-      <li>
-        <a href="https://github.com/cwoebker" class="icon">
-          <img src="/assets/images/github.png" alt="github" title="cwoebker on GitHub" />
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/cwoebker" class="icon">
-          <img src="/assets/images/twitter.png" alt="twitter" title="@cwoebker on Twitter" />
-        </a>
-      </li>
-      <li>
-        <a href="feed://feeds.feedburner.com/cwoebker" class="icon">
-          <img src="/assets/images/rss.png" alt="rss" title="Subscribe to this blog's RSS feed" />
-        </a>
-      </li>
-    </div>
-    <div id="internal">
-      <li><a class="section" href="/about">about</a></li>
-      <li><a class="section" href="/projects">projects</a></li>
-      <li><a class="section" href="/numb3rs">numb3rs</a></li>
-      <li><a class="section" href="/tags">tags</a></li>
-    </div>
+    <li><a class="cwoebker" href="/">
+        <img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=32" class="avatar"><span>c<b>woebker</b></span>
+    </a></li>
+    <li><a href="https://github.com/cwoebker" class="icon">
+      <img src="/assets/images/github.png" alt="github" title="cwoebker on GitHub" />
+    </a></li>
+    <li><a href="https://twitter.com/cwoebker" class="icon">
+      <img src="/assets/images/twitter.png" alt="twitter" title="@cwoebker on Twitter" />
+    </a></li>
+    <li><a href="feed://feeds.feedburner.com/cwoebker" class="icon">
+      <img src="/assets/images/rss.png" alt="rss" title="Subscribe to this blog's RSS feed" />
+    </a></li>
+  </ul>
+</div>
+<div class="internal">
+  <ul>
+    <li><a class="section" href="/about">about</a></li>
+    <li><a class="section" href="/projects">projects</a></li>
+    <li><a class="section" href="/numb3rs">numb3rs</a></li>
   </ul>
 </div>
 {% if page.hero %}
@@ -123,7 +110,6 @@
 
 {{ content }}
 
-<!--
 <footer role="contentinfo" class="sixteen columns">
   <hr>
   <nav role="navigation">
@@ -135,10 +121,9 @@
       <li><a href="mailto:me@cwoebker.com">Contact</a></li>
     </ul>
   </nav>
-  <span class="copyright">Copyright © 2013 <a rel="author" href="http://cwoebker.com/colophon" title="Cecil Woebker">Cecil Woebker</a> All Rights Reserved.
-  Hosted by <a href="http://www.heroku.com/">Heroku.</a></span>
+  <span class="copyright">Copyright © 2014 <a rel="author" href="http://cwoebker.com/colophon" title="Cecil Woebker">Cecil Woebker</a></span>
 </footer>
--->
+
 
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
