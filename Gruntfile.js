@@ -13,7 +13,7 @@ grunt.initConfig({
     production: {
       options: {
         paths: ["bower_components/bootstrap/less"],
-        yuicompress: true
+        cleancss: true
       },
       files: {
         "assets/css/application.min.css": "assets/_less/application.less",
@@ -39,7 +39,7 @@ grunt.initConfig({
   copy: {
     bootstrap: {
       files: [
-        {expand: true, cwd: 'bower_components/bootstrap/fonts/', src: ['**'], dest: 'assets/fonts/'}
+        {expand: true, cwd: 'bower_components/bootstrap/dist/fonts/', src: ['**'], dest: 'assets/fonts/'}
       ]
     }
   },
