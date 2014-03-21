@@ -4,8 +4,8 @@ grunt.initConfig({
   cssmin: {
     production: {
       files: {
-        "assets/css/styles.min.css": "assets/css/styles.css",
-        "assets/css/syntax.min.css": "assets/css/syntax.css"
+        "assets/css/styles.min.css": "assets/_css/styles.css",
+        "assets/css/syntax.min.css": "assets/_css/syntax.css"
       },
     },
   },
