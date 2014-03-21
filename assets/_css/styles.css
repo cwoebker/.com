@@ -184,7 +184,7 @@ blockquote h1, blockquote h2, blockquote h3{
 }
 
 #topbar .avatar{
-  margin-top: -3px;
+  margin-top: -4px;
   margin-left: -25px;
 }
 
@@ -242,7 +242,7 @@ blockquote h1, blockquote h2, blockquote h3{
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -4px;
+  margin-top: -7px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   z-index: 5;
 }
