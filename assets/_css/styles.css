@@ -570,15 +570,25 @@ footer[role="contentinfo"] nav ul li:last-child {
     display: none;
   }
 
-  .navbar-inner {
+  nav.navbar {
+      margin-bottom: 10px;
+      height: 0px;
+  }
+
+  nav.navbar-default {
+
+  }
+
+  .navbar-header {
     background-color: #EEE;
     background-image: none;
     border-bottom: 3px solid rgb(14, 14, 14);
     border-radius: 0;
   }
 
-  .navbar-inner .nav-collapse {
+  .navbar-header .nav-collapse {
     margin-bottom: -10px;
+    margin-left: -1px;
   }
 
   .nav-collapse ul.nav {
@@ -602,7 +612,7 @@ footer[role="contentinfo"] nav ul li:last-child {
       text-transform: uppercase;
   }
 
-  .navbar .btn-navbar {
+  .navbar .navbar-toggle {
       color: rgb(14, 14, 14);
       text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
       /*background-color: rgb(14, 14, 14);*/
@@ -620,11 +630,26 @@ footer[role="contentinfo"] nav ul li:last-child {
     padding-right: 0;
   }
 
+  ul.brand-icons {
+      margin-top: 20px;
+  }
+
+  ul.brand-icons li {
+      display: inline;
+  }
+
+  .logo {
+      height: 20px;
+  }
+
+  img.avatar {
+      margin-top: -12px;
+  }
+
   .name {
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 23px;
-    font-weight: bold;
+    font-size: 28px;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     letter-spacing: 1px;
     color: rgb(0, 0, 0);
