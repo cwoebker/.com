@@ -17,7 +17,7 @@ body{
 
 .right{
   float: right;
-  padding-right: 100px;
+  padding-right: 40px;
 }
 
 .break {page-break-before: always;}
