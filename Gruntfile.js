@@ -1,25 +1,25 @@
 module.exports = function(grunt) {
 
 grunt.initConfig({
-  cssmin: {
-    production: {
-      files: {
-        "assets/css/styles.min.css": "assets/_css/styles.css",
-        "assets/css/syntax.min.css": "assets/_css/syntax.css"
-      },
-    },
-  },
   less: {
-    production: {
+    bootstrap: {
       options: {
         paths: ["bower_components/bootstrap/less"],
         cleancss: true
       },
       files: {
-        "assets/css/application.min.css": "assets/_less/application.less",
-        "assets/css/bootstrap.min.css": "bower_components/bootstrap/less/bootstrap.less"
+        "assets/_css/bootstrap.min.css": "bower_components/bootstrap/less/bootstrap.less"
       }
     }
+  },
+  cssmin: {
+    app: {
+      files: {
+        "assets/css/cwoebker.min.css": ["assets/_css/bootstrap.min.css",
+                                        "assets/_css/styles.css",
+                                        "assets/_css/syntax.css"]
+      },
+    },
   },
   uglify: {
     jquery: {
@@ -68,7 +68,7 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-exec');
 
-grunt.registerTask('mini', [ 'cssmin', 'less', 'uglify', 'copy' ]);
+grunt.registerTask('mini', [ 'less', 'cssmin', 'uglify', 'copy' ]);
 grunt.registerTask('default', [ 'mini', 'exec:build' ]);
 grunt.registerTask('serve', [ 'exec:serve' ]);
 grunt.registerTask('deploy', [ 'exec:deploy' ]);
