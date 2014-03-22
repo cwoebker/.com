@@ -71,6 +71,6 @@ grunt.loadNpmTasks('grunt-exec');
 grunt.registerTask('mini', [ 'cssmin', 'less', 'uglify', 'copy' ]);
 grunt.registerTask('default', [ 'mini', 'exec:build' ]);
 grunt.registerTask('serve', [ 'exec:serve' ]);
-grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
+grunt.registerTask('deploy', [ 'exec:deploy' ]);
 
 };
