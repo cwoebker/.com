@@ -3,6 +3,7 @@ layout: post
 title: Jekyll Blogging
 published: true
 hn: http://news.ycombinator.com/item?id=3431807
+external: [latex]
 tags:
     - jekyll
     - blog
