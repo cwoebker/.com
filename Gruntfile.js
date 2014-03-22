@@ -22,17 +22,13 @@ grunt.initConfig({
     },
   },
   uglify: {
-    jquery: {
+    app: {
       files: {
-        'assets/js/jquery.min.js': 'bower_components/jquery/jquery.js'
-      }
-    },
-    bootstrap: {
-      files: {
-        'assets/js/bootstrap.min.js': ['bower_components/bootstrap/js/collapse.js',
-                                       'bower_components/bootstrap/js/scrollspy.js',
-                                       'bower_components/bootstrap/js/button.js',
-                                       'bower_components/bootstrap/js/affix.js']
+        'assets/js/cwoebker.min.js': ['bower_components/jquery/jquery.js',
+                                      'bower_components/bootstrap/js/collapse.js',
+                                      'bower_components/bootstrap/js/scrollspy.js',
+                                      'bower_components/bootstrap/js/button.js',
+                                      'bower_components/bootstrap/js/affix.js']
       }
     }
   },
@@ -45,7 +41,11 @@ grunt.initConfig({
   },
   jshint: {
     app: {
-      src: ['assets/js/test.js']
+      src: ['bower_components/jquery/jquery.js',
+            'bower_components/bootstrap/js/collapse.js',
+            'bower_components/bootstrap/js/scrollspy.js',
+            'bower_components/bootstrap/js/button.js',
+            'bower_components/bootstrap/js/affix.js']
     },
   },
   exec: {
@@ -69,6 +69,7 @@ grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-exec');
 
 grunt.registerTask('mini', [ 'less', 'cssmin', 'uglify', 'copy' ]);
+grunt.registerTask('test', [ 'jshint' ]);
 grunt.registerTask('default', [ 'mini', 'exec:build' ]);
 grunt.registerTask('serve', [ 'exec:serve' ]);
 grunt.registerTask('deploy', [ 'exec:deploy' ]);
