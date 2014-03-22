@@ -10,7 +10,7 @@ tags:
   - ai
 ---
 
-<iframe src="http://tic.anigmo.org/tic" width="520px" height="520px" frameBorder="0" />
+<iframe class="border-frame" src="http://tic.anigmo.org/tic" width="520px" height="520px" frameBorder="0" />
 
 ### An Introduction to Artificial Intelligence ###
 
