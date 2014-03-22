@@ -9,9 +9,13 @@ before_install:
   #- sudo apt-get install python-software-properties python g++ make
   #- sudo add-apt-repository ppa:chris-lea/node.js
   - sudo apt-get update
+
+install:
   - sudo apt-get install nodejs
 
 before_script:
   - npm install
+  - npm install -g grunt-cli
   - bower install
+ 
 script: grunt
