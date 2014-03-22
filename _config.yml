@@ -22,7 +22,9 @@ exclude:
   - 'Gruntfile.js'
   - 'assets/_css'
   - 'assets/_less'
-keep_files:  ['.git','.svn']
+keep_files:
+  - '.git'
+  - '.svn'
 gems:        []
 timezone:    nil
 encoding:    utf-8
@@ -57,7 +59,8 @@ maruku:
   fenced_code_blocks: true
 
 rdiscount:
-  extensions: ['smart']
+  extensions:
+    - 'smart'
 
 redcarpet:
   extensions: []
