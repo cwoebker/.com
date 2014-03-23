@@ -21,6 +21,20 @@ grunt.initConfig({
       },
     },
   },
+  imagemin: {
+    app: {
+      options: {
+        cache: false,
+        pngquant: true
+      },
+      files: [{
+        expand: true,                  // Enable dynamic expansion
+        cwd: 'assets/_img/',                   // Src matches are relative to this path
+        src: ['**/*.{png,jpg,gif,jpeg}'],   // Actual patterns to match
+        dest: 'assets/img/'                  // Destination path prefix
+      }]
+    }
+  },
   uglify: {
     app: {
       files: {
@@ -62,6 +76,7 @@ grunt.initConfig({
 });
 
 grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-contrib-less');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-jshint');
