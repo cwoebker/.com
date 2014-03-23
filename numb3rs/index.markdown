@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Numb3rs
-hero: /assets/images/leonardo.jpg
+hero: /assets/img/leonardo.jpg
 ---
 
 Here I am going to post links to different Math, Physics, Logic and related things I worked on. Just cause I want to share.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-hero: /assets/images/munich-mountains.jpg
+hero: /assets/img/munich-mountains.jpg
 ---
 
 <div class="left" style="max-width: 570px;">
