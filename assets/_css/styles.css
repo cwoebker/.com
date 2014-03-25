@@ -226,6 +226,7 @@ blockquote h1, blockquote h2, blockquote h3{
 .icon img {
   height: 18px;
   margin-top: -10px;
+  padding-right: 8px;
 }
 
 #topbar #me .cwoebker{
@@ -648,6 +649,7 @@ footer[role="contentinfo"] nav ul li:last-child {
 
   .logo {
       height: 20px;
+      padding-right: 10px;
   }
 
   img.avatar {
@@ -656,7 +658,7 @@ footer[role="contentinfo"] nav ul li:last-child {
 
   .name {
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 0px;
     font-size: 28px;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     letter-spacing: 1px;
