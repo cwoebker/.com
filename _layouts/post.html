@@ -3,24 +3,21 @@ layout: default
 ---
 
 <div class="content">
-  <div id="post">
+  <div class="post">
     <h1>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
     <section class="byline">{{ page.date | date: "%b %d, %Y" }}</section>
-    <div class="body">
+    <div class="post-content">
       {{ content }}
     </div>
-    <br />
-    <ul class="post_taglist">
+    <ul class="post-taglist">
     {% for tag in page.tags %}
       <li><a class="tag" href="/tag/{{ tag }}">{{ tag }}</a></li>
     {% endfor %}
     </ul>
     {% include about.html %}
-    <br />
     {% include adsense_responsive_leaderboards.html %}
-    <br />
     {% include comments.html %}
   </div>
 </div>

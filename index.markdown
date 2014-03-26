@@ -4,7 +4,7 @@ title: cwoebker
 hero: /assets/img/boston.jpg
 ---
 
-<div class="content" id="page">
+<div class="content">
     <div class="posts">
         <ul>
         {% for post in site.posts %}
