@@ -37,7 +37,7 @@ highlighter: pygments
 relative_permalinks: true
 permalink: "/posts/:title"
 
-markdown:      maruku
+markdown:      kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 textile_ext:   textile
 
