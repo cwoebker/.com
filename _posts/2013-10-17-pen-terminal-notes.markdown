@@ -17,6 +17,8 @@ What makes it special is that it is 'only' a command line application.
 Therefore you can even run it on a server.
 Pen has a minimalistic interface and notes can be added and grouped in a simple manner.
 
+<img src="/assets/img/posts/pen.jpg" alt="pen preview" title="Pen" />
+
 ## Installation
 
 It's as simple as that:
