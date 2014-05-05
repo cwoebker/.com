@@ -39,6 +39,7 @@ grunt.initConfig({
     app: {
       files: {
         'assets/js/cwoebker.min.js': ['bower_components/jquery/jquery.js',
+                                      'bower_components/bootstrap/js/transition.js',
                                       'bower_components/bootstrap/js/collapse.js',
                                       'bower_components/bootstrap/js/scrollspy.js',
                                       'bower_components/bootstrap/js/button.js',
