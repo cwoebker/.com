@@ -22,6 +22,8 @@ exclude:
   - 'Gruntfile.js'
   - 'assets/_css'
   - 'assets/_less'
+  - 'assets/_img'
+  - '.travis.yml'
 keep_files:
   - '.git'
   - '.svn'
