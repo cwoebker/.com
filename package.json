@@ -14,5 +14,8 @@
   },
   "engines": {
     "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^0.7.0"
   }
 }
