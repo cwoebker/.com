@@ -48,6 +48,14 @@ body{
         font-size: 12px;
     }
 
+.byline {
+  margin-bottom: 17px;
+  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+  padding-left: 0px;
+  font-size: 17px;
+  color: #777;
+}
+
 .border-frame {
     display:block;
     margin-left:auto;
@@ -76,6 +84,30 @@ hr{
   height: 1px;
   background-color: #ccc;
   margin: 2em 1em;
+}
+
+hr { /* old footer stuff */
+  clear: both;
+  margin: 10px 0 30px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0));
+  background-color: #FFF;
 }
 
 .content{
@@ -289,14 +321,6 @@ blockquote h1, blockquote h2, blockquote h3{
   margin-bottom: 30px;
 }
 
-.post .byline {
-  margin-bottom: 17px;
-  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-  padding-left: 0px;
-  font-size: 17px;
-  color: #777;
-}
-
 .post-about{
     overflow:hidden;
     padding-bottom: 20px;
@@ -470,30 +494,6 @@ footer {
   text-align: center;
   bottom: 0;
   left: 0;
-}
-
-footer hr {
-  clear: both;
-  margin: 10px 0 30px;
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -moz-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -ms-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -o-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-color: #FFF;
 }
 
 footer[role="contentinfo"] {
