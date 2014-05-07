@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-external: []
+external: ['noheader']
 ---
 
 <div class="row">
@@ -34,14 +34,14 @@ external: []
 
 <div class="clearfix"></div>
 
-<div class="item col-lg-6"><center>
+<div class="item col-lg-4 col-lg-offset-2"><center>
   <a><img class="img-circle" src="/assets/img/projects/brainloop.png"></a>
   <b>Brainloop</b><br>
   <i class="byline">Summers 2011 & 2013</i>
   <p>Summer Intern with Quality Management & Testing (2011) and iOS Development (2013)</p>
 </center></div>
 
-<div class="item col-lg-6"><center>
+<div class="item col-lg-4"><center>
   <a><img class="img-circle" src="/assets/img/projects/worcester.png"></a>
   <b>Worcester Academy</b><br>
   <i class="byline">2010 - 2013</i>

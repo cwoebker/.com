@@ -4,7 +4,9 @@ layout: default
 
 <div class="content">
   <div class="post">
+    {% unless page.external contains 'noheader' %}
     <h1><a href"{{ page.url }}">{{ page.title }}</a></h1>
+    {% endunless %}
     <div class="post-content">
       {{ content }}
     </div>
