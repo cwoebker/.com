@@ -11,11 +11,6 @@ layout: default
     <div class="post-content">
       {{ content }}
     </div>
-    <ul class="post-taglist">
-    {% for tag in page.tags %}
-      <li><a class="tag" href="/tag/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-    </ul>
     {% include about.html %}
     {% include adsense_responsive_leaderboards.html %}
     {% include comments.html %}
