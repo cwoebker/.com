@@ -400,6 +400,29 @@ blockquote h1, blockquote h2, blockquote h3{
 
 /*
 ###############
+### Grid Projects ###
+###############
+*/
+
+div.item h2 {
+    margin-bottom: -54px;
+}
+
+div.item .img-circle {
+    margin-top: 70px;
+    margin-bottom: 5px;
+    width: 140px;
+    height: 140px;
+}
+
+div.item img {
+    border-radius: 38px;
+    -moz-border-radius: 38px;
+    -webkit-border-radius: 38px;
+}
+
+/*
+###############
 ### ADSENSE ###
 ###############
 */

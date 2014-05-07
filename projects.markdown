@@ -4,30 +4,78 @@ title: Projects
 external: []
 ---
 
-### Anigmo ###
+<div class="row">
 
-##### Early-Stage #####
+<div class="item col-lg-4"><center>
+  <h2>Work</h2>
+  <a><img class="img-circle" src="/assets/img/projects/bglobl.png"></a>
+  <b>Bglobl</b><br>
+  <i class="byline">Spring 2014 - Now</i>
+  <p>iOS and Backend Development for a Munich startup that is connecting people globally.</p>
+</center></div>
 
-A general artificial intelligence library for abstract board games.
-Makes it easy to play games against computer opponents.
+<div class="item col-lg-4"><center>
+  <a><img class="img-circle" src="/assets/img/projects/ac.png"></a>
+  <b>Academy Consult</b><br>
+  <i class="byline">Fall 2013 - Now</i>
+  <p>Munich's student consultancy connects students to companies so they can apply their studies to the real world.</p>
+</center></div>
 
-{ [anigmo.org](http://anigmo.org) }
+<div class="item col-lg-4"><center>
+  <a><img class="img-circle" src="/assets/img/projects/tum.png"></a>
+  <b>TUM</b><br>
+  <i class="byline">Fall 2013 - Now</i>
+  <p>I go to college here in Munich. I study Physics during the day and do Computer Science at night.</p>
+</center></div>
 
-Or jump to the games right away:
+<div class="clearfix"></div>
 
-{ [play.anigmo.org](http://play.anigmo.org) }
+<div class="item col-lg-4"><center>
+  <a><img class="img-circle" src="/assets/img/projects/brainloop.png"></a>
+  <b>Brainloop</b><br>
+  <i class="byline">Summers 2011 & 2013</i>
+  <p>Summer Intern with Quality Management & Testing (2011) and iOS Development (2013)</p>
+</center></div>
 
-All games make use of this library. I still have to work
-some things out and then I will make everything open source with a documentation
-and everything.
+<div class="item col-lg-4"><center>
+  <a><img class="img-circle" src="/assets/img/projects/worcester.png"></a>
+  <b>Worcester Academy</b><br>
+  <i class="byline">2010 - 2013</i>
+  <p>I went to high school in the United States, met many cool people and got to do some interesting things.</p>
+</center></div>
 
-### Como: Batteries Complete ###
+<div class="item col-lg-4"><center>
+  <h2>Code</h2>
+  <a href="http://anigmo.org"><img class="img-circle" src="/assets/img/projects/anigmo.png"></a>
+  <b>Anigmo</b><br>
+  <i class="byline">Spring 2013</i>
+  <p>An artificial intelligence library for abstract board games.
+  Makes it easy to <a href="http://play.anigmo.org">play</a> against computer opponents.</p>
+</center></div>
 
-Como is a simple tool that runs on your computer and automatically collects information about your battery. It uploads this data anonymously to a nice webapp where you can check everything out.
+<div class="clearfix"></div>
 
-Check out the code: [cwoebker/como](http://github.com/cwoebker/como).
+<div class="item col-lg-4"><center>
+  <a href="https://github.com/cwoebker/como"><img class="img-circle" src="https://mts0.google.com/vt/data=9JDtAHjlTn3x-Sj-pwj3TI8qbtmqB_-LnEoOWHi1JIH9W7fJrfYPYf2ali6aD042Ny8SYFLwPPZZKXlfEZ4QdxIpwulW3ms6uP5wUAoVf93Jyw3RqOzuf7phyiJTNTa7F40NnNzgarXK_1t3AxD-WqBu5Go8Gincuj1Ho04og_3Sa2UiBghMZdgO5C25rkiQkreOKiiL1sBaWOqNe2jnAM4MI2IC" alt="Map not found"></a>
+  <b>Como</b><br>
+  <i class="byline">Winter 2012/13</i>
+  <p>Como is a simple tool that automatically collects information about your battery. This information can be accessed <a href="http://como.cwoebker.com">online</a> at any time.</p>
+</center></div>
+</center></div>
 
-{ [como.cwoebker.com](http://como.cwoebker.com) }
+</div><!-- row ends -->
+
+<hr>
+
+<center>
+<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#otherstuff" style="border: 1px solid #e5e5e5; background: none; color: #2d2d2d;;">
+  <b>Other Stuff</b>
+</button>
+</center>
+
+<div id="otherstuff" class="collapse">
+
+{% markdown %}
 
 ### Numb3rs ###
 
@@ -71,3 +119,6 @@ Just some other random stuff:
 - { [bigpic.py](http://cwoebker.com/posts/the-beauty-of-big-pictures/) }
     - Crawler/Downloader for the Boston Big Picture Archive
 
+{% endmarkdown %}
+
+</div>
