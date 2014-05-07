@@ -6,8 +6,12 @@ external: []
 
 <div class="row">
 
+<div class="item col-lg-4 col-lg-offset-4"><center>
+<h2>Work</h2>
+</center></div>
+<br>
+
 <div class="item col-lg-4"><center>
-  <h2>Work</h2>
   <a><img class="img-circle" src="/assets/img/projects/bglobl.png"></a>
   <b>Bglobl</b><br>
   <i class="byline">Spring 2014 - Now</i>
@@ -30,30 +34,34 @@ external: []
 
 <div class="clearfix"></div>
 
-<div class="item col-lg-4"><center>
+<div class="item col-lg-6"><center>
   <a><img class="img-circle" src="/assets/img/projects/brainloop.png"></a>
   <b>Brainloop</b><br>
   <i class="byline">Summers 2011 & 2013</i>
   <p>Summer Intern with Quality Management & Testing (2011) and iOS Development (2013)</p>
 </center></div>
 
-<div class="item col-lg-4"><center>
+<div class="item col-lg-6"><center>
   <a><img class="img-circle" src="/assets/img/projects/worcester.png"></a>
   <b>Worcester Academy</b><br>
   <i class="byline">2010 - 2013</i>
   <p>I went to high school in the United States, met many cool people and got to do some interesting things.</p>
 </center></div>
 
-<div class="item col-lg-4"><center>
-  <h2>Code</h2>
+<div class="clearfix"></div>
+
+<div class="item col-lg-4 col-lg-offset-4"><center>
+<h2>Code</h2>
+</center></div>
+<br>
+
+<div class="item col-lg-4 col-lg-offset-2"><center>
   <a href="http://anigmo.org"><img class="img-circle" src="/assets/img/projects/anigmo.png"></a>
   <b>Anigmo</b><br>
   <i class="byline">Spring 2013</i>
   <p>An artificial intelligence library for abstract board games.
   Makes it easy to <a href="http://play.anigmo.org">play</a> against computer opponents.</p>
 </center></div>
-
-<div class="clearfix"></div>
 
 <div class="item col-lg-4"><center>
   <a href="https://github.com/cwoebker/como"><img class="img-circle" src="https://mts0.google.com/vt/data=9JDtAHjlTn3x-Sj-pwj3TI8qbtmqB_-LnEoOWHi1JIH9W7fJrfYPYf2ali6aD042Ny8SYFLwPPZZKXlfEZ4QdxIpwulW3ms6uP5wUAoVf93Jyw3RqOzuf7phyiJTNTa7F40NnNzgarXK_1t3AxD-WqBu5Go8Gincuj1Ho04og_3Sa2UiBghMZdgO5C25rkiQkreOKiiL1sBaWOqNe2jnAM4MI2IC" alt="Map not found"></a>
