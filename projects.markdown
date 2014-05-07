@@ -61,7 +61,6 @@ external: []
   <i class="byline">Winter 2012/13</i>
   <p>Como is a simple tool that automatically collects information about your battery. This information can be accessed <a href="http://como.cwoebker.com">online</a> at any time.</p>
 </center></div>
-</center></div>
 
 </div><!-- row ends -->
 
