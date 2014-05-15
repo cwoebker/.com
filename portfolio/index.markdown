@@ -12,21 +12,21 @@ external: ['noheader']
 <br>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/projects/bglobl.png"></a>
+  <a><img class="img-circle" src="/assets/img/portfolio/bglobl.png"></a>
   <b>Bglobl</b><br>
   <i class="byline">Spring 2014 - Now</i>
   <p>iOS and Backend Development for a Munich startup that is connecting people globally.</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/projects/ac.png"></a>
+  <a><img class="img-circle" src="/assets/img/portfolio/ac.png"></a>
   <b>Academy Consult</b><br>
   <i class="byline">Fall 2013 - Now</i>
   <p>Munich's student consultancy connects students to companies so they can apply their studies to the real world.</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/projects/tum.png"></a>
+  <a><img class="img-circle" src="/assets/img/portfolio/tum.png"></a>
   <b>TUM</b><br>
   <i class="byline">Fall 2013 - Now</i>
   <p>I go to college here in Munich. I study Physics during the day and do Computer Science at night.</p>
@@ -35,14 +35,14 @@ external: ['noheader']
 <div class="clearfix"></div>
 
 <div class="item col-lg-4 col-lg-offset-2"><center>
-  <a><img class="img-circle" src="/assets/img/projects/brainloop.png"></a>
+  <a><img class="img-circle" src="/assets/img/portfolio/brainloop.png"></a>
   <b>Brainloop</b><br>
   <i class="byline">Summers 2011 & 2013</i>
   <p>Summer Intern with Quality Management & Testing (2011) and iOS Development (2013)</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/projects/worcester.png"></a>
+  <a><img class="img-circle" src="/assets/img/portfolio/worcester.png"></a>
   <b>Worcester Academy</b><br>
   <i class="byline">2010 - 2013</i>
   <p>I went to high school in the United States, met many cool people and got to do some interesting things.</p>
@@ -56,7 +56,7 @@ external: ['noheader']
 <br>
 
 <div class="item col-lg-4 col-lg-offset-2"><center>
-  <a href="http://anigmo.org"><img class="img-circle" src="/assets/img/projects/anigmo.png"></a>
+  <a href="http://anigmo.org"><img class="img-circle" src="/assets/img/portfolio/anigmo.png"></a>
   <b>Anigmo</b><br>
   <i class="byline">Spring 2013</i>
   <p>An artificial intelligence library for abstract board games.
@@ -69,6 +69,22 @@ external: ['noheader']
   <i class="byline">Winter 2012/13</i>
   <p>Como is a simple tool that automatically collects information about your battery. This information can be accessed <a href="http://como.cwoebker.com">online</a> at any time.</p>
 </center></div>
+
+<!--
+<div class="item col-lg-4"><center>
+  <h2>Freelancing</h2>
+  <a><img class="img-circle" src="/assets/img/portfolio/fraunhofervc.png"></a>
+  <b>Fraunhofer Ventures</b><br>
+  <i class="byline">Spring 2014</i>
+  <p>Strategic development of a platform to support entrepreneurs and their companies founded at one of the Fraunhofer Institutes.</p>
+</center></div>
+<div class="item col-lg-4"><center>
+  <a href="http://www.isarlights.de"><img class="img-circle" style="height: 50px;" src="/assets/img/portfolio/isarlights.png"></a>
+  <b>Isar Lights</b><br>
+  <i class="byline">Spring 2014</i>
+  <p>Website Design & Development for a Lights & Sound equipment renter in Munich.</p>
+</center></div>
+-->
 
 </div><!-- row ends -->
 
