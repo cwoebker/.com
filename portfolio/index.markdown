@@ -12,21 +12,21 @@ external: ['noheader']
 <br>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/bglobl.png"></a>
+  <a href="http://bglobl.com"><img class="img-circle" src="/assets/img/portfolio/bglobl.png"></a>
   <b>Bglobl</b><br>
   <i class="byline">Spring 2014 - Now</i>
   <p>iOS and Backend Development for a Munich startup that is connecting people globally.</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/ac.png"></a>
+  <a href="http://www.academyconsult.de"><img class="img-circle" src="/assets/img/portfolio/ac.png"></a>
   <b>Academy Consult</b><br>
   <i class="byline">Fall 2013 - Now</i>
   <p>Munich's student consultancy connects students to companies so they can apply their studies to the real world.</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/tum.png"></a>
+  <a href="http://www.tum.de"><img class="img-circle" src="/assets/img/portfolio/tum.png"></a>
   <b>TUM</b><br>
   <i class="byline">Fall 2013 - Now</i>
   <p>I go to college here in Munich. I study Physics during the day and do Computer Science at night.</p>
@@ -35,21 +35,21 @@ external: ['noheader']
 <div class="clearfix"></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/stanford.png"></a>
+  <a href="http://www.stanford.edu"><img class="img-circle" src="/assets/img/portfolio/stanford.png"></a>
   <b>Stanford University</b><br>
   <i class="byline">Summer 2012</i>
   <p>Spent the summer doing math and computer science. Also, Fountain Hopping.</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/brainloop.png"></a>
+  <a href="https://www.brainloop.com"><img class="img-circle" src="/assets/img/portfolio/brainloop.png"></a>
   <b>Brainloop</b><br>
   <i class="byline">Summers 2011 & 2013</i>
   <p>Summer Intern with Quality Management & Testing (2011) and iOS Development (2013)</p>
 </center></div>
 
 <div class="item col-lg-4"><center>
-  <a><img class="img-circle" src="/assets/img/portfolio/worcester.png"></a>
+  <a href="http://www.worcesteracademy.org"><img class="img-circle" src="/assets/img/portfolio/worcester.png"></a>
   <b>Worcester Academy</b><br>
   <i class="byline">2010 - 2013</i>
   <p>I went to high school in the United States, met many cool people and got to do some interesting things.</p>
