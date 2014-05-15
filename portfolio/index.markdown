@@ -34,7 +34,14 @@ external: ['noheader']
 
 <div class="clearfix"></div>
 
-<div class="item col-lg-4 col-lg-offset-2"><center>
+<div class="item col-lg-4"><center>
+  <a><img class="img-circle" src="/assets/img/portfolio/stanford.png"></a>
+  <b>Stanford University</b><br>
+  <i class="byline">Summer 2012</i>
+  <p>Spent the summer doing math and computer science. Also, Fountain Hopping.</p>
+</center></div>
+
+<div class="item col-lg-4"><center>
   <a><img class="img-circle" src="/assets/img/portfolio/brainloop.png"></a>
   <b>Brainloop</b><br>
   <i class="byline">Summers 2011 & 2013</i>
