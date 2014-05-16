@@ -9,8 +9,7 @@ tags:
 
 ### Background
 
-Recently while working on a project, I figured that I should prettify my output a little bit. First I tried to implement something that works with the python logging module.
-But since the logging module seemed too heavy for what I needed: easy pretty terminal printing. I decided to write a small little module myself. I looked around the web, found a bunch of scripts that implemented it but nothing that gave a nice and simple explanation. So here we go.
+Recently while working on a project, I figured that I should prettify my output a little bit. First I tried to implement something that works with the python logging module. But since the logging module seemed too heavy for what I needed: easy pretty terminal printing. I decided to write a small little module myself. I looked around the web, found a bunch of scripts that implemented it but nothing that gave a nice and simple explanation. So here we go.
 
 ## What are ANSI Codes?
 
@@ -28,9 +27,7 @@ Some options include:
 
 ## What to do
 
-This is going to be really basic for easy formatting.
-I am going to cover SGR, Select Graphic Rendition.
-Initially you need to tell the terminal that you are going to use an ANSI Escape Code.
+This is going to be really basic for easy formatting. I am going to cover SGR, Select Graphic Rendition. Initially you need to tell the terminal that you are going to use an ANSI Escape Code.
 
 - CSI n \[;k\] m
 
@@ -100,8 +97,7 @@ SLOW_BLINK = '5;'
 FAST_BLINK = '6;' # Not widely supported
 {% endhighlight %}
 
-Here we set up all the different options that we can reuse later.
-Note that some of them aren't supported very well since its always up to the terminal application to implement these features.
+Here we set up all the different options that we can reuse later. Note that some of them aren't supported very well since its always up to the terminal application to implement these features.
 
 {% highlight python %}
 COLORS = {
@@ -138,8 +134,7 @@ print ansi.white_bold_underlined("message")
 
 # Why use them?
 
-Shells don't have to be plain white and black.
-ANSI Formatting can help command line applications to display information better and more efficiently.
+Shells don't have to be plain white and black. ANSI Formatting can help command line applications to display information better and more efficiently.
 
 # And now? #
 

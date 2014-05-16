@@ -9,9 +9,7 @@ tags:
     - blog
 ---
 
-A Jekyll blog might be more complicated than
-other approaches but it also offers high
-flexibility and many features.
+A Jekyll blog might be more complicated than other approaches but it also offers high flexibility and many features.
 
 You can install it yourself with:
 
@@ -35,9 +33,7 @@ For more information check the [Jekyll Wiki](https://github.com/mojombo/jekyll/w
 
 Posting with Jekyll doesn't involve a nice interface but is still a lot more simple than other methods.
 
-You can post with [Markdown] like me or use an alternative.
-
-Editing gets even better if you are on a Mac and you use a nice markdown editor like [Mou]
+You can post with [Markdown] like me or use an alternative. Editing gets even better if you are on a Mac and you use a nice markdown editor like [Mou].
 
 This is how my Jekyll folder tree looks like:
 
@@ -80,8 +76,7 @@ The files in here are going to be the basic building blocks of your site. At the
 
     layout: post
 
-therefore i access the `post.html` file in `_layouts`.
-That `post.html` file is based of a `default.html` file. Therefore I don't have to worry about any CSS or HTML after the site has been set up once.
+therefore i access the `post.html` file in `_layouts`. That `post.html` file is based of a `default.html` file. Therefore I don't have to worry about any CSS or HTML after the site has been set up once.
 
 ### \_posts
 
@@ -162,8 +157,7 @@ Execution:
 
 *`chmod u+x newpost.rb`* might be needed in order for the script to be executable.
 
-The script is going to look for a file named template.markdown in you Jekyll root directory.
-This template is a basic Jekyll post that you have to fill in with your content.
+The script is going to look for a file named template.markdown in you Jekyll root directory. This template is a basic Jekyll post that you have to fill in with your content.
 
     ---
     layout: post
@@ -172,7 +166,7 @@ This template is a basic Jekyll post that you have to fill in with your content.
     ---
     Hello, Jekyll!
 
-more on this can be found at [Cody's Blog](http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html)
+More on this can be found at [Cody's Blog](http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html)
 
 ### `\( \LaTeX \)`
 

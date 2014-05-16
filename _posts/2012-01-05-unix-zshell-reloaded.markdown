@@ -8,11 +8,7 @@ tags:
     - terminal
 ---
 
-In the good old days, when there were no such things as Graphical User Interfaces a computer could only be used with a Shell command-line interface.
-This system was intensively refined and even today can still be used really efficiently to accomplish some tasks.
-One of the major initial shells was the `Bourne-Shell` that uses the short abbreviation `sh`. It was used widely and at one point it received an update
-called `Bourne-Again Shell` - `bash`. Bash is the standard on many operating systems today. Although it is so popular there have been some other contestants
-which have even more features. One of them is `zsh` the `Z-Shell`.
+In the good old days, when there were no such things as Graphical User Interfaces a computer could only be used with a Shell command-line interface. This system was intensively refined and even today can still be used really efficiently to accomplish some tasks. One of the major initial shells was the `Bourne-Shell` that uses the short abbreviation `sh`. It was used widely and at one point it received an update called `Bourne-Again Shell` - `bash`. Bash is the standard on many operating systems today. Although it is so popular there have been some other contestants which have even more features. One of them is `zsh` the `Z-Shell`.
 
 **Problem:**
 
@@ -20,8 +16,7 @@ which have even more features. One of them is `zsh` the `Z-Shell`.
 
 ## Oh-My-ZSH
 
-[oh-my-zsh] which was written by [Robby Russell] tries to solve this problem and in my opinion, succeeds in doing so.
-It is easy to install, use and customize and makes everyday working with a shell a charm. Unfortunately
+[oh-my-zsh] which was written by [Robby Russell] tries to solve this problem and in my opinion, succeeds in doing so. It is easy to install, use and customize and makes everyday working with a shell a charm. Unfortunately
 
 ### Installation
 
@@ -40,10 +35,7 @@ Hopefully you will get to see this awesome piece of ASCII art at one point:
 	\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
 	                        /____/
 
-At one point this will ask you for an admin password. It needs that to change your default shell to zsh.
-If you have a brew version of zsh installed this will not succeed since the chsh (change shell) command
-only allows system shells. (At least it did so for me.)
-If you run into the same problem just quickly type this into your current shell.
+At one point this will ask you for an admin password. It needs that to change your default shell to zsh. If you have a brew version of zsh installed this will not succeed since the chsh (change shell) command only allows system shells. (At least it did so for me.) If you run into the same problem just quickly type this into your current shell.
 
 {% highlight bash %}
 chsh /bin/zsh
@@ -95,15 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 {% endhighlight %}
 
-This file is pretty self explanatory. Two of the most important customization options are themes and plugins.
-The creator's theme is the default when first installed and only one plugin is active.
+This file is pretty self explanatory. Two of the most important customization options are themes and plugins. The creator's theme is the default when first installed and only one plugin is active.
 
 For plugins I suggest you walk through the [plugin directory] or the [plugin wiki] and check out what is available and just add whatever you think is needed to your configuration file.
 
 #### Extending Oh My ZSH
 
-Go to your `~/.oh-my-zsh` directory. Create a new directory inside of the `custom` directory called `plugins`. Here we can create any custom plugins we want.
-Create a new folder called `test` and inside of it `touch` a new file called `test.plugin.zsh`.
+Go to your `~/.oh-my-zsh` directory. Create a new directory inside of the `custom` directory called `plugins`. Here we can create any custom plugins we want. Create a new folder called `test` and inside of it `touch` a new file called `test.plugin.zsh`.
 
 {% highlight bash %}
 c() { cd ~/some/important/dir/$1; }
@@ -111,8 +101,7 @@ _c() { _files -W ~/some/important/dir -/; }
 compdef _c c
 {% endhighlight %}
 
-This will add the `c` command that can quickly `cd` into an **important** directory.
-The second line even makes auto completion possible, it will list all the directories that are so important to you.
+This will add the `c` command that can quickly `cd` into an **important** directory. The second line even makes auto completion possible, it will list all the directories that are so important to you.
 
 #### Theming your ZSHELL
 
@@ -164,9 +153,7 @@ Make sure to check out my post about [ANSI Escape Codes](/posts/ansi-escape-code
 
 #### And now?
 
-In the end you can customize your shell however you want. If you need some inspiration and help look at both the [themes wiki] and the [themes directory].
-You can get some ideas of what you want to do and of how to add some other information.
-Look at some of the [Prompt Options] to add more system info.
+In the end you can customize your shell however you want. If you need some inspiration and help look at both the [themes wiki] and the [themes directory]. You can get some ideas of what you want to do and of how to add some other information. Look at some of the [Prompt Options] to add more system info.
 
 ### Usage
 

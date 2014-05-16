@@ -65,8 +65,7 @@ Essentially the computer does the exact same thing. It has one important advanta
 
 ### The Setup ###
 
-First of all we need to represent the current game state.
-I created a simple python class for this purpose. It basically follows the following function outline:
+First of all we need to represent the current game state. I created a simple python class for this purpose. It basically follows the following function outline:
 
 - `show()`: shows the board
 - `available_moves()`: all empty spaces
@@ -254,9 +253,7 @@ This function looks almost identical to the algorithm itself. It's purpose is si
 
 ## The Website ##
 
-After finishing all of the game logic and the artificial intelligence I decided to create a little website for the game.
-It runs on [Flask](http://flask.pocoo.org) and simply makes an Ajax requests to the server to determine the next move.
-I made some minor additions to save moves that were already calculated so that it doesn't crash when too many people play at the same time. I embedded it at the top of this post if you wanna give it a shot, otherwise check out the site: [tic.cwoebker.com](http://tic.cwoebker.com)
+After finishing all of the game logic and the artificial intelligence I decided to create a little website for the game. It runs on [Flask](http://flask.pocoo.org) and simply makes an Ajax requests to the server to determine the next move. I made some minor additions to save moves that were already calculated so that it doesn't crash when too many people play at the same time. I embedded it at the top of this post if you wanna give it a shot, otherwise check out the site: [tic.cwoebker.com](http://tic.cwoebker.com)
 
 ## The Result ##
 
@@ -409,8 +406,7 @@ if __name__ == "__main__":
 
 ## Post Scriptum ##
 
-Feel free to `<iframe>` this wherever you want. Make sure to give credit!
-Everyone should play some Tic Tac Toe from day to day.
+Feel free to `<iframe>` this wherever you want. Make sure to give credit! Everyone should play some Tic Tac Toe from day to day.
 
 {% highlight html %}
     <iframe src="http://tic.anigmo.org/tic" width="520px" height="520px" frameBorder="0"

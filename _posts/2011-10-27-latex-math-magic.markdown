@@ -39,8 +39,7 @@ This post basically works with multiple layers:
 
 All these parts work pretty nicely together, except that **Markdown messes up MathJax!**
 
-The main problem here is that some of the Latex would be interpreted as Markdown
-This means that in the end we wouldn't get our normal LaTeX output. The markdown interprets the LaTeX before MathJax can do that.
+The main problem here is that some of the Latex would be interpreted as Markdown. This means that in the end we wouldn't get our normal LaTeX output. The markdown interprets the LaTeX before MathJax can do that.
 
 ## So how can I fix this?
 

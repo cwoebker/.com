@@ -8,8 +8,7 @@ tags:
   - security
 ---
 
-For a small project of mine I needed to learn a bit about public & private key pairs. These keys are very important in many cryptographic areas. It took me a little to figure out which type of key is being used for what and how each task can be accomplished securely and easily.
-After I figured it out myself I figured I'll share a few simple basics.
+For a small project of mine I needed to learn a bit about public & private key pairs. These keys are very important in many cryptographic areas. It took me a little to figure out which type of key is being used for what and how each task can be accomplished securely and easily. After I figured it out myself I figured I'll share a few simple basics.
 
 ## The Keys ##
 

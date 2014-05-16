@@ -27,9 +27,7 @@ News come across the globe in a matter of seconds now and everyone **knows**; th
 
 ---
 
-A friend of mine told me a story about this one news stand in the middle of Boston. Initially it might have seemed just like any other kiosk, a small little building filled with drinks, food, magazines and newspapers. But something was special about this one, it was so much more, it was a connection to the world, like one end of a [submarine communications cable](http://en.wikipedia.org/wiki/Submarine_communications_cable).
-Every day it would have newspapers from all over the world, even from some Irish counties most people probably never heard of. It usually took these newspapers a couple of days to make it all the way across the ocean, but they did. And this is how people got news, this is how they knew.
-The guy who ran this store found a gap in the market and build a business around it, and believe me the place was packed with people everyday trying to get their hands on these valuable documents.
+A friend of mine told me a story about this one news stand in the middle of Boston. Initially it might have seemed just like any other kiosk, a small little building filled with drinks, food, magazines and newspapers. But something was special about this one, it was so much more, it was a connection to the world, like one end of a [submarine communications cable](http://en.wikipedia.org/wiki/Submarine_communications_cable). Every day it would have newspapers from all over the world, even from some Irish counties most people probably never heard of. It usually took these newspapers a couple of days to make it all the way across the ocean, but they did. And this is how people got news, this is how they knew. The guy who ran this store found a gap in the market and build a business around it, and believe me the place was packed with people everyday trying to get their hands on these valuable documents.
 
 ---
 
